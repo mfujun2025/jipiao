@@ -26,7 +26,7 @@ SITE = {
     "tagline": "机票资讯 · 价格动态 · 出行攻略",
     "desc": "机票.CC 是聚焦机票价格动态、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
     "agent_email": "mfujun88@agent.qq.com",
-    "updated": "2026-10-10",
+    "updated": "2026-10-11",
     "icp": "备案信息办理中",
 }
 
@@ -206,6 +206,76 @@ ARTICLES = [
                       "波动频繁，请以航空公司官方渠道实时公示为准。本站不销售机票、不参与任何交易环节。",
     },
     {
+        "slug": "post-holiday-low-fares",
+        "drafts": ["post-holiday-low-fares-2026-10-11.md"],
+        "column": "deals.html",
+        "column_name": "优惠活动",
+        "date": "2026-10-11",
+        "review": STAMP["next_review_price"],
+        "scope": "数据",
+        "title_fallback": "节后机票价格降三成",
+        "meta_title": "节后机票价格降三成：错峰出行低价窗口怎么抓-机票.CC",
+        "head_desc_extra": "文中含节后错峰时间结构表、主要客源地低价航线样本、下单前核对清单与错峰购票 FAQ。",
+        "keywords": "节后机票价格,错峰出行,低价机票什么时候买,机票淡季,节后特价机票",
+        "cat_label": "错峰出行",
+        "summary": "平均支付价较十一低三成以上——窗口边界、航线结构与核对清单。",
+        "about_note": "本文为机票.CC「优惠活动」栏目的错峰出行专题，文中价格均为公开渠道整理的参考区间，"
+                      "标注统计口径与时间范围；价格实时变动，请以航空公司官方渠道实时展示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "winter-schedule-2026",
+        "drafts": ["winter-schedule-2026-2026-10-11.md"],
+        "column": "routes.html",
+        "column_name": "航线资讯",
+        "date": "2026-10-11",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与动态",
+        "title_fallback": "冬春航季10月25日换季",
+        "meta_title": "冬春航季10月25日换季：新开航线与班次调整怎么影响购票-机票.CC",
+        "head_desc_extra": "文中含换季机制说明、新开与加密航线方向表、跨航季购票四个实操建议与 FAQ。",
+        "keywords": "冬春航季,航班换季,新开航线,航线加密,换季航班时刻",
+        "cat_label": "航季换季",
+        "summary": "10 月 25 日换季：直飞保留、班次密度与时刻的三重变化怎么应对。",
+        "about_note": "本文为机票.CC「航线资讯」栏目的换季专题，文中航线与班次信息整理自公开渠道，"
+                      "以各航司最终执行的航班计划为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "flight-vs-train",
+        "drafts": ["flight-vs-train-2026-10-11.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-11",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "机票比高铁便宜时怎么选",
+        "meta_title": "机票比高铁便宜时怎么选：一张决策清单算清总成本-机票.CC",
+        "head_desc_extra": "文中含五种成本维度对比表、机票占优场景表与下单前六步决策清单。",
+        "keywords": "机票比高铁便宜,机票和高铁怎么选,机票总成本,门到门时间,低价机票攻略",
+        "cat_label": "比价决策",
+        "summary": "裸价便宜不等于总成本便宜：五个维度、六步清单把账算清。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的比价决策专题，文中价格均为公开渠道整理的参考区间，"
+                      "标注统计口径与时间范围；机票与高铁价格实时变动，请以官方渠道为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "winter-airline-capacity",
+        "drafts": ["winter-airline-capacity-2026-10-11.md"],
+        "column": "airlines.html",
+        "column_name": "航司动态",
+        "date": "2026-10-11",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与动态",
+        "title_fallback": "冬春航季航司运力调整",
+        "meta_title": "冬春航季航司运力调整：国际航班增长与购票机会在哪-机票.CC",
+        "head_desc_extra": "文中含运力变化类型表、国际航线方向表，以及换季动态转化为购票决策的四条思路。",
+        "keywords": "冬春航季运力,航司运力调整,国际航班恢复,国际机票什么时候买,换季购票",
+        "cat_label": "航季调整",
+        "summary": "国内平稳、国际恢复：运力增量在哪，价格洼地就在哪。",
+        "about_note": "本文为机票.CC「航司动态」栏目的换季运力专题，文中运力与航线信息整理自公开渠道并标注时间口径，"
+                      "各航司最终执行计划可能调整，请以官方渠道为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
         "slug": "fuel-surcharge",
         "drafts": ["fuel-surcharge-2026-10-10.md"],
         "column": "price.html",
@@ -230,6 +300,34 @@ def articles_of(column_file: str):
     """取某栏目下已登记的文章，按日期倒序（最新的排前面）。"""
     return sorted([a for a in ARTICLES if a["column"] == column_file],
                   key=lambda a: a["date"], reverse=True)
+
+
+def column_articles_section(column_file: str, head_title: str, head_desc: str):
+    """栏目页的「本栏目专题」文章列表，与 price 页的专题区块使用同一套标记与样式。"""
+    arts = articles_of(column_file)
+    if not arts:
+        return ""
+    items = "\n".join(f"""        <li class="list-item">
+          <span class="list-num">{i+1}</span>
+          <div class="list-main">
+            <h4><a href="{article_url(a['slug'])}">{e(a.get('resolved_title') or a['slug'])}</a></h4>
+            <p>{e(a['summary'])}</p>
+          </div>
+          <div class="list-side"><span class="badge badge-gray">{e(a['cat_label'])}</span><br>{a['date']}</div>
+        </li>""" for i, a in enumerate(arts))
+    return f"""
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2><span class="bar"></span>{e(head_title)}</h2>
+          <p>{e(head_desc)}</p>
+        </div>
+      </div>
+      <ul class="list">
+{items}
+      </ul>
+    </section>
+"""
 
 
 def article_url(slug: str) -> str:
@@ -957,6 +1055,7 @@ def build_routes():
         </div>
       </div>
     </section>
+{column_articles_section("routes.html", "航线专题", "把换季与航线结构变化转化为购票判断的深度解读")}
   </div>
 </main>
 {subscribe_band()}
@@ -1025,6 +1124,7 @@ def build_guides():
         </div>
       </aside>
     </div>
+{column_articles_section("guides.html", "出行攻略专题", "把购票决策拆成可操作的判断清单与成本账")}
   </div>
 </main>
 {subscribe_band()}
@@ -1083,6 +1183,7 @@ def build_airlines():
       </aside>
     </div>
 {source_note(' 航司动态内容整理自航司及公开信息渠道，涉及具体规则请以航司官方公告为准。')}
+{column_articles_section("airlines.html", "航司动态专题", "从运力与规则变化中读出购票机会的深度梳理")}
   </div>
 </main>
 {subscribe_band()}
@@ -1150,6 +1251,7 @@ def build_deals():
         </div>
       </div>
     </section>
+{column_articles_section("deals.html", "优惠解读专题", "把促销与价格窗口转化为「是否值得下手」的判断框架")}
 {source_note()}
   </div>
 </main>
