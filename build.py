@@ -1351,16 +1351,25 @@ def md_to_html(md: str):
 
 
 def read_article():
-    f = ROOT.parent / "drafts" / "best-time-to-buy-2026-10-10.md"
-    if not f.exists():
+    cands = ["best-time-to-buy-2026-10-10-v2.md", "best-time-to-buy-2026-10-10.md"]
+    f = None
+    for name in cands:
+        p = ROOT.parent / "drafts" / name
+        if p.exists():
+            f = p
+            break
+    if f is None:
         return None
     md = f.read_text(encoding="utf-8")
+    # 去掉构建期注释（Meta 信息块）
+    md = re.sub(r"<!--.*?-->", "", md, flags=re.S)
     h1 = ""
     m = re.search(r"^#\s+(.+)$", md, re.M)
     if m:
         h1 = m.group(1).strip()
         md = md[:m.start()] + md[m.end():]
-    paras = [p.strip() for p in md.split("\n") if p.strip() and not p.strip().startswith(("#", "|", ">", "-", "*", "1."))]
+    paras = [p.strip() for p in md.split("\n")
+             if p.strip() and not p.strip().startswith(("#", "|", ">", "-", "*", "1.", "["))]
     desc = re.sub(r"[*`\[\]]|\(([^)]+)\)", "", paras[0])[:110] if paras else ""
     return {"h1": h1, "md": md, "desc": desc}
 
