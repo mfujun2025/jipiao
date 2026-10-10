@@ -403,6 +403,16 @@ const FAQ = [
 
 const SEARCH_INDEX = [
   {
+    "title": "机票什么时候买最便宜？提前多久订的完整时间表（国内 / 国际 / 淡旺季）",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "best-time-to-buy.html"
+  },
+  {
+    "title": "机票燃油附加费10月10日起上调：机票预定该提前还是再等？一笔净成本账说清",
+    "meta": "机票价格动态 · 价格解读",
+    "url": "fuel-surcharge.html"
+  },
+  {
     "title": "上海 → 北京 机票价格动态（最低 ¥620 起）",
     "meta": "价格动态 · 干线",
     "url": "price.html"

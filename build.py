@@ -168,6 +168,73 @@ DEALS = [
      "特殊人群优惠通常需要满足年龄与证件条件，且退改限制较多，购票前需逐条确认。"),
 ]
 
+# ----------------------------------------------------------------------
+# 文章注册表
+# ----------------------------------------------------------------------
+# 日更文章在此登记一条即可，其余（文章页 HTML / 所属栏目列表 / sitemap.xml /
+# 站内搜索索引）全部由 build.py 自动处理。沿用既有页面模板与样式，不新增设计。
+#
+# 字段说明：
+#   slug            产出 <slug>.html
+#   drafts          草稿候选文件名（相对 ../drafts/，按顺序取第一个存在的）
+#   column          所属栏目页文件名（决定面包屑与导航高亮、栏目列表归属）
+#   column_name     栏目中文名
+#   date            文章发布日期
+#   review/scope    E-E-A-T 下次复核日期与复核类别
+#   keywords        Article JSON-LD 的 keywords
+#   cat_label       栏目列表里显示的标签
+#   summary         栏目列表里的一句话摘要
+#   about_note      文末「关于本文」段落正文
+#   head_desc_extra <title> 之外补充进 meta description 的句子
+# ----------------------------------------------------------------------
+ARTICLES = [
+    {
+        "slug": "best-time-to-buy",
+        "drafts": ["best-time-to-buy-2026-10-10-v2.md", "best-time-to-buy-2026-10-10.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-10",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "机票什么时候买最便宜",
+        "head_desc_extra": "本文按国内/国际、淡旺季、周内与日内时段给出完整时间表，并说明价格规律与避坑要点。",
+        "keywords": "机票什么时候买最便宜,机票提前多久买,机票价格规律,国内机票,国际机票",
+        "cat_label": "购票技巧",
+        "summary": "为什么「提前 30 天」不是一个通用答案。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的价格规律专题，文中价格为公开渠道整理的参考区间，"
+                      "波动频繁，请以航空公司官方渠道实时公示为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "fuel-surcharge",
+        "drafts": ["fuel-surcharge-2026-10-10.md"],
+        "column": "price.html",
+        "column_name": "机票价格动态",
+        "date": "2026-10-10",
+        "review": STAMP["next_review_price"],
+        "scope": "数据",
+        "title_fallback": "机票燃油附加费上调",
+        "meta_title": "机票燃油附加费10月10日起上调：机票预定该提前还是再等-机票.CC",
+        "head_desc_extra": "文中含新旧征收标准对照、2026 年内调价轨迹、节后票价区间参考，以及「该提前还是再等」的判断清单。",
+        "keywords": "机票燃油附加费上调,机票预定,机票预订什么时候买,燃油附加费怎么算,机建燃油费,节后机票价格",
+        "cat_label": "价格解读",
+        "summary": "附加费涨 10–20 元，基础票价降数百元——净成本账怎么算？",
+        "about_note": "本文为机票.CC「机票价格动态」栏目的价格构成解读，文中价格与附加费标准均整理自公开渠道，"
+                      "并标注统计口径与时间范围；相关政策随时可能调整，请以航空公司官方渠道与出票页面展示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+]
+
+
+def articles_of(column_file: str):
+    """取某栏目下已登记的文章，按日期倒序（最新的排前面）。"""
+    return sorted([a for a in ARTICLES if a["column"] == column_file],
+                  key=lambda a: a["date"], reverse=True)
+
+
+def article_url(slug: str) -> str:
+    return f"{slug}.html"
+
+
 FAQ = [
     ("机票.CC 是购票平台吗？可以直接在这里买票吗？",
      "不是。机票.CC 是机票资讯与攻略类内容站点，我们不直接出票，也不参与交易。站内提供的价格信息用于帮助你了解行情与判断预订时机，实际购票请前往航空公司官方渠道或正规票务平台。"),
@@ -717,6 +784,29 @@ def build_price():
             <td class="muted">{e(r[6])}</td>
           </tr>""" for r in PRICES)
 
+    price_arts = articles_of("price.html")
+    art_items = "\n".join(f"""        <li class="list-item">
+          <span class="list-num">{i+1}</span>
+          <div class="list-main">
+            <h4><a href="{article_url(a['slug'])}">{e(a.get('resolved_title') or a['slug'])}</a></h4>
+            <p>{e(a['summary'])}</p>
+          </div>
+          <div class="list-side"><span class="badge badge-gray">{e(a['cat_label'])}</span><br>{a['date']}</div>
+        </li>""" for i, a in enumerate(price_arts))
+    art_section = f"""
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2><span class="bar"></span>价格动态专题</h2>
+          <p>把价格信息转化为决策的深度解读</p>
+        </div>
+      </div>
+      <ul class="list">
+{art_items}
+      </ul>
+    </section>
+""" if price_arts else ""
+
     body = topbar() + header("price.html") + page_hero(
         [("首页", "index.html"), ("机票价格动态", "price.html")],
         "机票价格动态",
@@ -770,7 +860,7 @@ def build_price():
         </div></article>
       </div>
     </section>
-
+{art_section}
     <section class="section">
       <div class="section-head">
         <div>
@@ -781,7 +871,7 @@ def build_price():
       </div>
       <ul class="list">
         <li class="list-item"><span class="list-num">1</span><div class="list-main">
-          <h4><a href="guides.html">机票什么时候买最划算？基于价格曲线的预订窗口分析</a></h4>
+          <h4><a href="best-time-to-buy.html">机票什么时候买最划算？基于价格曲线的预订窗口分析</a></h4>
           <p>为什么「提前 30 天」不是一个通用答案。</p></div>
           <div class="list-side"><span class="badge badge-gray">购票技巧</span></div></li>
         <li class="list-item"><span class="list-num">2</span><div class="list-main">
@@ -1230,7 +1320,11 @@ def build_data_js():
         "FAQ": [{"q": q, "a": a} for q, a in FAQ],
     }
     index = (
-        [{"title": f"{r[0]} 机票价格动态（最低 ¥{r[2]} 起）", "meta": "价格动态 · " + r[6], "url": "price.html"} for r in PRICES]
+        [{"title": a["resolved_title"],
+          "meta": f"{a['column_name']} · {a['cat_label']}",
+          "url": article_url(a["slug"])}
+         for a in ARTICLES if a.get("resolved_title")]
+        + [{"title": f"{r[0]} 机票价格动态（最低 ¥{r[2]} 起）", "meta": "价格动态 · " + r[6], "url": "price.html"} for r in PRICES]
         + [{"title": r[1], "meta": "航线资讯 · " + r[2], "url": "routes.html"} for r in ROUTES]
         + [{"title": g[1], "meta": "出行攻略 · " + g[2], "url": "guides.html"} for g in GUIDES]
         + [{"title": a[2], "meta": "航司动态 · " + a[1], "url": "airlines.html"} for a in AIRLINES]
@@ -1368,10 +1462,9 @@ def md_to_html(md: str):
     return "\n".join(out), toc
 
 
-def read_article():
-    cands = ["best-time-to-buy-2026-10-10-v2.md", "best-time-to-buy-2026-10-10.md"]
+def read_article(spec):
     f = None
-    for name in cands:
+    for name in spec["drafts"]:
         p = ROOT.parent / "drafts" / name
         if p.exists():
             f = p
@@ -1392,38 +1485,49 @@ def read_article():
     return {"h1": h1, "md": md, "desc": desc}
 
 
-def build_article():
-    art = read_article()
+def build_articles():
+    for spec in ARTICLES:
+        build_article(spec)
+
+
+def build_article(spec):
+    art = read_article(spec)
     if not art:
-        print("skip: 文章草稿尚未就绪")
+        print("skip: 文章草稿尚未就绪 ->", spec["slug"])
         return
     body_html, toc = md_to_html(art["md"])
-    title = art["h1"] or "机票什么时候买最便宜"
+    title = art["h1"] or spec.get("title_fallback", "机票资讯")
+    spec["resolved_title"] = title          # 供栏目列表 / 站内搜索索引复用
     desc = art["desc"]
-    ttl = (title[:24] + "-机票.CC") if len(title) > 18 else (title + "-机票.CC")
+    url = article_url(spec["slug"])
+    col = spec["column"]
+    col_name = spec["column_name"]
+    # 优先用登记的 meta_title（人工控好长度与关键词前置），否则按标题自动截断
+    ttl = spec.get("meta_title") or (
+        (title[:24] + "-机票.CC") if len(title) > 18 else (title + "-机票.CC"))
 
     ld = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "首页", "item": BASE_URL + "/"},
-            {"@type": "ListItem", "position": 2, "name": "出行攻略", "item": BASE_URL + "/guides.html"},
-            {"@type": "ListItem", "position": 3, "name": title, "item": BASE_URL + "/best-time-to-buy.html"}]},
+            {"@type": "ListItem", "position": 2, "name": col_name, "item": BASE_URL + "/" + col},
+            {"@type": "ListItem", "position": 3, "name": title, "item": BASE_URL + "/" + url}]},
         {"@context": "https://schema.org", "@type": "Article", "headline": title,
          "description": desc, "inLanguage": "zh-CN",
-         "datePublished": STAMP["updated"], "dateModified": STAMP["updated"],
+         "datePublished": spec["date"], "dateModified": spec["date"],
          "author": {"@type": "Organization", "name": SITE["name"]},
          "publisher": {"@type": "Organization", "name": SITE["name"]},
-         "mainEntityOfPage": BASE_URL + "/best-time-to-buy.html",
-         "keywords": "机票什么时候买最便宜,机票提前多久买,机票价格规律,国内机票,国际机票"},
+         "mainEntityOfPage": BASE_URL + "/" + url,
+         "keywords": spec["keywords"]},
     ]
 
     toc_html = "\n".join(
         f'            <li><a href="#{a}">{e(t)}</a></li>' for a, t in toc)
 
-    body = topbar() + header("guides.html") + page_hero(
-        [("首页", "index.html"), ("出行攻略", "guides.html"), (title, "best-time-to-buy.html")],
+    body = topbar() + header(col) + page_hero(
+        [("首页", "index.html"), (col_name, col), (title, url)],
         title,
         desc + "……",
-        STAMP["next_review_rule"], "规则与攻略"
+        spec["review"], spec["scope"]
     ) + f"""
 <main class="layout-main">
   <div class="container">
@@ -1433,8 +1537,7 @@ def build_article():
 {body_html}
         </article>
         <div class="source-note" style="margin-top:18px;">
-          <b>关于本文：</b>本文为机票.CC「出行攻略」栏目的价格规律专题，文中价格为公开渠道整理的参考区间，
-          波动频繁，请以航空公司官方渠道实时公示为准。本站不销售机票、不参与任何交易环节。
+          <b>关于本文：</b>{spec['about_note']}
           发现内容问题欢迎邮件反馈：{SITE['agent_email']}
         </div>
       </div>
@@ -1466,9 +1569,9 @@ def build_article():
 </main>
 {subscribe_band()}
 {footer()}"""
-    write(ROOT / "best-time-to-buy.html",
-          head(ttl, desc + "本文按国内/国际、淡旺季、周内与日内时段给出完整时间表，并说明价格规律与避坑要点。",
-               "guides.html", BASE_URL + "/best-time-to-buy.html", ld) + body)
+    write(ROOT / url,
+          head(ttl, desc + spec["head_desc_extra"],
+               col, BASE_URL + "/" + url, ld) + body)
 
 
 # ----------------------------------------------------------------------
@@ -1477,8 +1580,11 @@ def build_article():
 def build_seo_files():
     pages = ["index.html", "price.html", "routes.html", "guides.html",
              "airlines.html", "deals.html", "about.html"]
-    if (ROOT / "best-time-to-buy.html").exists():
-        pages.insert(2, "best-time-to-buy.html")
+    # 已登记且已生成的文章页一并进 sitemap
+    article_pages = [article_url(a["slug"]) for a in ARTICLES
+                     if (ROOT / article_url(a["slug"])).exists()]
+    for p in article_pages:
+        pages.insert(2, p)
 
     (ROOT / "robots.txt").write_text(
         "User-agent: *\nAllow: /\n\n"
@@ -1503,6 +1609,8 @@ def build_seo_files():
 
 
 if __name__ == "__main__":
+    # 先解析文章标题：栏目列表与站内搜索索引都复用 resolved_title
+    build_articles()
     build_index()
     build_price()
     build_routes()
@@ -1510,7 +1618,6 @@ if __name__ == "__main__":
     build_airlines()
     build_deals()
     build_about()
-    build_article()
     build_data_js()
     build_seo_files()
     print("\n✅ 站点构建完成")
