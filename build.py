@@ -16,12 +16,13 @@ from pathlib import Path
 from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent
-BASE_URL = "https://xn--yetu496a.cc"
+# 站点主域：机票.CC 的正确 punycode 为 xn--nqvq81b.cc（与仓库根目录 CNAME 保持一致）
+BASE_URL = "https://xn--nqvq81b.cc"
 
 SITE = {
     "name": "机票.CC",
     "domain_cn": "机票.CC",
-    "punycode": "xn--yetu496a.cc",
+    "punycode": "xn--nqvq81b.cc",
     "tagline": "机票资讯 · 价格动态 · 出行攻略",
     "desc": "机票.CC 是聚焦机票价格动态、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
     "agent_email": "mfujun88@agent.qq.com",
