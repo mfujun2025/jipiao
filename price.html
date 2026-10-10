@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>机票价格动态｜价格规律·趋势查询·何时买最便宜-机票.CC</title>
+  <meta name="description" content="汇集机票价格规律、票价趋势、何时买最便宜等实用信息，数据标注来源与更新时间，帮你判断机票该不该现在买。">
+  <meta name="keywords" content="机票,机票价格,机票资讯,航线资讯,出行攻略,航司动态,优惠活动,机票.CC">
+  <meta name="author" content="机票.CC">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://xn--yetu496a.cc/price.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="机票.CC">
+  <meta property="og:title" content="机票价格动态｜价格规律·趋势查询·何时买最便宜-机票.CC">
+  <meta property="og:description" content="汇集机票价格规律、票价趋势、何时买最便宜等实用信息，数据标注来源与更新时间，帮你判断机票该不该现在买。">
+  <meta property="og:url" content="https://xn--yetu496a.cc/price.html">
+  <meta name="theme-color" content="#0b63c5">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://xn--yetu496a.cc/"}, {"@type": "ListItem", "position": 2, "name": "机票价格动态", "item": "https://xn--yetu496a.cc/price.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "热门航线机票价格动态（示例）", "description": "包含航线、参考航司、最低价、均价、环比变化与余票状态的周期性更新表格。", "temporalCoverage": "2026-10", "creator": {"@type": "Organization", "name": "机票.CC"}, "license": "https://xn--yetu496a.cc/about.html#standards"}</script>
+</head>
+<body>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>📌 本站为机票资讯类内容站点，不提供票务交易服务</span>
+    </div>
+    <div class="topbar-right">
+      <span>数据更新：<b>2026-10-10</b></span>
+      <a href="mailto:mfujun88@agent.qq.com">mfujun88@agent.qq.com</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="机票.CC 首页">
+      <span class="brand-mark" aria-hidden="true">机</span>
+      <span class="brand-text">
+        <span class="brand-name">机票<span class="tld">.CC</span></span>
+        <span class="brand-sub">FLIGHT INFO</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航" aria-expanded="false">☰</button>
+    <nav class="nav" id="siteNav" aria-label="主导航">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="price.html" class="is-active">价格动态</a></li>
+        <li><a href="routes.html">航线资讯</a></li>
+        <li><a href="guides.html">出行攻略</a></li>
+        <li><a href="airlines.html">航司动态</a></li>
+        <li><a href="deals.html">优惠活动</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-accent btn-sm" href="mailto:mfujun88@agent.qq.com?subject=%E8%AE%A2%E9%98%85%E6%9C%BA%E7%A5%A8.CC%20%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0">✉ 订阅更新</a>
+    </div>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="container">
+  <nav class="breadcrumb" aria-label="面包屑"><a href="index.html">首页</a><span class="sep">/</span><span aria-current="page">机票价格动态</span></nav>
+    <h1>机票价格动态</h1>
+    <p class="lead">按航线跟踪最低价与环比变化，帮助你判断当前价格处于什么位置。价格波动频繁，请以购票渠道实际查询为准。</p>
+    <div class="stamp">
+      <span>🕘 最后更新：<b>2026-10-10</b></span>
+      <span>🔁 下次复核：<b>2026-11-10</b>（数据类内容按周期复核，过期内容将更新或归档）</span>
+    </div>
+  </div>
+</section>
+
+<main class="layout-main">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="chip is-active" type="button" data-filter="全部">全部</button>
+      <button class="chip" type="button" data-filter="干线">干线</button>
+      <button class="chip" type="button" data-filter="旅游">旅游</button>
+      <button class="chip" type="button" data-filter="长航线">长航线</button>
+      <button class="chip" type="button" data-filter="地区">地区</button>
+      <button class="chip" type="button" data-filter="短途">短途</button>
+
+    </div>
+    <div class="table-wrap">
+      <table id="priceTable">
+        <caption class="sr-only">热门航线机票价格动态（示例数据）</caption>
+        <thead>
+          <tr>
+            <th>航线</th>
+            <th>参考航司</th>
+            <th class="td-num sortable" data-col="2" data-type="num">最低价 ↕</th>
+            <th class="td-num sortable" data-col="3" data-type="num">均价 ↕</th>
+            <th class="sortable" data-col="4" data-type="num">环比变化 ↕</th>
+            <th>余票</th>
+            <th>类型</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="js-item" data-cat="干线">
+            <td class="td-strong">上海 → 北京</td>
+            <td class="muted">示例航空 MU</td>
+            <td class="td-num td-strong" data-sort="620">¥620</td>
+            <td class="td-num" data-sort="780">¥780</td>
+            <td data-sort="2.4"><span class="chg-up">▲ +2.4%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">干线</td>
+          </tr>
+          <tr class="js-item" data-cat="干线">
+            <td class="td-strong">广州 → 成都</td>
+            <td class="muted">示例航空 CZ</td>
+            <td class="td-num td-strong" data-sort="480">¥480</td>
+            <td class="td-num" data-sort="610">¥610</td>
+            <td data-sort="-5.1"><span class="chg-down">▼ -5.1%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">干线</td>
+          </tr>
+          <tr class="js-item" data-cat="旅游">
+            <td class="td-strong">北京 → 三亚</td>
+            <td class="muted">示例航空 HU</td>
+            <td class="td-num td-strong" data-sort="1080">¥1080</td>
+            <td class="td-num" data-sort="1360">¥1360</td>
+            <td data-sort="8.7"><span class="chg-up">▲ +8.7%</span></td>
+            <td><span class="badge badge-gray">偏紧</span></td>
+            <td class="muted">旅游</td>
+          </tr>
+          <tr class="js-item" data-cat="干线">
+            <td class="td-strong">深圳 → 西安</td>
+            <td class="muted">示例航空 ZH</td>
+            <td class="td-num td-strong" data-sort="560">¥560</td>
+            <td class="td-num" data-sort="700">¥700</td>
+            <td data-sort="-3.2"><span class="chg-down">▼ -3.2%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">干线</td>
+          </tr>
+          <tr class="js-item" data-cat="旅游">
+            <td class="td-strong">杭州 → 昆明</td>
+            <td class="muted">示例航空 CA</td>
+            <td class="td-num td-strong" data-sort="740">¥740</td>
+            <td class="td-num" data-sort="950">¥950</td>
+            <td data-sort="1.6"><span class="chg-up">▲ +1.6%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">旅游</td>
+          </tr>
+          <tr class="js-item" data-cat="旅游">
+            <td class="td-strong">成都 → 拉萨</td>
+            <td class="muted">示例航空 3U</td>
+            <td class="td-num td-strong" data-sort="890">¥890</td>
+            <td class="td-num" data-sort="1150">¥1150</td>
+            <td data-sort="-6.4"><span class="chg-down">▼ -6.4%</span></td>
+            <td><span class="badge badge-gray">偏紧</span></td>
+            <td class="muted">旅游</td>
+          </tr>
+          <tr class="js-item" data-cat="长航线">
+            <td class="td-strong">上海 → 乌鲁木齐</td>
+            <td class="muted">示例航空 MU</td>
+            <td class="td-num td-strong" data-sort="1250">¥1250</td>
+            <td class="td-num" data-sort="1580">¥1580</td>
+            <td data-sort="4.3"><span class="chg-up">▲ +4.3%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">长航线</td>
+          </tr>
+          <tr class="js-item" data-cat="地区">
+            <td class="td-strong">北京 → 香港</td>
+            <td class="muted">示例航空 CX</td>
+            <td class="td-num td-strong" data-sort="1420">¥1420</td>
+            <td class="td-num" data-sort="1760">¥1760</td>
+            <td data-sort="-2.8"><span class="chg-down">▼ -2.8%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">地区</td>
+          </tr>
+          <tr class="js-item" data-cat="旅游">
+            <td class="td-strong">广州 → 哈尔滨</td>
+            <td class="muted">示例航空 CZ</td>
+            <td class="td-num td-strong" data-sort="980">¥980</td>
+            <td class="td-num" data-sort="1290">¥1290</td>
+            <td data-sort="6.1"><span class="chg-up">▲ +6.1%</span></td>
+            <td><span class="badge badge-gray">偏紧</span></td>
+            <td class="muted">旅游</td>
+          </tr>
+          <tr class="js-item" data-cat="旅游">
+            <td class="td-strong">重庆 → 厦门</td>
+            <td class="muted">示例航空 MF</td>
+            <td class="td-num td-strong" data-sort="530">¥530</td>
+            <td class="td-num" data-sort="690">¥690</td>
+            <td data-sort="-4.5"><span class="chg-down">▼ -4.5%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">旅游</td>
+          </tr>
+          <tr class="js-item" data-cat="短途">
+            <td class="td-strong">武汉 → 青岛</td>
+            <td class="muted">示例航空 SC</td>
+            <td class="td-num td-strong" data-sort="440">¥440</td>
+            <td class="td-num" data-sort="570">¥570</td>
+            <td data-sort="1.1"><span class="chg-up">▲ +1.1%</span></td>
+            <td><span class="badge badge-gray">充足</span></td>
+            <td class="muted">短途</td>
+          </tr>
+          <tr class="js-item" data-cat="旅游">
+            <td class="td-strong">西安 → 敦煌</td>
+            <td class="muted">示例航空 GS</td>
+            <td class="td-num td-strong" data-sort="610">¥610</td>
+            <td class="td-num" data-sort="800">¥800</td>
+            <td data-sort="-7.3"><span class="chg-down">▼ -7.3%</span></td>
+            <td><span class="badge badge-gray">偏紧</span></td>
+            <td class="muted">旅游</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="source-note">
+      <b>数据来源与口径：</b>本页价格为示例数据，用于演示栏目结构与交互，<b>不构成任何报价或购票依据</b>。
+      正式上线后，每条数据将按统一格式标注来源与时间口径，例如：<span class="src-demo">来源：××航司官网《会员日公告》（2026-10-01）</span>。
+      价格一律以<b>区间</b>给出并注明统计区间（如「2026-09-01 至 09-30」），区分裸票价 / 含税总价 / 燃油附加费 / 民航发展基金，避免无口径的孤立数字。
+      本页最后更新 2026-10-10，下次复核 2026-11-10。 价格类型划分：干线为高频商务航线，旅游为季节性休闲航线，长航线/短途按航程区分，地区指中国港澳台地区航线。
+    </div>
+
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2><span class="bar"></span>怎么读懂这张表</h2>
+          <p>价格动态应该配合方法一起看，否则只是数字</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <article class="card"><div class="card-body">
+          <h3>环比变化说明什么</h3>
+          <p>环比反映的是相对上一次更新周期的价格移动方向，不代表未来走势。连续上涨通常意味着需求端偏紧，但不必然等于「还会更贵」。</p>
+        </div></article>
+        <article class="card"><div class="card-body">
+          <h3>最低价为什么不是你的成交价</h3>
+          <p>最低价对应的是特定日期、特定舱位的价格。你实际查到的价格取决于出行日期、余票与舱位等级，通常高于表中的最低价。</p>
+        </div></article>
+        <article class="card"><div class="card-body">
+          <h3>余票状态怎么用</h3>
+          <p>余票「偏紧」意味着可选的舱位与日期组合变少，灵活度下降。如果你的日期不能改，应尽早锁定而不是继续等待降价。</p>
+        </div></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2><span class="bar"></span>相关攻略</h2>
+          <p>把价格信息转化为决策</p>
+        </div>
+        <a class="more-link" href="guides.html">全部攻略 →</a>
+      </div>
+      <ul class="list">
+        <li class="list-item"><span class="list-num">1</span><div class="list-main">
+          <h4><a href="guides.html">机票什么时候买最划算？基于价格曲线的预订窗口分析</a></h4>
+          <p>为什么「提前 30 天」不是一个通用答案。</p></div>
+          <div class="list-side"><span class="badge badge-gray">购票技巧</span></div></li>
+        <li class="list-item"><span class="list-num">2</span><div class="list-main">
+          <h4><a href="guides.html">特价票的退改签陷阱：低价背后的真实成本</a></h4>
+          <p>把退改规则折进总成本再做比较。</p></div>
+          <div class="list-side"><span class="badge badge-gray">避坑指南</span></div></li>
+        <li class="list-item"><span class="list-num">3</span><div class="list-main">
+          <h4><a href="guides.html">错峰出行指南：非高峰日期的价格洼地</a></h4>
+          <p>周中与周末的价差，往往比促销更实在。</p></div>
+          <div class="list-side"><span class="badge badge-gray">错峰出行</span></div></li>
+      </ul>
+    </section>
+  </div>
+</main>
+<section class="section">
+  <div class="container">
+    <div class="subscribe-band" id="subscribe">
+      <div>
+        <h2>订阅机票价格与航线动态</h2>
+        <p>留下邮箱，或直接向我们的智能体邮箱发送一封「订阅」邮件。我们会按周期推送价格动态摘要、新增航线与航司规则变更提醒。</p>
+        <p class="sub-note">订阅入口同时展示于页脚「订阅与联系」栏目：mfujun88@agent.qq.com</p>
+      </div>
+      <div>
+        <form class="sub-form" id="subForm" novalidate>
+          <label class="sr-only" for="subEmail">订阅邮箱</label>
+          <input type="email" id="subEmail" name="email" placeholder="你的邮箱地址" required>
+          <button class="btn btn-accent" type="submit">立即订阅</button>
+        </form>
+        <div class="sub-msg" id="subMsg" role="status"></div>
+        <p class="sub-note">提交后将唤起邮件客户端，把订阅请求发送至 mfujun88@agent.qq.com。我们不会将邮箱用于其他用途。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-name">机票<span class="tld">.CC</span></span>
+        <span class="brand-sub">FLIGHT INFO</span>
+        <p>机票.CC 是聚焦机票价格动态、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="price.html">机票价格动态</a></li>
+          <li><a href="routes.html">航线资讯</a></li>
+          <li><a href="guides.html">出行攻略</a></li>
+          <li><a href="airlines.html">航司动态</a></li>
+          <li><a href="deals.html">优惠活动</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>关于与规范</h4>
+        <ul>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="about.html#standards">内容与数据规范</a></li>
+          <li><a href="about.html#disclaimer">免责声明</a></li>
+          <li><a href="about.html#faq">常见问题</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>用户服务</h4>
+        <ul>
+          <li><a href="mailto:mfujun88@agent.qq.com?subject=%E8%AE%A2%E9%98%85%E6%9C%BA%E7%A5%A8.CC%20%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0">邮件订阅</a></li>
+          <li><a href="price.html">价格动态查询</a></li>
+          <li><a href="guides.html">出行攻略索引</a></li>
+          <li><a href="about.html#contact">内容纠错与投稿</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="agent-mail-card">
+          <h4><span class="ai-dot" aria-hidden="true"></span>订阅与联系</h4>
+          <p>站点智能体邮箱，接受订阅申请、内容纠错与合作咨询，通常 1 个工作日内回复。</p>
+          <a class="mail-addr" href="mailto:mfujun88@agent.qq.com" title="点击发送邮件">mfujun88@agent.qq.com</a>
+          <div class="mail-actions">
+            <a class="btn btn-ghost btn-sm" href="mailto:mfujun88@agent.qq.com?subject=%E8%AE%A2%E9%98%85%E6%9C%BA%E7%A5%A8.CC%20%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0">✉ 邮件订阅</a>
+            <button class="btn btn-ghost btn-sm" type="button" id="copyMail" data-mail="mfujun88@agent.qq.com">⧉ 复制邮箱</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-disclaimer">
+      免责声明：本站为机票信息聚合与资讯平台，<b>不提供机票销售、出票及任何交易服务</b>。站内价格、活动、规则等信息均来源于公开渠道，仅供参考；
+      机票价格实时变动，实际价格与规则请以航空公司/官方售票渠道实时公示为准。本站不对因使用本站信息产生的决策结果承担责任。
+      站内演示用示例数据已明确标注。如含导流或合作链接，将显式标注「广告 / 合作」。
+    </p>
+
+    <div class="footer-bottom">
+      <span>© 2026 机票.CC · 机票.CC（xn--yetu496a.cc）</span>
+      <span>
+        <a href="about.html">关于我们</a> ·
+        <a href="about.html#standards">内容规范</a> ·
+        <a href="about.html#disclaimer">免责声明</a> ·
+        <a href="mailto:mfujun88@agent.qq.com">mfujun88@agent.qq.com</a>
+      </span>
+      <span>备案信息办理中</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
