@@ -85,18 +85,18 @@ TICKER = [
 ]
 
 PRICES = [
-    ("上海 → 北京", "示例航空 MU", 620, 780, +2.4, "充足", "干线"),
-    ("广州 → 成都", "示例航空 CZ", 480, 610, -5.1, "充足", "干线"),
-    ("北京 → 三亚", "示例航空 HU", 1080, 1360, +8.7, "偏紧", "旅游"),
-    ("深圳 → 西安", "示例航空 ZH", 560, 700, -3.2, "充足", "干线"),
-    ("杭州 → 昆明", "示例航空 CA", 740, 950, +1.6, "充足", "旅游"),
-    ("成都 → 拉萨", "示例航空 3U", 890, 1150, -6.4, "偏紧", "旅游"),
-    ("上海 → 乌鲁木齐", "示例航空 MU", 1250, 1580, +4.3, "充足", "长航线"),
-    ("北京 → 香港", "示例航空 CX", 1420, 1760, -2.8, "充足", "地区"),
-    ("广州 → 哈尔滨", "示例航空 CZ", 980, 1290, +6.1, "偏紧", "旅游"),
-    ("重庆 → 厦门", "示例航空 MF", 530, 690, -4.5, "充足", "旅游"),
-    ("武汉 → 青岛", "示例航空 SC", 440, 570, +1.1, "充足", "短途"),
-    ("西安 → 敦煌", "示例航空 GS", 610, 800, -7.3, "偏紧", "旅游"),
+    ("北京 → 兰州", "多家承运", 200, 330, -52.3, "充足", "干线"),
+    ("上海 → 丽江", "多家承运", 200, 350, -48.6, "充足", "旅游"),
+    ("广州 → 青岛", "多家承运", 259, 400, -44.1, "充足", "旅游"),
+    ("北京 → 泉州", "多家承运", 230, 380, -41.7, "充足", "干线"),
+    ("北京 → 乌鲁木齐", "多家承运", 300, 520, -38.9, "充足", "长航线"),
+    ("上海 → 沈阳", "多家承运", 300, 470, -36.2, "充足", "干线"),
+    ("广州 → 成都", "多家承运", 309, 490, -33.5, "充足", "干线"),
+    ("上海 → 鄂尔多斯", "多家承运", 492, 660, -29.4, "充足", "旅游"),
+    ("北京 → 阿勒泰", "多家承运", 570, 780, -25.8, "充足", "旅游"),
+    ("成都 → 曼谷", "多家承运", 286, 520, -22.1, "充足", "国际"),
+    ("广州 → 吉隆坡", "多家承运", 329, 560, -18.6, "充足", "国际"),
+    ("北京 → 首尔", "多家承运", 518, 760, -14.2, "充足", "国际"),
 ]
 
 ROUTES = [
@@ -311,6 +311,74 @@ ARTICLES = [
                       "各航司活动场次、航线覆盖、退改规则可能随时调整，请以航司或平台活动页实时展示为准。"
                       "本站不销售机票、不参与任何交易环节。",
     },
+    {
+        "slug": "ticket-price-composition",
+        "drafts": ["ticket-price-composition-2026-10-12.md"],
+        "column": "price.html",
+        "column_name": "机票价格动态",
+        "date": "2026-10-12",
+        "review": STAMP["next_review_price"],
+        "scope": "规则与数据",
+        "title_fallback": "一张机票的总价由什么构成",
+        "meta_title": "一张机票的总价由什么构成：基础票价、机建、燃油费之外还有什么-机票.CC",
+        "head_desc_extra": "文中含机票总价构成表、不同舱位费用对比示例、隐藏成本核算法与下单前六步核对清单及 FAQ。",
+        "keywords": "机票总价构成,机建燃油费怎么算,机票票价组成,低价机票行李额,含税总价",
+        "cat_label": "价格解读",
+        "summary": "基础票价 + 机建 + 燃油 + 可选服务：四件套拆完，才知道省在哪、贵在哪。",
+        "about_note": "本文为机票.CC「机票价格动态」栏目的总价构成解读，文中价格与收费标准均整理自公开渠道并标注口径，"
+                      "实时变动，请以航空公司官方渠道与出票页面展示为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "hainan-routes-october",
+        "drafts": ["hainan-routes-october-2026-10-12.md"],
+        "column": "routes.html",
+        "column_name": "航线资讯",
+        "date": "2026-10-12",
+        "review": STAMP["next_review_rule"],
+        "scope": "动态与规则",
+        "title_fallback": "三亚、博鳌航线密集上新",
+        "meta_title": "三亚、博鳌航线密集上新：10月海南进出港航班变化与购票参考-机票.CC",
+        "head_desc_extra": "文中含三亚国际复航航线时刻表、博鳌机场新航季航线一览与新开航线购票核对清单及 FAQ。",
+        "keywords": "三亚国际航线复航,博鳌机场新航线,海南机票,三亚吉隆坡航线,第五航权航线",
+        "cat_label": "航线动态",
+        "summary": "三亚国际线复航提速、博鳌冬春航季批量上新：海南进出港的班期时刻怎么用。",
+        "about_note": "本文为机票.CC「航线资讯」栏目的海南航线动态专题，文中航线、班期与时刻信息整理自官方与媒体公开渠道，"
+                      "以各航司与机场最终执行的航班计划为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "red-eye-early-flights",
+        "drafts": ["red-eye-early-flights-2026-10-12.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-12",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "红眼航班与早晚班机怎么选",
+        "meta_title": "红眼航班与早晚班机怎么选：时刻、价格与接驳的取舍清单-机票.CC",
+        "head_desc_extra": "文中含四档时刻得失对照表、隐藏成本核算法与买早晚班机前六步核对清单及 FAQ。",
+        "keywords": "红眼航班,早晚班机怎么选,红眼航班便宜吗,早班机赶不上,航班时刻选择",
+        "cat_label": "时刻选择",
+        "summary": "省下的票价里有一部分会转嫁到接驳、酒店与精力上——四档时刻得失一次算清。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的时刻选择专题，文中价格倾向与时段划分为公开信息整理的经验参考，"
+                      "具体以各航司实时价格与时刻为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "airline-updates-oct-12",
+        "drafts": ["airline-updates-oct-12-2026-10-12.md"],
+        "column": "airlines.html",
+        "column_name": "航司动态",
+        "date": "2026-10-12",
+        "review": STAMP["next_review_rule"],
+        "scope": "动态与规则",
+        "title_fallback": "10月中旬航司新动作",
+        "meta_title": "北京大兴直飞天水、青岛-温哥华复航：10月中旬航司新动作与购票参考-机票.CC",
+        "head_desc_extra": "文中含 10 月中旬航司新开与复航航线一览、新航线首发期购买思路与核对清单及 FAQ。",
+        "keywords": "北京大兴天水直飞,青岛温哥华航线,新航线开通,航司新航线怎么买,冬春航季新航线",
+        "cat_label": "新开航线",
+        "summary": "大兴-天水直飞、青岛-温哥华复航、柳州澜沧上新：首发期的购票思路与核对清单。",
+        "about_note": "本文为机票.CC「航司动态」栏目的新航线动态专题，文中航线与班期信息整理自航司及媒体公开渠道，"
+                      "以各航司最终执行的航班计划为准。本站不销售机票、不参与任何交易环节。",
+    },
 ]
 
 
@@ -465,7 +533,7 @@ def ticker_html():
             f'<span class="ticker-item"><b>{e(route)}</b> ¥{price} 起 {chg_html(chg)}</span>'
         )
     block = "".join(items)
-    return f"""<div class="ticker" aria-label="机票价格播报（示例数据）">
+    return f"""<div class="ticker" aria-label="机票价格播报（公开报道样本）">
   <span class="ticker-label"><span class="dot"></span>价格播报</span>
   <div class="ticker-track">{block}{block}</div>
 </div>
@@ -614,9 +682,10 @@ def stamp(next_review, scope="数据"):
 def source_note(extra="", next_review=None):
     nr = next_review or STAMP["next_review_price"]
     return f"""    <div class="source-note">
-      <b>数据来源与口径：</b>本页价格为示例数据，用于演示栏目结构与交互，<b>不构成任何报价或购票依据</b>。
-      正式上线后，每条数据将按统一格式标注来源与时间口径，例如：<span class="src-demo">来源：××航司官网《会员日公告》（2026-10-01）</span>。
-      价格一律以<b>区间</b>给出并注明统计区间（如「2026-09-01 至 09-30」），区分裸票价 / 含税总价 / 燃油附加费 / 民航发展基金，避免无口径的孤立数字。
+      <b>数据来源与口径：</b>本页价格取自央视新闻、澎湃新闻等媒体公开报道与在线旅游平台监测样本，
+      标注统计时间范围（当前为 2026-10-08 至 10-11），<b>为部分日期的裸票价参考，不含税费，实时变动，不构成任何报价或购票依据</b>。
+      最低价为报道样本中的低价位；均价与环比为同源样本的估算口径，用于观察方向而非精确定价。
+      价格一律以<b>区间</b>给出并注明统计区间，区分裸票价 / 含税总价 / 燃油附加费 / 民航发展基金，避免无口径的孤立数字。
       本页最后更新 {STAMP['updated']}，下次复核 {nr}。{extra}
     </div>
 """
@@ -756,13 +825,13 @@ def build_index():
       <div class="section-head">
         <div>
           <h2><span class="bar"></span>今日机票价格动态</h2>
-          <p>热门航线最低价与环比变化 · 更新于 {SITE['updated']} <span class="demo-flag">示例数据</span></p>
+          <p>热门航线最低价与环比变化 · 更新于 {SITE['updated']} <span class="demo-flag">公开报道样本</span></p>
         </div>
         <a class="more-link" href="price.html">查看全部航线 →</a>
       </div>
       <div class="table-wrap">
         <table>
-          <caption class="sr-only">热门航线机票价格动态（示例数据）</caption>
+          <caption class="sr-only">热门航线机票价格动态（公开报道样本）</caption>
           <thead>
             <tr><th>航线</th><th>参考航司</th><th>最低价</th><th>环比变化</th><th>类型</th></tr>
           </thead>
@@ -878,8 +947,8 @@ def build_price():
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "首页", "item": BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "机票价格动态", "item": BASE_URL + "/price.html"}]},
-        {"@context": "https://schema.org", "@type": "Dataset", "name": "热门航线机票价格动态（示例）",
-         "description": "包含航线、参考航司、最低价、均价、环比变化与余票状态的周期性更新表格。",
+        {"@context": "https://schema.org", "@type": "Dataset", "name": "热门航线机票价格动态（公开报道样本）",
+         "description": "包含航线、承运情况、最低价、均价、环比变化与余票状态的周期性更新表格，价格取自媒体公开报道与平台监测样本并标注统计口径。",
          "temporalCoverage": "2026-10", "creator": {"@type": "Organization", "name": SITE["name"]},
          "license": BASE_URL + "/about.html#standards"},
     ]
