@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 价格动态 · 出行攻略",
   "desc": "机票.CC 是聚焦机票价格动态、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "icp": "备案信息办理中"
 };
 
@@ -72,7 +72,7 @@ const PRICES = [
     "chg": -52.3,
     "seats": "充足",
     "cat": "干线",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "上海 → 丽江",
@@ -82,7 +82,7 @@ const PRICES = [
     "chg": -48.6,
     "seats": "充足",
     "cat": "旅游",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "广州 → 青岛",
@@ -92,7 +92,7 @@ const PRICES = [
     "chg": -44.1,
     "seats": "充足",
     "cat": "旅游",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "北京 → 泉州",
@@ -102,7 +102,7 @@ const PRICES = [
     "chg": -41.7,
     "seats": "充足",
     "cat": "干线",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "北京 → 乌鲁木齐",
@@ -112,7 +112,7 @@ const PRICES = [
     "chg": -38.9,
     "seats": "充足",
     "cat": "长航线",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "上海 → 沈阳",
@@ -122,7 +122,7 @@ const PRICES = [
     "chg": -36.2,
     "seats": "充足",
     "cat": "干线",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "广州 → 成都",
@@ -132,7 +132,7 @@ const PRICES = [
     "chg": -33.5,
     "seats": "充足",
     "cat": "干线",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "上海 → 鄂尔多斯",
@@ -142,7 +142,7 @@ const PRICES = [
     "chg": -29.4,
     "seats": "充足",
     "cat": "旅游",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "北京 → 阿勒泰",
@@ -152,7 +152,37 @@ const PRICES = [
     "chg": -25.8,
     "seats": "充足",
     "cat": "旅游",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
+  },
+  {
+    "route": "杭州 → 烟台",
+    "airline": "多家承运",
+    "low": 200,
+    "avg": 340,
+    "chg": -42.5,
+    "seats": "充足",
+    "cat": "旅游",
+    "date": "2026-10-13"
+  },
+  {
+    "route": "南昌 → 西安",
+    "airline": "多家承运",
+    "low": 200,
+    "avg": 340,
+    "chg": -43.0,
+    "seats": "充足",
+    "cat": "干线",
+    "date": "2026-10-13"
+  },
+  {
+    "route": "北京 → 呼和浩特",
+    "airline": "多家承运",
+    "low": 300,
+    "avg": 420,
+    "chg": -27.8,
+    "seats": "充足",
+    "cat": "干线",
+    "date": "2026-10-13"
   },
   {
     "route": "成都 → 曼谷",
@@ -162,7 +192,7 @@ const PRICES = [
     "chg": -22.1,
     "seats": "充足",
     "cat": "国际",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "广州 → 吉隆坡",
@@ -172,7 +202,7 @@ const PRICES = [
     "chg": -18.6,
     "seats": "充足",
     "cat": "国际",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   },
   {
     "route": "北京 → 首尔",
@@ -182,7 +212,7 @@ const PRICES = [
     "chg": -14.2,
     "seats": "充足",
     "cat": "国际",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
   }
 ];
 
@@ -458,6 +488,26 @@ const SEARCH_INDEX = [
     "url": "airline-updates-oct-12.html"
   },
   {
+    "title": "两百多元的机票最后要付多少：燃油附加费上调后的捡漏总价账",
+    "meta": "机票价格动态 · 含税总价",
+    "url": "budget-fare-true-total.html"
+  },
+  {
+    "title": "广州直飞亚的斯亚贝巴开航、宁波复航普吉岛：近期国际航线上新怎么买",
+    "meta": "航线资讯 · 国际航线",
+    "url": "new-international-routes-mid-oct.html"
+  },
+  {
+    "title": "秋假家庭出游机票怎么买：远期预订量增长四成后的锁票与退改策略",
+    "meta": "出行攻略 · 家庭出行",
+    "url": "autumn-break-family-booking.html"
+  },
+  {
+    "title": "冬春航季倒计时：乌鲁木齐航空航线新增复航与航司产品上新盘点",
+    "meta": "航司动态 · 换季前瞻",
+    "url": "airlines-winter-season-prep.html"
+  },
+  {
     "title": "北京 → 兰州 机票价格动态（最低 ¥200 起）",
     "meta": "价格动态 · 干线",
     "url": "price.html"
@@ -500,6 +550,21 @@ const SEARCH_INDEX = [
   {
     "title": "北京 → 阿勒泰 机票价格动态（最低 ¥570 起）",
     "meta": "价格动态 · 旅游",
+    "url": "price.html"
+  },
+  {
+    "title": "杭州 → 烟台 机票价格动态（最低 ¥200 起）",
+    "meta": "价格动态 · 旅游",
+    "url": "price.html"
+  },
+  {
+    "title": "南昌 → 西安 机票价格动态（最低 ¥200 起）",
+    "meta": "价格动态 · 干线",
+    "url": "price.html"
+  },
+  {
+    "title": "北京 → 呼和浩特 机票价格动态（最低 ¥300 起）",
+    "meta": "价格动态 · 干线",
     "url": "price.html"
   },
   {
