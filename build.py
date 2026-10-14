@@ -550,6 +550,96 @@ ARTICLES = [
         "about_note": "本文为机票.CC「航司动态」栏目的新开航线专题，文中航线、班期与时刻信息整理自新华社、广州日报等公开报道，"
                       "以各航司最终执行的航班计划与官方公示为准。本站不销售机票、不参与任何交易环节。",
     },
+    {
+        "slug": "flight-booking-tips",
+        "drafts": ["flight-booking-tips-2026-10-15.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-15",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "机票预订技巧",
+        "meta_title": "机票预订技巧：从搜索到出票的 9 个关键动作（2026 实用版）-机票.CC",
+        "head_desc_extra": "文中含预订全流程对照表、比价要素表、下单核对清单、常见错误对照与 6 条预订 FAQ。",
+        "keywords": "机票预订技巧,机票怎么订,订机票流程,机票预订注意事项,机票出票后要做什么,机票比价看什么",
+        "cat_label": "购票技巧",
+        "summary": "从搜索、比价、下单到出票验票：9 个能直接照做的动作，避开大多数多花的钱。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的机票预订流程专题，文中流程与规则为通用科普整理，"
+                      "不同航司与渠道存在差异，请以航空公司官方渠道及实际购票页面实时展示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "cheap-flights-how-to",
+        "drafts": ["cheap-flights-how-to-2026-10-15.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-15",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "特价机票怎么买",
+        "meta_title": "特价机票怎么买才靠谱？低价舱、促销节奏与捡漏的正确姿势-机票.CC",
+        "head_desc_extra": "文中含低价来源对照表、促销节点节奏表、6 个捡漏动作与隐性成本检查清单及 FAQ。",
+        "keywords": "特价机票怎么买,特价机票,便宜机票怎么买,机票促销时间,机票捡漏技巧,低价机票靠谱吗",
+        "cat_label": "特价票",
+        "summary": "低价舱、促销与清仓三类来源怎么分辨，以及 6 个能做成习惯的捡漏动作。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的特价机票专题，文中价格为公开渠道整理的参考区间，"
+                      "标注统计口径与时间范围；价格实时变动，请以航空公司官方渠道实时展示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "flight-booking-money-saving",
+        "drafts": ["flight-booking-money-saving-2026-10-15.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-15",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "机票省钱攻略",
+        "meta_title": "机票省钱攻略：票价之外的 10 个能省环节与核对清单-机票.CC",
+        "head_desc_extra": "文中含机票成本构成表、10 个省钱环节清单、伪省钱风险对照表与不同人群省钱重点。",
+        "keywords": "机票省钱攻略,买机票怎么省钱,机票省钱技巧,机票附加费用,机票怎么买最划算,机票行李费怎么省",
+        "cat_label": "省钱攻略",
+        "summary": "把一张票的总成本拆开，逐项优化，通常比单纯比价更见效。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的机票省钱专题，文中成本分类与金额为说明结构的示意，"
+                      "不构成报价；实际费用因航司、航线与舱位而异，请以官方渠道实时展示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "flight-booking-mistakes",
+        "drafts": ["flight-booking-mistakes-2026-10-15.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-15",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "订机票常见错误与避坑清单",
+        "meta_title": "订机票最容易犯的 12 个错误：从姓名拼写到证件有效期-机票.CC",
+        "head_desc_extra": "文中含三环节错误对照表、问题处理紧迫度表、逐项核对清单与出错后处理路径及 FAQ。",
+        "keywords": "机票预订注意事项,订机票避坑,机票姓名拼错怎么办,重复购票怎么办,机票退改签陷阱,机票核对清单",
+        "cat_label": "避坑指南",
+        "summary": "姓名、证件、重复下单、退改规则——12 个高频错误与一份能挡掉它们的核对清单。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的订票避坑专题，文中规则与提示为公开信息归纳，"
+                      "能否处理与处理结果取决于航司规则和票种，请以航空公司官方答复为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "round-trip-vs-oneway",
+        "drafts": ["round-trip-vs-oneway-2026-10-15.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-15",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "往返票还是单程票",
+        "meta_title": "往返票还是单程票？多段组合购票的决策方法与场景对照-机票.CC",
+        "head_desc_extra": "文中含四种票型对照表、场景决策速查表、中转保障差异说明与组合购票核对清单及 FAQ。",
+        "keywords": "往返票还是单程票,往返票和单程票哪个便宜,开口票是什么,联程票和分段买区别,机票组合购票,中转机票行李直挂",
+        "cat_label": "购票技巧",
+        "summary": "单程、往返、开口、联程四种票型怎么选，以及中转时该选联程还是分段买。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的票型选择专题，文中票型与规则为通用科普整理，"
+                      "是否提供对应票型及具体价格需按航线查询，请以航空公司官方渠道实时展示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
 ]
 
 

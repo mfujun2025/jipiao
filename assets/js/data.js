@@ -322,6 +322,31 @@ const SEARCH_INDEX = [
     "url": "baiyun-three-intl-routes-oct.html"
   },
   {
+    "title": "机票预订技巧：从搜索到出票的 9 个关键动作（2026 实用版）",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "flight-booking-tips.html"
+  },
+  {
+    "title": "特价机票怎么买才靠谱？低价舱、促销节奏与捡漏的正确姿势",
+    "meta": "出行攻略 · 特价票",
+    "url": "cheap-flights-how-to.html"
+  },
+  {
+    "title": "机票省钱攻略：票价之外，还有 10 个能省的环节（附核对清单）",
+    "meta": "出行攻略 · 省钱攻略",
+    "url": "flight-booking-money-saving.html"
+  },
+  {
+    "title": "订机票最容易犯的 12 个错误：从姓名拼写到证件有效期（避坑清单）",
+    "meta": "出行攻略 · 避坑指南",
+    "url": "flight-booking-mistakes.html"
+  },
+  {
+    "title": "往返票还是单程票？多段组合购票的决策方法（附场景对照表）",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "round-trip-vs-oneway.html"
+  },
+  {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
     "meta": "航线资讯 · 干线",
     "url": "routes.html"
