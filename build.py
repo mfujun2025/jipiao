@@ -39,7 +39,7 @@ CTA_SUB = "✉ 订阅价格提醒"
 
 NAV = [
     ("index.html", "首页"),
-    ("price.html", "价格动态"),
+    ("price.html", "航空公司导航"),
     ("routes.html", "航线资讯"),
     ("guides.html", "出行攻略"),
     ("airlines.html", "航司动态"),
@@ -59,9 +59,9 @@ STAMP = {
 }
 
 COLUMNS = [
-    {"file": "price.html", "ico": "📈", "name": "机票价格动态", "short": "价格动态",
-     "desc": "按航线跟踪最低价、均价与环比变化，标注更新日期与数据来源。",
-     "freq": "每周二、五更新"},
+    {"file": "price.html", "ico": "🧭", "name": "航空公司导航", "short": "航司导航",
+     "desc": "48 家国内外航空公司及在线旅行平台的官网入口，卡片式导航，直达官方渠道查询航班与票价。",
+     "freq": "每周复核"},
     {"file": "routes.html", "ico": "🗺️", "name": "航线资讯", "short": "航线资讯",
      "desc": "干线、季节性、高原、区域与国际航线的班次结构与运力变化解读。",
      "freq": "每日更新"},
@@ -104,6 +104,63 @@ PRICES = [
     ("成都 → 曼谷", "多家承运", 286, 520, -22.1, "充足", "国际"),
     ("广州 → 吉隆坡", "多家承运", 329, 560, -18.6, "充足", "国际"),
     ("北京 → 首尔", "多家承运", 518, 760, -14.2, "充足", "国际"),
+]
+
+# ----------------------------------------------------------------------
+# 航空公司导航（price.html 卡片式导航）
+# ----------------------------------------------------------------------
+# 48 家：国内客运航司 + 中国港澳台地区航司 + 在线旅行平台（携程/同程）。
+# 字段：航空公司名称、官网域名、备注（"" 或 "ota" 在线旅行平台）。
+# 域名由站长提供；本站仅作官网入口导航，不代售、不导流下单。
+AIRLINES_NAV = [
+    ("中国国际航空", "www.airchina.com.cn", ""),
+    ("中国东方航空", "www.ceair.com", ""),
+    ("中国南方航空", "www.csair.cn", ""),
+    ("海南航空", "www.hnair.com", ""),
+    ("厦门航空", "www.xiamenair.com", ""),
+    ("四川航空", "www.sichuanair.com", ""),
+    ("山东航空", "www.sda.cn", ""),
+    ("深圳航空", "www.shenzhenair.com", ""),
+    ("上海航空", "www.ceair.com", "无独立官网，共用东航"),
+    ("春秋航空", "www.ch.com", ""),
+    ("吉祥航空", "www.juneyaoair.com", ""),
+    ("中国联合航空", "www.flycua.com", ""),
+    ("九元航空", "www.9air.com", ""),
+    ("奥凯航空", "www.okair.net", ""),
+    ("首都航空", "www.jdair.net", ""),
+    ("天津航空", "www.tianjin-air.com", ""),
+    ("祥鹏航空", "www.luckyair.net", ""),
+    ("西部航空", "www.westair.cn", ""),
+    ("福州航空", "www.fuzhou-air.cn", ""),
+    ("金鹏航空", "www.yzr.com.cn", ""),
+    ("长安航空", "www.airchangan.com", ""),
+    ("乌鲁木齐航空", "www.urumqi-air.com", ""),
+    ("华夏航空", "www.chinaexpressair.com", ""),
+    ("成都航空", "www.cdal.com.cn", ""),
+    ("西藏航空", "www.airxizang.com", ""),
+    ("青岛航空", "www.qdairlines.com", ""),
+    ("湖南航空", "www.redair.cn", ""),
+    ("多彩贵州航空", "www.cgzair.com", ""),
+    ("江西航空", "www.airjiangxi.com", ""),
+    ("北部湾航空", "www.gxairlines.com", ""),
+    ("昆明航空", "www.airkunming.com", ""),
+    ("龙江航空", "www.longjianghk.com", ""),
+    ("河北航空", "www.hbhk.com.cn", ""),
+    ("长龙航空", "www.loongair.cn", ""),
+    ("东海航空", "www.donghaiair.com", ""),
+    ("幸福航空", "www.joy-air.com", ""),
+    ("中华航空", "www.china-airlines.com", ""),
+    ("长荣航空", "www.evaair.com", ""),
+    ("立荣航空", "www.uniair.com.tw", ""),
+    ("华信航空", "www.mandarin-airlines.com", ""),
+    ("台湾虎航", "www.tigerairtw.com", ""),
+    ("星宇航空", "www.starlux-airlines.com", ""),
+    ("国泰航空", "www.cathaypacific.com", ""),
+    ("香港航空", "www.hongkongairlines.com", ""),
+    ("香港快运航空", "www.hkexpress.com", ""),
+    ("澳门航空", "www.airmacau.com.mo", ""),
+    ("携程", "www.ctrip.com", "ota"),
+    ("同程旅行", "www.ly.com", "ota"),
 ]
 
 ROUTES = [
@@ -1090,14 +1147,14 @@ def build_price():
     ld = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "首页", "item": BASE_URL + "/"},
-            {"@type": "ListItem", "position": 2, "name": "机票价格动态", "item": BASE_URL + "/price.html"}]},
+            {"@type": "ListItem", "position": 2, "name": "航空公司导航", "item": BASE_URL + "/price.html"}]},
         {"@context": "https://schema.org", "@type": "Dataset", "name": "热门航线机票价格动态（公开报道样本）",
          "description": "包含航线、承运情况、最低价、均价、环比变化与余票状态的周期性更新表格，价格取自媒体公开报道与平台监测样本并标注统计口径。",
          "temporalCoverage": "2026-10", "creator": {"@type": "Organization", "name": SITE["name"]},
          "license": BASE_URL + "/about.html#standards"},
     ]
-    title = "机票价格动态｜价格规律·趋势查询·何时买最便宜-机票.CC"
-    desc = "汇集机票价格规律、票价趋势、何时买最便宜等实用信息，数据标注来源与更新时间，帮你判断机票该不该现在买。"
+    title = "航空公司导航｜48 家国内外航司与平台官网入口-机票.CC"
+    desc = "卡片式航空公司导航：48 家国内外客运航司及携程、同程等平台官网入口，直达官方渠道查询航班、票价与规则。"
 
     chips = ["全部", "干线", "旅游", "长航线", "地区", "短途"]
     chip_html = "".join(
@@ -1113,6 +1170,31 @@ def build_price():
             <td><span class="badge badge-gray">{e(r[5])}</span></td>
             <td class="muted">{e(r[6])}</td>
           </tr>""" for r in PRICES)
+
+    nav_cards = "\n".join(f"""        <a class="airline-card" href="https://{u}" target="_blank" rel="noopener">
+          <span class="airline-num">序号 {i}</span>
+          <span class="airline-name">{e(n)}{'<span class="airline-ota">平台</span>' if t == "ota" else ''}</span>
+          <span class="airline-url">{e(u)}</span>
+          {f'<span class="airline-note">{e(t)}</span>' if t and t != "ota" else ""}
+        </a>""" for i, (n, u, t) in enumerate(AIRLINES_NAV, 1))
+    nav_section = f"""
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2><span class="bar"></span>航空公司官网导航</h2>
+          <p>共 48 家：国内客运航司、中国港澳台地区航司与在线旅行平台（携程、同程）；点击卡片直达官网</p>
+        </div>
+      </div>
+      <div class="grid-4 airline-grid">
+{nav_cards}
+      </div>
+      <div class="source-note" style="margin-top:16px;">
+        <b>入口说明：</b>本导航仅提供航空公司及在线旅行平台的官网入口，方便你直达官方渠道查询航班、票价与规则；
+        标注「平台」的为在线旅行服务商（OTA），并非航空公司。<b>本站不销售机票、不代收票款、不参与任何交易、不为任何机构导流下单</b>，
+        域名信息由站长整理提供，如发现变更欢迎邮件反馈：{SITE['agent_email']}。
+      </div>
+    </section>
+"""
 
     price_arts = articles_of("price.html")
     art_items = "\n".join(f"""        <li class="list-item">
@@ -1138,18 +1220,27 @@ def build_price():
 """ if price_arts else ""
 
     body = topbar() + header("price.html") + page_hero(
-        [("首页", "index.html"), ("机票价格动态", "price.html")],
-        "机票价格动态",
-        "按航线跟踪最低价与环比变化，帮助你判断当前价格处于什么位置。价格波动频繁，请以购票渠道实际查询为准。"
-    ) + f"""
+        [("首页", "index.html"), ("航空公司导航", "price.html")],
+        "航空公司导航",
+        "48 家国内外航空公司及在线旅行平台的官网入口，卡片式直达；下方附热门航线价格数据与价格动态专题。"
+    ) + nav_section + f"""
 <main class="layout-main">
   <div class="container">
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2><span class="bar"></span>价格数据：热门航线公开报道样本</h2>
+          <p>按航线跟踪最低价、均价与环比变化，标注更新日期与数据来源</p>
+        </div>
+        <span class="badge badge-gray">更新于 {SITE['updated']}</span>
+      </div>
+    </section>
     <div class="filter-bar">
 {chip_html}
     </div>
     <div class="table-wrap">
       <table id="priceTable">
-        <caption class="sr-only">热门航线机票价格动态（示例数据）</caption>
+        <caption class="sr-only">热门航线机票价格动态（公开报道样本）</caption>
         <thead>
           <tr>
             <th>航线</th>
@@ -1529,7 +1620,7 @@ def build_about():
 
           <h2>我们做什么</h2>
           <ul class="dots">
-            <li><b>机票价格动态</b>：按航线跟踪价格区间与环比变化，标注更新时间与来源口径。</li>
+            <li><b>航空公司导航</b>：48 家国内外航司与平台官网入口卡片导航，并附热门航线价格数据样本。</li>
             <li><b>航线资讯</b>：解读航线的班次结构、需求节奏与替代方案。</li>
             <li><b>出行攻略</b>：购票时机、退改签、中转联程、行李与出行保障的实操方法。</li>
             <li><b>航司动态</b>：航季调整、规则变更与会员计划的公开信息汇总。</li>
@@ -1885,7 +1976,7 @@ def build_article(spec):
         <div class="side-box">
           <h3><span class="bar"></span>相关栏目</h3>
           <ul class="side-list">
-            <li><a href="price.html">机票价格动态</a></li>
+            <li><a href="price.html">航空公司导航</a></li>
             <li><a href="routes.html">航线资讯</a></li>
             <li><a href="guides.html">出行攻略</a></li>
             <li><a href="deals.html">优惠活动</a></li>
