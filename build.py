@@ -1123,9 +1123,12 @@ def build_price():
     desc = "卡片式航空公司导航：48 家国内外客运航司及携程、同程等平台官网入口，直达官方渠道查询航班、票价与规则。"
 
     nav_cards = "\n".join(f"""        <a class="airline-card" href="https://{u}" target="_blank" rel="noopener">
-          <span class="airline-name">{e(n)}{'<span class="airline-ota">平台</span>' if t == "ota" else ''}</span>
-          <span class="airline-url">{e(u)}</span>
-          {f'<span class="airline-note">{e(t)}</span>' if t and t != "ota" else ""}
+          <span class="airline-avatar" aria-hidden="true">{e(n[0])}</span>
+          <span class="airline-body">
+            <span class="airline-name">{e(n)}{'<span class="airline-ota">平台</span>' if t == "ota" else ''}</span>
+            <span class="airline-url">{e(u)}</span>
+            {f'<span class="airline-note">{e(t)}</span>' if t and t != "ota" else ""}
+          </span>
         </a>""" for n, u, t in AIRLINES_NAV)
     nav_section = f"""
     <section class="section">

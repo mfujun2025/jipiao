@@ -546,9 +546,10 @@ tbody tr:hover { background: var(--surface-2); }
 /* ==========================================================================
    航空公司导航卡片（price.html 卡片式导航，复用设计令牌，不新增色板）
    ========================================================================== */
+.airline-grid { gap: 14px; }
 .airline-card {
-  display: flex; flex-direction: column; gap: 3px;
-  padding: 13px 14px 12px;
+  display: flex; flex-direction: row; align-items: center; gap: 12px;
+  padding: 12px 14px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r);
@@ -558,9 +559,28 @@ tbody tr:hover { background: var(--surface-2); }
 }
 .airline-card:hover {
   box-shadow: var(--shadow-2); border-color: #d7e2f1;
-  color: var(--brand); transform: translateY(-1px);
+  transform: translateY(-1px);
 }
-.airline-name { font-size: 15px; font-weight: 600; line-height: 1.45; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.airline-avatar {
+  flex: 0 0 auto;
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--brand); color: #fff;
+  border-radius: 10px;
+  font-size: 18px; font-weight: 700;
+  line-height: 1;
+  transition: background .15s ease;
+}
+.airline-card:hover .airline-avatar { background: #094e9c; }
+.airline-body {
+  display: flex; flex-direction: column; gap: 3px;
+  min-width: 0; flex: 1;
+}
+.airline-name {
+  font-size: 15px; font-weight: 600; line-height: 1.35;
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+}
 .airline-ota { font-size: 11px; font-weight: 500; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; }
-.airline-url { font-size: 12.5px; color: var(--brand); word-break: break-all; }
-.airline-note { font-size: 12px; color: var(--ink-3); }
+.airline-url { font-size: 12px; color: var(--ink-3); word-break: break-all; line-height: 1.35; }
+.airline-card:hover .airline-url { color: var(--brand); }
+.airline-note { font-size: 12px; color: var(--ink-3); line-height: 1.35; }
