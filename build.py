@@ -645,21 +645,6 @@ def head(title, desc, active, canonical, jsonld):
 """
 
 
-def topbar():
-    return f"""<div class="topbar">
-  <div class="container">
-    <div class="topbar-left">
-      <span>📌 本站为机票资讯类内容站点，不提供票务交易服务</span>
-    </div>
-    <div class="topbar-right">
-      <span>数据更新：<b>{SITE['updated']}</b></span>
-      <a href="{MAILTO}">{SITE['agent_email']}</a>
-    </div>
-  </div>
-</div>
-"""
-
-
 def header(active):
     links = "\n".join(
         f'        <li><a href="{f}"{" class=\"is-active\"" if f == active else ""}>{e(n)}</a></li>'
@@ -908,7 +893,7 @@ def build_index():
 
     tags = "".join(f'<a class="tag" href="{c["file"]}">#{e(c["short"])}</a>' for c in COLUMNS)
 
-    body = topbar() + header("index.html") + f"""
+    body = header("index.html") + f"""
 <main>
   <section class="hero">
     <div class="container hero-grid">
@@ -1088,7 +1073,7 @@ def build_price():
     </section>
 """
 
-    body = topbar() + header("price.html") + page_hero(
+    body = header("price.html") + page_hero(
         [("首页", "index.html"), ("航空公司导航", "price.html")],
         "航空公司导航",
         "48 家国内外航空公司及在线旅行平台的官网入口，卡片式直达；点击卡片跳转官方渠道查询航班、票价与退改规则。",
@@ -1153,7 +1138,7 @@ def build_routes():
           </div>
         </article>""" for r in ROUTES)
 
-    body = topbar() + header("routes.html") + page_hero(
+    body = header("routes.html") + page_hero(
         [("首页", "index.html"), ("航线资讯", "routes.html")],
         "航线资讯",
         "同一个目的地，出发地、班次密度与中转点的选择会显著改变出行成本与体验。本栏目按航线类型整理可复用的判断依据。",
@@ -1225,7 +1210,7 @@ def build_guides():
           <div class="list-side"><span class="badge badge-gray">{e(g[2])}</span><br>{g[3]} · {g[4]} 分钟</div>
         </li>""" for i, g in enumerate(GUIDES))
 
-    body = topbar() + header("guides.html") + page_hero(
+    body = header("guides.html") + page_hero(
         [("首页", "index.html"), ("出行攻略", "guides.html")],
         "出行攻略",
         "机票只是出行成本的一部分。这个栏目关注「买之前要知道什么」：什么时候买、低价票有什么代价、中转能不能接上、行李怎么算。",
@@ -1286,7 +1271,7 @@ def build_airlines():
             <p>{e(a[4])}</p>
           </div>""" for a in AIRLINES)
 
-    body = topbar() + header("airlines.html") + page_hero(
+    body = header("airlines.html") + page_hero(
         [("首页", "index.html"), ("航司动态", "airlines.html")],
         "航司动态",
         "航季调整、规则变更、会员计划改动，是影响出行成本的高频变量。本栏目按时间线汇总公开信息，并说明它与旅客的实际关系。",
@@ -1353,7 +1338,7 @@ def build_deals():
           </div>
         </article>""" for d in DEALS)
 
-    body = topbar() + header("deals.html") + page_hero(
+    body = header("deals.html") + page_hero(
         [("首页", "index.html"), ("优惠活动", "deals.html")],
         "优惠活动",
         "促销信息真正需要的不是罗列，而是判断：限制条件是什么、和你的行程是否匹配、为了折扣要多付出什么。",
@@ -1417,7 +1402,7 @@ def build_about():
         <div class="faq-a">{e(a)}</div>
       </div>""" for q, a in FAQ)
 
-    body = topbar() + header("about.html") + page_hero(
+    body = header("about.html") + page_hero(
         [("首页", "index.html"), ("关于我们", "about.html")],
         "关于我们",
         "机票.CC 是一个机票资讯类内容站点。我们把「不做什么」写清楚，和写清楚「做什么」一样重要。",
@@ -1756,7 +1741,7 @@ def build_article(spec):
     toc_html = "\n".join(
         f'            <li><a href="#{a}">{e(t)}</a></li>' for a, t in toc)
 
-    body = topbar() + header(col) + page_hero(
+    body = header(col) + page_hero(
         [("首页", "index.html"), (col_name, col), (title, url)],
         title,
         desc + "……",

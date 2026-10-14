@@ -70,23 +70,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
-/* ---------- 顶部通知条 ---------- */
-.topbar {
-  background: linear-gradient(90deg, #0a4d9b, #0b63c5 55%, #1780d8);
-  color: #eaf2fd;
-  font-size: 13px;
-}
-.topbar .container {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 16px; height: 36px;
-}
-.topbar-left { display: flex; align-items: center; gap: 8px; white-space: nowrap; overflow: hidden; }
-.topbar b { color: #fff; font-weight: 600; }
-.topbar-right { display: flex; gap: 16px; flex-shrink: 0; }
-.topbar a { color: #cfe3fb; }
-.topbar a:hover { color: #fff; }
-@media (max-width: 860px) { .topbar-right { display: none; } }
-
 /* ---------- 头部 ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 60;
@@ -541,7 +524,7 @@ tbody tr:hover { background: var(--surface-2); }
 }
 .toast.is-show { opacity: 1; transform: translate(-50%, 0); }
 
-@media print { .site-header, .subscribe-band, .ticker, .topbar { display: none; } }
+@media print { .site-header, .subscribe-band, .ticker { display: none; } }
 
 /* ==========================================================================
    航空公司导航卡片（price.html 卡片式导航，复用设计令牌，不新增色板）
