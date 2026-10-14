@@ -1088,7 +1088,6 @@ def build_price():
         gi += len(items)
         groups_html += f"""
       <div class="airline-group">
-        <h3><span class="dot"></span>{gname}<span class="sub">{gsub}</span></h3>
         <div class="grid-4 airline-grid">
 {cards}
         </div>
