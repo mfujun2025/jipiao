@@ -1132,12 +1132,6 @@ def build_price():
         </a>""" for n, u, t in AIRLINES_NAV)
     nav_section = f"""
     <section class="section">
-      <div class="section-head">
-        <div>
-          <h2><span class="bar"></span>航空公司官网导航</h2>
-          <p>共 48 家：国内客运航司、中国港澳台地区航司与在线旅行平台（携程、同程）；点击卡片直达官网</p>
-        </div>
-      </div>
       <div class="grid-4 airline-grid">
 {nav_cards}
       </div>
