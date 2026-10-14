@@ -24,7 +24,7 @@ SITE = {
     "domain_cn": "机票.CC",
     "punycode": "xn--nqvq81b.cc",
     "tagline": "机票资讯 · 价格动态 · 出行攻略",
-    "desc": "机票.CC 是聚焦机票价格动态、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
+    "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
     "agent_email": "mfujun88@agent.qq.com",
     "updated": "2026-10-14",
     "icp": "备案信息办理中",
@@ -121,7 +121,7 @@ AIRLINES_NAV = [
     ("四川航空", "www.sichuanair.com", ""),
     ("山东航空", "www.sda.cn", ""),
     ("深圳航空", "www.shenzhenair.com", ""),
-    ("上海航空", "www.ceair.com", "无独立官网，共用东航"),
+    ("上海航空", "www.ceair.com", ""),
     ("春秋航空", "www.ch.com", ""),
     ("吉祥航空", "www.juneyaoair.com", ""),
     ("中国联合航空", "www.flycua.com", ""),
@@ -159,7 +159,7 @@ AIRLINES_NAV = [
     ("香港航空", "www.hongkongairlines.com", ""),
     ("香港快运航空", "www.hkexpress.com", ""),
     ("澳门航空", "www.airmacau.com.mo", ""),
-    ("携程", "www.ctrip.com", "ota"),
+    ("携程", "t.ctrip.cn/wvJ3M20", "ota"),
     ("同程旅行", "www.ly.com", "ota"),
 ]
 
@@ -625,7 +625,7 @@ FAQ = [
     ("机票.CC 是购票平台吗？可以直接在这里买票吗？",
      "不是。机票.CC 是机票资讯与攻略类内容站点，我们不直接出票，也不参与交易。站内提供的价格信息用于帮助你了解行情与判断预订时机，实际购票请前往航空公司官方渠道或正规票务平台。"),
     ("站内的机票价格是实时的吗？",
-     "站内价格动态为周期性更新的参考信息，并非实时报价。机票价格受舱位、日期、余票与促销影响波动频繁，请在购票渠道以实际查询结果为准。页面上会标注每份数据的更新日期与来源。"),
+     "站内关于票价的说明为周期性更新的参考信息，并非实时报价。机票价格受舱位、日期、余票与促销影响波动频繁，请在购票渠道以实际查询结果为准。页面上会标注每份数据的更新日期与来源。"),
     ("怎样订阅机票.CC 的内容更新？",
      "在页脚的「订阅与联系」栏，或在首页订阅横幅填写邮箱即可；也可以直接向站点智能体邮箱发一封邮件。订阅后每周最多 2 封，内容为价格提醒与航线资讯；不发广告、不转卖邮箱，回信写「退订」即可停止。详见关于我们页的隐私与退订说明。"),
     ("网站会推荐具体的购票渠道吗？",
@@ -800,7 +800,7 @@ def footer():
         <h4>用户服务</h4>
         <ul>
           <li><a href="{MAILTO_SUB}">邮件订阅</a></li>
-          <li><a href="price.html">价格动态查询</a></li>
+          <li><a href="price.html">航空公司导航</a></li>
           <li><a href="guides.html">出行攻略索引</a></li>
           <li><a href="about.html#contact">内容纠错与投稿</a></li>
         </ul>
@@ -910,7 +910,7 @@ def build_index():
                              "query-input": "required name=search_term_string"}},
         {"@context": "https://schema.org", "@type": "Organization", "name": SITE["name"],
          "url": BASE_URL + "/", "email": SITE["agent_email"],
-         "description": "机票资讯类内容站点，提供价格动态、航线资讯、出行攻略、航司动态与优惠活动信息。"},
+         "description": "机票资讯类内容站点，提供航空公司导航、航线资讯、出行攻略、航司动态与优惠活动信息。"},
     ]
     title = "机票.CC｜不卖票的机票信息站·价格规律与出行攻略"
     desc = "机票.CC 是中立机票信息平台：查机票价格规律、看航线资讯、学乘机攻略、盯航司与优惠动态。本站不卖票，只帮你做对出行决定。"
@@ -921,16 +921,6 @@ def build_index():
           <p>{e(c['desc'])}</p>
           <span class="col-meta">{e(c['freq'])} →</span>
         </a>""" for c in COLUMNS)
-
-    price_rows = "\n".join(
-        f"""            <tr>
-              <td class="td-strong">{e(r[0])}</td>
-              <td class="muted">{e(r[1])}</td>
-              <td class="td-num td-strong">¥{r[2]}</td>
-              <td class="td-num">{chg_html(r[4])}</td>
-              <td><span class="badge badge-gray">{e(r[6])}</span></td>
-            </tr>""" for r in PRICES[:8]
-    )
 
     route_cards = "\n".join(f"""        <article class="card">
           <div class="card-cover" aria-hidden="true">🗺️</div>
@@ -980,7 +970,7 @@ def build_index():
       <div>
         <h1>不卖票的机票信息站，<span class="hl">只帮你做对出行决定</span></h1>
         <p class="hero-lead">
-          机票.CC 是机票资讯与信息聚合站点：跟踪机票价格动态、解读航线资讯、拆解出行攻略、汇总航司动态与优惠活动。
+          机票.CC 是机票资讯与信息聚合站点：汇总航空公司官网导航、解读航线资讯、拆解出行攻略、汇总航司动态与优惠活动。
           我们不提供购票与交易，只把「机票什么时候买、怎么买才不亏」用可核对的数据和中立的态度讲清楚。
         </p>
         <div class="hero-tags">
@@ -1020,30 +1010,6 @@ def build_index():
   </section>
 
 {subscribe_band()}
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2><span class="bar"></span>今日机票价格动态</h2>
-          <p>热门航线最低价与环比变化 · 更新于 {SITE['updated']} <span class="demo-flag">公开报道样本</span></p>
-        </div>
-        <a class="more-link" href="price.html">查看全部航线 →</a>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <caption class="sr-only">热门航线机票价格动态（公开报道样本）</caption>
-          <thead>
-            <tr><th>航线</th><th>参考航司</th><th>最低价</th><th>环比变化</th><th>类型</th></tr>
-          </thead>
-          <tbody>
-{price_rows}
-          </tbody>
-        </table>
-      </div>
-{source_note()}
-    </div>
-  </section>
 
   <section class="section">
     <div class="container">
@@ -1148,28 +1114,13 @@ def build_price():
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "首页", "item": BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "航空公司导航", "item": BASE_URL + "/price.html"}]},
-        {"@context": "https://schema.org", "@type": "Dataset", "name": "热门航线机票价格动态（公开报道样本）",
-         "description": "包含航线、承运情况、最低价、均价、环比变化与余票状态的周期性更新表格，价格取自媒体公开报道与平台监测样本并标注统计口径。",
-         "temporalCoverage": "2026-10", "creator": {"@type": "Organization", "name": SITE["name"]},
-         "license": BASE_URL + "/about.html#standards"},
+        {"@context": "https://schema.org", "@type": "ItemList", "name": "航空公司官网导航",
+         "itemListElement": [
+             {"@type": "ListItem", "position": i + 1, "name": n, "url": "https://" + u}
+             for i, (n, u, t) in enumerate(AIRLINES_NAV, 1)]},
     ]
     title = "航空公司导航｜48 家国内外航司与平台官网入口-机票.CC"
     desc = "卡片式航空公司导航：48 家国内外客运航司及携程、同程等平台官网入口，直达官方渠道查询航班、票价与规则。"
-
-    chips = ["全部", "干线", "旅游", "长航线", "地区", "短途"]
-    chip_html = "".join(
-        f'      <button class="chip{" is-active" if c == "全部" else ""}" type="button" data-filter="{c}">{c}</button>\n'
-        for c in chips
-    )
-    rows = "\n".join(f"""          <tr class="js-item" data-cat="{r[6]}">
-            <td class="td-strong">{e(r[0])}</td>
-            <td class="muted">{e(r[1])}</td>
-            <td class="td-num td-strong" data-sort="{r[2]}">¥{r[2]}</td>
-            <td class="td-num" data-sort="{r[3]}">¥{r[3]}</td>
-            <td data-sort="{r[4]}">{chg_html(r[4])}</td>
-            <td><span class="badge badge-gray">{e(r[5])}</span></td>
-            <td class="muted">{e(r[6])}</td>
-          </tr>""" for r in PRICES)
 
     nav_cards = "\n".join(f"""        <a class="airline-card" href="https://{u}" target="_blank" rel="noopener">
           <span class="airline-num">序号 {i}</span>
@@ -1196,97 +1147,18 @@ def build_price():
     </section>
 """
 
-    price_arts = articles_of("price.html")
-    art_items = "\n".join(f"""        <li class="list-item">
-          <span class="list-num">{i+1}</span>
-          <div class="list-main">
-            <h4><a href="{article_url(a['slug'])}">{e(a.get('resolved_title') or a['slug'])}</a></h4>
-            <p>{e(a['summary'])}</p>
-          </div>
-          <div class="list-side"><span class="badge badge-gray">{e(a['cat_label'])}</span><br>{a['date']}</div>
-        </li>""" for i, a in enumerate(price_arts))
-    art_section = f"""
-    <section class="section">
-      <div class="section-head">
-        <div>
-          <h2><span class="bar"></span>价格动态专题</h2>
-          <p>把价格信息转化为决策的深度解读</p>
-        </div>
-      </div>
-      <ul class="list">
-{art_items}
-      </ul>
-    </section>
-""" if price_arts else ""
-
     body = topbar() + header("price.html") + page_hero(
         [("首页", "index.html"), ("航空公司导航", "price.html")],
         "航空公司导航",
-        "48 家国内外航空公司及在线旅行平台的官网入口，卡片式直达；下方附热门航线价格数据与价格动态专题。"
+        "48 家国内外航空公司及在线旅行平台的官网入口，卡片式直达；点击卡片跳转官方渠道查询航班、票价与退改规则。"
     ) + nav_section + f"""
 <main class="layout-main">
   <div class="container">
     <section class="section">
       <div class="section-head">
         <div>
-          <h2><span class="bar"></span>价格数据：热门航线公开报道样本</h2>
-          <p>按航线跟踪最低价、均价与环比变化，标注更新日期与数据来源</p>
-        </div>
-        <span class="badge badge-gray">更新于 {SITE['updated']}</span>
-      </div>
-    </section>
-    <div class="filter-bar">
-{chip_html}
-    </div>
-    <div class="table-wrap">
-      <table id="priceTable">
-        <caption class="sr-only">热门航线机票价格动态（公开报道样本）</caption>
-        <thead>
-          <tr>
-            <th>航线</th>
-            <th>参考航司</th>
-            <th class="td-num sortable" data-col="2" data-type="num">最低价 ↕</th>
-            <th class="td-num sortable" data-col="3" data-type="num">均价 ↕</th>
-            <th class="sortable" data-col="4" data-type="num">环比变化 ↕</th>
-            <th>余票</th>
-            <th>类型</th>
-          </tr>
-        </thead>
-        <tbody>
-{rows}
-        </tbody>
-      </table>
-    </div>
-{source_note(' 价格类型划分：干线为高频商务航线，旅游为季节性休闲航线，长航线/短途按航程区分，地区指中国港澳台地区航线。')}
-
-    <section class="section">
-      <div class="section-head">
-        <div>
-          <h2><span class="bar"></span>怎么读懂这张表</h2>
-          <p>价格动态应该配合方法一起看，否则只是数字</p>
-        </div>
-      </div>
-      <div class="grid-3">
-        <article class="card"><div class="card-body">
-          <h3>环比变化说明什么</h3>
-          <p>环比反映的是相对上一次更新周期的价格移动方向，不代表未来走势。连续上涨通常意味着需求端偏紧，但不必然等于「还会更贵」。</p>
-        </div></article>
-        <article class="card"><div class="card-body">
-          <h3>最低价为什么不是你的成交价</h3>
-          <p>最低价对应的是特定日期、特定舱位的价格。你实际查到的价格取决于出行日期、余票与舱位等级，通常高于表中的最低价。</p>
-        </div></article>
-        <article class="card"><div class="card-body">
-          <h3>余票状态怎么用</h3>
-          <p>余票「偏紧」意味着可选的舱位与日期组合变少，灵活度下降。如果你的日期不能改，应尽早锁定而不是继续等待降价。</p>
-        </div></article>
-      </div>
-    </section>
-{art_section}
-    <section class="section">
-      <div class="section-head">
-        <div>
           <h2><span class="bar"></span>相关攻略</h2>
-          <p>把价格信息转化为决策</p>
+          <p>关于买票与航司，这些攻略能帮上忙</p>
         </div>
         <a class="more-link" href="guides.html">全部攻略 →</a>
       </div>
