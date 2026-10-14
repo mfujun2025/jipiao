@@ -101,38 +101,6 @@
     });
   }
 
-  /* ---------------- 表格排序 ---------------- */
-  function initTableSort() {
-    var table = $('#priceTable');
-    if (!table) return;
-    $$('th.sortable', table).forEach(function (th) {
-      th.addEventListener('click', function () {
-        var col = parseInt(th.getAttribute('data-col'), 10);
-        var tbody = $('tbody', table);
-        var rows = $$('tr', tbody).filter(function (r) { return r.style.display !== 'none'; });
-        var dir = th._dir === 'asc' ? 'desc' : 'asc';
-        th._dir = dir;
-
-        rows.sort(function (a, b) {
-          var av = num(a.children[col]), bv = num(b.children[col]);
-          return dir === 'asc' ? av - bv : bv - av;
-        });
-        rows.forEach(function (r) { tbody.appendChild(r); });
-
-        $$('th.sortable', table).forEach(function (t) {
-          t.textContent = t.textContent.replace(/\s*[↑↓]$/, '');
-        });
-        th.textContent = th.textContent.replace(/\s*↕\s*$/, '') + (dir === 'asc' ? ' ↑' : ' ↓');
-      });
-    });
-
-    function num(cell) {
-      if (!cell) return 0;
-      var raw = cell.getAttribute('data-sort') || cell.textContent;
-      var v = parseFloat(String(raw).replace(/[^\d.\-+]/g, ''));
-      return isNaN(v) ? 0 : v;
-    }
-  }
 
   /* ---------------- FAQ 折叠 ---------------- */
   function initFaq() {
@@ -167,7 +135,7 @@
       var subject = encodeURIComponent('订阅价格提醒：机票.CC');
       var body = encodeURIComponent(
         '我想订阅机票.CC 的价格提醒。\n\n订阅邮箱：' + val
-        + '\n关注方向（可多选，留空视为全部）：机票价格动态 / 航线资讯 / 出行攻略 / 航司动态 / 优惠活动\n'
+        + '\n关注方向（可多选，留空视为全部）：航空公司导航 / 航线资讯 / 出行攻略 / 航司动态 / 优惠活动\n'
         + '\n退订方式：回信写「退订」即可。\n'
       );
       window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
@@ -206,7 +174,6 @@
     initNav();
     initSearch();
     initFilters();
-    initTableSort();
     initFaq();
     initSubscribe();
     initCopyMail();

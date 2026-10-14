@@ -23,7 +23,7 @@ SITE = {
     "name": "机票.CC",
     "domain_cn": "机票.CC",
     "punycode": "xn--nqvq81b.cc",
-    "tagline": "机票资讯 · 价格动态 · 出行攻略",
+    "tagline": "机票资讯 · 航司导航 · 出行攻略",
     "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
     "agent_email": "mfujun88@agent.qq.com",
     "updated": "2026-10-14",
@@ -74,36 +74,6 @@ COLUMNS = [
     {"file": "deals.html", "ico": "🎫", "name": "优惠活动", "short": "优惠活动",
      "desc": "早鸟、会员日、联程与人群优惠的规则解读与价值判断框架。",
      "freq": "每周一更新"},
-]
-
-TICKER = [
-    ("上海 → 北京", 620, +2.4), ("广州 → 成都", 480, -5.1),
-    ("北京 → 三亚", 1080, +8.7), ("深圳 → 西安", 560, -3.2),
-    ("杭州 → 昆明", 740, +1.6), ("成都 → 拉萨", 890, -6.4),
-    ("上海 → 乌鲁木齐", 1250, +4.3), ("北京 → 香港", 1420, -2.8),
-    ("广州 → 哈尔滨", 980, +6.1), ("重庆 → 厦门", 530, -4.5),
-]
-
-PRICES = [
-    ("北京 → 大理", "多家承运", 700, 1050, -63.2, "充足", "旅游"),
-    ("北京 → 兰州", "多家承运", 200, 330, -52.3, "充足", "干线"),
-    ("上海 → 丽江", "多家承运", 200, 350, -48.6, "充足", "旅游"),
-    ("广州 → 青岛", "多家承运", 259, 400, -44.1, "充足", "旅游"),
-    ("南昌 → 西安", "多家承运", 200, 340, -43.0, "充足", "干线"),
-    ("杭州 → 烟台", "多家承运", 200, 340, -42.5, "充足", "旅游"),
-    ("北京 → 泉州", "多家承运", 230, 380, -41.7, "充足", "干线"),
-    ("青岛 → 大连", "多家承运", 200, 340, -41.2, "充足", "旅游"),
-    ("济南 → 沈阳", "多家承运", 200, 330, -39.4, "充足", "干线"),
-    ("北京 → 乌鲁木齐", "多家承运", 300, 520, -38.9, "充足", "长航线"),
-    ("南京 → 西安", "多家承运", 250, 400, -37.5, "充足", "旅游"),
-    ("上海 → 沈阳", "多家承运", 300, 470, -36.2, "充足", "干线"),
-    ("广州 → 成都", "多家承运", 309, 490, -33.5, "充足", "干线"),
-    ("上海 → 鄂尔多斯", "多家承运", 492, 660, -29.4, "充足", "旅游"),
-    ("北京 → 呼和浩特", "多家承运", 300, 420, -27.8, "充足", "干线"),
-    ("北京 → 阿勒泰", "多家承运", 570, 780, -25.8, "充足", "旅游"),
-    ("成都 → 曼谷", "多家承运", 286, 520, -22.1, "充足", "国际"),
-    ("广州 → 吉隆坡", "多家承运", 329, 560, -18.6, "充足", "国际"),
-    ("北京 → 首尔", "多家承运", 518, 760, -14.2, "充足", "国际"),
 ]
 
 # ----------------------------------------------------------------------
@@ -342,8 +312,8 @@ ARTICLES = [
     {
         "slug": "fuel-surcharge",
         "drafts": ["fuel-surcharge-2026-10-10.md"],
-        "column": "price.html",
-        "column_name": "机票价格动态",
+        "column": "guides.html",
+        "column_name": "出行攻略",
         "date": "2026-10-10",
         "review": STAMP["next_review_price"],
         "scope": "数据",
@@ -353,7 +323,7 @@ ARTICLES = [
         "keywords": "机票燃油附加费上调,机票预定,机票预订什么时候买,燃油附加费怎么算,机建燃油费,节后机票价格",
         "cat_label": "价格解读",
         "summary": "附加费涨 10–20 元，基础票价降数百元——净成本账怎么算？",
-        "about_note": "本文为机票.CC「机票价格动态」栏目的价格构成解读，文中价格与附加费标准均整理自公开渠道，"
+        "about_note": "本文为机票.CC「出行攻略」栏目的价格构成解读，文中价格与附加费标准均整理自公开渠道，"
                       "并标注统计口径与时间范围；相关政策随时可能调整，请以航空公司官方渠道与出票页面展示为准。"
                       "本站不销售机票、不参与任何交易环节。",
     },
@@ -378,8 +348,8 @@ ARTICLES = [
     {
         "slug": "ticket-price-composition",
         "drafts": ["ticket-price-composition-2026-10-12.md"],
-        "column": "price.html",
-        "column_name": "机票价格动态",
+        "column": "guides.html",
+        "column_name": "出行攻略",
         "date": "2026-10-12",
         "review": STAMP["next_review_price"],
         "scope": "规则与数据",
@@ -389,7 +359,7 @@ ARTICLES = [
         "keywords": "机票总价构成,机建燃油费怎么算,机票票价组成,低价机票行李额,含税总价",
         "cat_label": "价格解读",
         "summary": "基础票价 + 机建 + 燃油 + 可选服务：四件套拆完，才知道省在哪、贵在哪。",
-        "about_note": "本文为机票.CC「机票价格动态」栏目的总价构成解读，文中价格与收费标准均整理自公开渠道并标注口径，"
+        "about_note": "本文为机票.CC「出行攻略」栏目的总价构成解读，文中价格与收费标准均整理自公开渠道并标注口径，"
                       "实时变动，请以航空公司官方渠道与出票页面展示为准。本站不销售机票、不参与任何交易环节。",
     },
     {
@@ -446,8 +416,8 @@ ARTICLES = [
     {
         "slug": "budget-fare-true-total",
         "drafts": ["budget-fare-true-total-2026-10-13.md"],
-        "column": "price.html",
-        "column_name": "机票价格动态",
+        "column": "guides.html",
+        "column_name": "出行攻略",
         "date": "2026-10-13",
         "review": STAMP["next_review_price"],
         "scope": "数据",
@@ -457,7 +427,7 @@ ARTICLES = [
         "keywords": "两百多元机票,机票含税总价,燃油附加费标准,节后特价机票,捡漏机票怎么算",
         "cat_label": "含税总价",
         "summary": "裸票价之外再加 100–140 元税费：机建与燃油两档标准、三笔总价账与隐性成本一次算清。",
-        "about_note": "本文为机票.CC「机票价格动态」栏目的含税总价专题，文中价格为公开报道样本整理的参考区间并标注口径，"
+        "about_note": "本文为机票.CC「出行攻略」栏目的含税总价专题，文中价格为公开报道样本整理的参考区间并标注口径，"
                       "实时变动，请以航空公司官方渠道与支付页面实时展示为准。本站不销售机票、不参与任何交易环节。",
     },
     {
@@ -625,7 +595,7 @@ FAQ = [
     ("机票.CC 是购票平台吗？可以直接在这里买票吗？",
      "不是。机票.CC 是机票资讯与攻略类内容站点，我们不直接出票，也不参与交易。站内提供的价格信息用于帮助你了解行情与判断预订时机，实际购票请前往航空公司官方渠道或正规票务平台。"),
     ("站内的机票价格是实时的吗？",
-     "站内关于票价的说明为周期性更新的参考信息，并非实时报价。机票价格受舱位、日期、余票与促销影响波动频繁，请在购票渠道以实际查询结果为准。页面上会标注每份数据的更新日期与来源。"),
+     "航线、班次、规则与价格类信息均来自公开渠道整理，并非实时报价。机票价格受舱位、日期、余票与促销影响波动频繁，请在购票渠道以实际查询结果为准。页面上会标注每份内容的更新日期与来源。"),
     ("怎样订阅机票.CC 的内容更新？",
      "在页脚的「订阅与联系」栏，或在首页订阅横幅填写邮箱即可；也可以直接向站点智能体邮箱发一封邮件。订阅后每周最多 2 封，内容为价格提醒与航线资讯；不发广告、不转卖邮箱，回信写「退订」即可停止。详见关于我们页的隐私与退订说明。"),
     ("网站会推荐具体的购票渠道吗？",
@@ -638,15 +608,6 @@ FAQ = [
 # ----------------------------------------------------------------------
 # 工具函数
 # ----------------------------------------------------------------------
-def chg_html(chg: float) -> str:
-    """涨跌着色：遵循中国大陆惯例，涨=红、跌=绿。"""
-    if chg > 0:
-        return f'<span class="chg-up">▲ {chg:+.1f}%</span>'
-    if chg < 0:
-        return f'<span class="chg-down">▼ {chg:.1f}%</span>'
-    return '<span class="muted">持平</span>'
-
-
 def e(text: str) -> str:
     return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
@@ -727,28 +688,14 @@ def header(active):
 """
 
 
-def ticker_html():
-    items = []
-    for route, price, chg in TICKER:
-        items.append(
-            f'<span class="ticker-item"><b>{e(route)}</b> ¥{price} 起 {chg_html(chg)}</span>'
-        )
-    block = "".join(items)
-    return f"""<div class="ticker" aria-label="机票价格播报（公开报道样本）">
-  <span class="ticker-label"><span class="dot"></span>价格播报</span>
-  <div class="ticker-track">{block}{block}</div>
-</div>
-"""
-
-
 def subscribe_band():
     return f"""<section class="section" id="subscribe">
   <div class="container">
     <div class="subscribe-band">
       <div>
-        <h2>机票价格，我们替你盯着</h2>
-        <p><b>每周最多 2 封</b>：你常飞航线的价位变化、新增与复航航线、航司规则变更。不发广告、不转卖邮箱，回信写「退订」即可停止。</p>
-        <p class="sub-note">订阅后你会收到什么：价格区间变动摘要 + 一条本周值得关注的航线。我们不卖票、不导流，只做信息。</p>
+        <h2>航线资讯与出行提醒，我们替你盯着</h2>
+        <p><b>每周最多 2 封</b>：新增与复航航线、航司规则变更、出行攻略要点。不发广告、不转卖邮箱，回信写「退订」即可停止。</p>
+        <p class="sub-note">订阅后你会收到什么：一条本周值得关注的航线 + 一份出行决策提醒。我们不卖票、不导流，只做信息。</p>
       </div>
       <div>
         <form class="sub-form" id="subForm" novalidate>
@@ -883,11 +830,9 @@ def stamp(next_review, scope="数据"):
 def source_note(extra="", next_review=None):
     nr = next_review or STAMP["next_review_price"]
     return f"""    <div class="source-note">
-      <b>数据来源与口径：</b>本页价格取自央视新闻、澎湃新闻等媒体公开报道与在线旅游平台监测样本，
-      标注统计时间范围（当前为 2026-10-08 至 10-14），<b>为部分日期的裸票价参考，不含税费，实时变动，不构成任何报价或购票依据</b>。
-      最低价为报道样本中的低价位；均价与环比为同源样本的估算口径，用于观察方向而非精确定价。
-      价格一律以<b>区间</b>给出并注明统计区间，区分裸票价 / 含税总价 / 燃油附加费 / 民航发展基金，避免无口径的孤立数字。
-      本页最后更新 {STAMP['updated']}，下次复核 {nr}。{extra}
+      <b>信息来源与口径：</b>本页航线、班次、规则与活动信息整理自航司官方渠道及媒体公开报道，并标注更新时间；
+      具体航班、价格与规则以各航司及官方售票渠道实时公示为准。
+      本站不销售机票、不代收票款、不参与任何交易。本页最后更新 {STAMP['updated']}，下次复核 {nr}。{extra}
     </div>
 """
 
@@ -963,7 +908,7 @@ def build_index():
 
     tags = "".join(f'<a class="tag" href="{c["file"]}">#{e(c["short"])}</a>' for c in COLUMNS)
 
-    body = topbar() + header("index.html") + ticker_html() + f"""
+    body = topbar() + header("index.html") + f"""
 <main>
   <section class="hero">
     <div class="container hero-grid">
@@ -1489,7 +1434,7 @@ def build_about():
 
           <h2>我们做什么</h2>
           <ul class="dots">
-            <li><b>航空公司导航</b>：48 家国内外航司与平台官网入口卡片导航，并附热门航线价格数据样本。</li>
+            <li><b>航空公司导航</b>：48 家国内外航司与平台官网入口卡片导航，直达官方渠道。</li>
             <li><b>航线资讯</b>：解读航线的班次结构、需求节奏与替代方案。</li>
             <li><b>出行攻略</b>：购票时机、退改签、中转联程、行李与出行保障的实操方法。</li>
             <li><b>航司动态</b>：航季调整、规则变更与会员计划的公开信息汇总。</li>
@@ -1520,7 +1465,7 @@ def build_about():
           <p>本站所有内容仅为机票资讯与出行参考，<b>不构成任何形式的报价、预订承诺或交易建议</b>。本站不销售机票、不代收票款、不承担任何因依赖站内信息而产生的直接或间接损失。站内演示性质的示例数据均已明确标注，请勿作为购票依据。涉及具体航司规则、政策与价格的最终解释权归相应航司与发布方所有。</p>
 
           <h2 id="contact">订阅与联系</h2>
-          <p>站点的订阅与联系入口统一使用以下<b>智能体邮箱</b>。你可以用它来：订阅价格动态摘要、反馈内容错误、提出选题建议，或咨询内容合作。</p>
+          <p>站点的订阅与联系入口统一使用以下<b>智能体邮箱</b>。你可以用它来：订阅航线资讯与出行提醒、反馈内容错误、提出选题建议，或咨询内容合作。</p>
           <div class="agent-mail-card" style="background:#0d1b31;margin:16px 0;">
             <h4><span class="ai-dot"></span>智能体邮箱 · 订阅与联系</h4>
             <p>接受订阅申请、内容纠错与合作咨询，通常 1 个工作日内回复。</p>
@@ -1604,9 +1549,6 @@ def build_about():
 def build_data_js():
     payload = {
         "SITE": SITE,
-        "TICKER": [{"route": r, "price": p, "chg": c} for r, p, c in TICKER],
-        "PRICES": [{"route": r[0], "airline": r[1], "low": r[2], "avg": r[3], "chg": r[4],
-                    "seats": r[5], "cat": r[6], "date": SITE["updated"]} for r in PRICES],
         "ROUTES": [{"id": r[0], "title": r[1], "cat": r[2], "date": r[3]} for r in ROUTES],
         "GUIDES": [{"id": g[0], "title": g[1], "cat": g[2], "date": g[3]} for g in GUIDES],
         "AIRLINES": [{"date": a[0], "airline": a[1], "title": a[2], "cat": a[3]} for a in AIRLINES],
@@ -1618,7 +1560,6 @@ def build_data_js():
           "meta": f"{a['column_name']} · {a['cat_label']}",
           "url": article_url(a["slug"])}
          for a in ARTICLES if a.get("resolved_title")]
-        + [{"title": f"{r[0]} 机票价格动态（最低 ¥{r[2]} 起）", "meta": "价格动态 · " + r[6], "url": "price.html"} for r in PRICES]
         + [{"title": r[1], "meta": "航线资讯 · " + r[2], "url": "routes.html"} for r in ROUTES]
         + [{"title": g[1], "meta": "出行攻略 · " + g[2], "url": "guides.html"} for g in GUIDES]
         + [{"title": a[2], "meta": "航司动态 · " + a[1], "url": "airlines.html"} for a in AIRLINES]
@@ -1628,8 +1569,6 @@ def build_data_js():
     js = (
         "/* 本文件由 build.py 自动生成，请勿手工修改；数据源见 build.py */\n"
         "const SITE = " + json.dumps(payload["SITE"], ensure_ascii=False, indent=2) + ";\n\n"
-        "const TICKER = " + json.dumps(payload["TICKER"], ensure_ascii=False, indent=2) + ";\n\n"
-        "const PRICES = " + json.dumps(payload["PRICES"], ensure_ascii=False, indent=2) + ";\n\n"
         "const ROUTES = " + json.dumps(payload["ROUTES"], ensure_ascii=False, indent=2) + ";\n\n"
         "const GUIDES = " + json.dumps(payload["GUIDES"], ensure_ascii=False, indent=2) + ";\n\n"
         "const AIRLINES = " + json.dumps(payload["AIRLINES"], ensure_ascii=False, indent=2) + ";\n\n"
