@@ -527,49 +527,107 @@ tbody tr:hover { background: var(--surface-2); }
 @media print { .site-header, .subscribe-band, .ticker { display: none; } }
 
 /* ==========================================================================
-   航空公司导航卡片（price.html 卡片式导航，复用设计令牌，不新增色板）
+   航空公司导航卡片（price.html 卡片式导航）
    ========================================================================== */
+/* 品牌色循环（基于设计令牌扩展的语义色） */
+.air-c1 { --air-c: #0b63c5; }
+.air-c2 { --air-c: #12915a; }
+.air-c3 { --air-c: #6c4ad6; }
+.air-c4 { --air-c: #f5661e; }
+.air-c5 { --air-c: #0e9bb5; }
+.air-c6 { --air-c: #d92b2b; }
+
+.airline-search {
+  position: sticky; top: 60px; z-index: 20;
+  display: flex; align-items: center; gap: 10px;
+  max-width: 1080px; margin: 0 auto 22px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r); padding: 12px 16px;
+  box-shadow: var(--shadow-1);
+}
+.airline-search .ic { font-size: 16px; opacity: .7; }
+.airline-search input {
+  flex: 1; min-width: 0; border: 0; outline: 0; background: transparent;
+  font-size: 15px; color: var(--ink); font-family: inherit;
+}
+.airline-search input::placeholder { color: var(--ink-3); }
+.airline-count {
+  flex: 0 0 auto; color: var(--ink-3); font-size: 13px;
+  background: var(--surface-2); padding: 4px 10px; border-radius: 999px; white-space: nowrap;
+}
+
+.airline-group { max-width: 1080px; margin: 28px auto 8px; }
+.airline-group:first-of-type { margin-top: 4px; }
+.airline-group > h3 {
+  display: flex; align-items: baseline; gap: 8px;
+  font-size: 17px; margin-bottom: 14px;
+}
+.airline-group .dot {
+  width: 9px; height: 9px; border-radius: 50%; background: var(--brand);
+  transform: translateY(1px); flex: 0 0 auto;
+}
+.airline-group .sub { font-size: 13px; font-weight: 400; color: var(--ink-3); }
+
+.airline-empty {
+  display: none; max-width: 1080px; margin: 8px auto 0;
+  text-align: center; color: var(--ink-3); padding: 40px 0; font-size: 15px;
+}
+.airline-empty.show { display: block; }
+
 .airline-grid {
-  gap: 12px;
+  gap: 14px;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1040px;
+  max-width: 1080px;
   margin: 0 auto;
 }
-@media (max-width: 760px) { .airline-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 880px) { .airline-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .airline-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
 .airline-card {
-  display: flex; flex-direction: row; align-items: center; gap: 10px;
-  padding: 8px 10px;
+  position: relative;
+  display: flex; flex-direction: row; align-items: center; gap: 12px;
+  padding: 14px 16px 14px 13px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r);
   box-shadow: var(--shadow-1);
   text-decoration: none; color: var(--ink);
-  transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+  overflow: hidden;
+  transition: box-shadow .18s ease, border-color .18s ease, transform .18s ease;
+}
+.airline-card::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--air-c, var(--brand)); opacity: 0; transition: opacity .18s ease;
 }
 .airline-card:hover {
-  box-shadow: var(--shadow-2); border-color: #d7e2f1;
-  transform: translateY(-1px);
+  box-shadow: var(--shadow-2); border-color: var(--line-strong);
+  transform: translateY(-2px);
 }
+.airline-card:hover::before { opacity: 1; }
 .airline-avatar {
   flex: 0 0 auto;
-  width: 36px; height: 36px;
+  width: 44px; height: 44px;
   display: flex; align-items: center; justify-content: center;
-  background: var(--brand); color: #fff;
-  border-radius: 8px;
-  font-size: 15px; font-weight: 700;
-  line-height: 1;
-  transition: background .15s ease;
+  background: var(--air-c, var(--brand)); color: #fff;
+  border-radius: 12px;
+  font-size: 19px; font-weight: 700; line-height: 1;
+  box-shadow: 0 4px 10px rgba(16, 32, 58, .14);
 }
-.airline-card:hover .airline-avatar { background: #094e9c; }
 .airline-body {
-  display: flex; flex-direction: column; gap: 2px;
+  display: flex; flex-direction: column; gap: 3px;
   min-width: 0; flex: 1;
 }
 .airline-name {
-  font-size: 14px; font-weight: 600; line-height: 1.3;
+  font-size: 14.5px; font-weight: 600; line-height: 1.3;
   display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
 }
 .airline-ota { font-size: 11px; font-weight: 500; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; }
 .airline-url { font-size: 12px; color: var(--ink-3); word-break: break-all; line-height: 1.3; }
-.airline-card:hover .airline-url { color: var(--brand); }
+.airline-card:hover .airline-url { color: var(--air-c, var(--brand)); }
 .airline-note { font-size: 12px; color: var(--ink-3); line-height: 1.3; }
+.airline-go {
+  flex: 0 0 auto; margin-left: 2px;
+  color: var(--ink-3); font-size: 17px; line-height: 1;
+  opacity: 0; transform: translateX(-5px);
+  transition: opacity .18s ease, transform .18s ease, color .18s ease;
+}
+.airline-card:hover .airline-go { opacity: 1; transform: translateX(0); color: var(--air-c, var(--brand)); }

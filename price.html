@@ -55,393 +55,462 @@
 </section>
 
     <section class="section">
-      <div class="grid-4 airline-grid">
-        <a class="airline-card" href="https://www.airchina.com.cn" target="_blank" rel="noopener">
+      
+    <div class="airline-search">
+      <span class="ic" aria-hidden="true">🔍</span>
+      <input id="airlineSearch" type="search" placeholder="搜索航司或平台名称、域名，如：国航 / cathay / ctrip" autocomplete="off" aria-label="搜索航空公司">
+      <span class="airline-count" id="airlineCount">共 48 家</span>
+    </div>
+    <p class="airline-empty" id="airlineEmpty">没有匹配的航司或平台，换个关键词试试。</p>
+
+      <div class="airline-group">
+        <h3><span class="dot"></span>中国大陆航空公司<span class="sub">36 家客运航司</span></h3>
+        <div class="grid-4 airline-grid">
+        <a class="airline-card air-c1" href="https://www.airchina.com.cn" target="_blank" rel="noopener" data-search="中国国际航空 www.airchina.com.cn">
           <span class="airline-avatar" aria-hidden="true">中</span>
           <span class="airline-body">
             <span class="airline-name">中国国际航空</span>
             <span class="airline-url">www.airchina.com.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.ceair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.ceair.com" target="_blank" rel="noopener" data-search="中国东方航空 www.ceair.com">
           <span class="airline-avatar" aria-hidden="true">中</span>
           <span class="airline-body">
             <span class="airline-name">中国东方航空</span>
             <span class="airline-url">www.ceair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.csair.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.csair.cn" target="_blank" rel="noopener" data-search="中国南方航空 www.csair.cn">
           <span class="airline-avatar" aria-hidden="true">中</span>
           <span class="airline-body">
             <span class="airline-name">中国南方航空</span>
             <span class="airline-url">www.csair.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.hnair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.hnair.com" target="_blank" rel="noopener" data-search="海南航空 www.hnair.com">
           <span class="airline-avatar" aria-hidden="true">海</span>
           <span class="airline-body">
             <span class="airline-name">海南航空</span>
             <span class="airline-url">www.hnair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.xiamenair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c5" href="https://www.xiamenair.com" target="_blank" rel="noopener" data-search="厦门航空 www.xiamenair.com">
           <span class="airline-avatar" aria-hidden="true">厦</span>
           <span class="airline-body">
             <span class="airline-name">厦门航空</span>
             <span class="airline-url">www.xiamenair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.sichuanair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.sichuanair.com" target="_blank" rel="noopener" data-search="四川航空 www.sichuanair.com">
           <span class="airline-avatar" aria-hidden="true">四</span>
           <span class="airline-body">
             <span class="airline-name">四川航空</span>
             <span class="airline-url">www.sichuanair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.sda.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c1" href="https://www.sda.cn" target="_blank" rel="noopener" data-search="山东航空 www.sda.cn">
           <span class="airline-avatar" aria-hidden="true">山</span>
           <span class="airline-body">
             <span class="airline-name">山东航空</span>
             <span class="airline-url">www.sda.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.shenzhenair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.shenzhenair.com" target="_blank" rel="noopener" data-search="深圳航空 www.shenzhenair.com">
           <span class="airline-avatar" aria-hidden="true">深</span>
           <span class="airline-body">
             <span class="airline-name">深圳航空</span>
             <span class="airline-url">www.shenzhenair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.ceair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.ceair.com" target="_blank" rel="noopener" data-search="上海航空 www.ceair.com">
           <span class="airline-avatar" aria-hidden="true">上</span>
           <span class="airline-body">
             <span class="airline-name">上海航空</span>
             <span class="airline-url">www.ceair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.ch.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.ch.com" target="_blank" rel="noopener" data-search="春秋航空 www.ch.com">
           <span class="airline-avatar" aria-hidden="true">春</span>
           <span class="airline-body">
             <span class="airline-name">春秋航空</span>
             <span class="airline-url">www.ch.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.juneyaoair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c5" href="https://www.juneyaoair.com" target="_blank" rel="noopener" data-search="吉祥航空 www.juneyaoair.com">
           <span class="airline-avatar" aria-hidden="true">吉</span>
           <span class="airline-body">
             <span class="airline-name">吉祥航空</span>
             <span class="airline-url">www.juneyaoair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.flycua.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.flycua.com" target="_blank" rel="noopener" data-search="中国联合航空 www.flycua.com">
           <span class="airline-avatar" aria-hidden="true">中</span>
           <span class="airline-body">
             <span class="airline-name">中国联合航空</span>
             <span class="airline-url">www.flycua.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.9air.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c1" href="https://www.9air.com" target="_blank" rel="noopener" data-search="九元航空 www.9air.com">
           <span class="airline-avatar" aria-hidden="true">九</span>
           <span class="airline-body">
             <span class="airline-name">九元航空</span>
             <span class="airline-url">www.9air.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.okair.net" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.okair.net" target="_blank" rel="noopener" data-search="奥凯航空 www.okair.net">
           <span class="airline-avatar" aria-hidden="true">奥</span>
           <span class="airline-body">
             <span class="airline-name">奥凯航空</span>
             <span class="airline-url">www.okair.net</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.jdair.net" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.jdair.net" target="_blank" rel="noopener" data-search="首都航空 www.jdair.net">
           <span class="airline-avatar" aria-hidden="true">首</span>
           <span class="airline-body">
             <span class="airline-name">首都航空</span>
             <span class="airline-url">www.jdair.net</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.tianjin-air.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.tianjin-air.com" target="_blank" rel="noopener" data-search="天津航空 www.tianjin-air.com">
           <span class="airline-avatar" aria-hidden="true">天</span>
           <span class="airline-body">
             <span class="airline-name">天津航空</span>
             <span class="airline-url">www.tianjin-air.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.luckyair.net" target="_blank" rel="noopener">
+        <a class="airline-card air-c5" href="https://www.luckyair.net" target="_blank" rel="noopener" data-search="祥鹏航空 www.luckyair.net">
           <span class="airline-avatar" aria-hidden="true">祥</span>
           <span class="airline-body">
             <span class="airline-name">祥鹏航空</span>
             <span class="airline-url">www.luckyair.net</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.westair.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.westair.cn" target="_blank" rel="noopener" data-search="西部航空 www.westair.cn">
           <span class="airline-avatar" aria-hidden="true">西</span>
           <span class="airline-body">
             <span class="airline-name">西部航空</span>
             <span class="airline-url">www.westair.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.fuzhou-air.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c1" href="https://www.fuzhou-air.cn" target="_blank" rel="noopener" data-search="福州航空 www.fuzhou-air.cn">
           <span class="airline-avatar" aria-hidden="true">福</span>
           <span class="airline-body">
             <span class="airline-name">福州航空</span>
             <span class="airline-url">www.fuzhou-air.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.yzr.com.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.yzr.com.cn" target="_blank" rel="noopener" data-search="金鹏航空 www.yzr.com.cn">
           <span class="airline-avatar" aria-hidden="true">金</span>
           <span class="airline-body">
             <span class="airline-name">金鹏航空</span>
             <span class="airline-url">www.yzr.com.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.airchangan.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.airchangan.com" target="_blank" rel="noopener" data-search="长安航空 www.airchangan.com">
           <span class="airline-avatar" aria-hidden="true">长</span>
           <span class="airline-body">
             <span class="airline-name">长安航空</span>
             <span class="airline-url">www.airchangan.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.urumqi-air.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.urumqi-air.com" target="_blank" rel="noopener" data-search="乌鲁木齐航空 www.urumqi-air.com">
           <span class="airline-avatar" aria-hidden="true">乌</span>
           <span class="airline-body">
             <span class="airline-name">乌鲁木齐航空</span>
             <span class="airline-url">www.urumqi-air.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.chinaexpressair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c5" href="https://www.chinaexpressair.com" target="_blank" rel="noopener" data-search="华夏航空 www.chinaexpressair.com">
           <span class="airline-avatar" aria-hidden="true">华</span>
           <span class="airline-body">
             <span class="airline-name">华夏航空</span>
             <span class="airline-url">www.chinaexpressair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.cdal.com.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.cdal.com.cn" target="_blank" rel="noopener" data-search="成都航空 www.cdal.com.cn">
           <span class="airline-avatar" aria-hidden="true">成</span>
           <span class="airline-body">
             <span class="airline-name">成都航空</span>
             <span class="airline-url">www.cdal.com.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.airxizang.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c1" href="https://www.airxizang.com" target="_blank" rel="noopener" data-search="西藏航空 www.airxizang.com">
           <span class="airline-avatar" aria-hidden="true">西</span>
           <span class="airline-body">
             <span class="airline-name">西藏航空</span>
             <span class="airline-url">www.airxizang.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.qdairlines.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.qdairlines.com" target="_blank" rel="noopener" data-search="青岛航空 www.qdairlines.com">
           <span class="airline-avatar" aria-hidden="true">青</span>
           <span class="airline-body">
             <span class="airline-name">青岛航空</span>
             <span class="airline-url">www.qdairlines.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.redair.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.redair.cn" target="_blank" rel="noopener" data-search="湖南航空 www.redair.cn">
           <span class="airline-avatar" aria-hidden="true">湖</span>
           <span class="airline-body">
             <span class="airline-name">湖南航空</span>
             <span class="airline-url">www.redair.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.cgzair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.cgzair.com" target="_blank" rel="noopener" data-search="多彩贵州航空 www.cgzair.com">
           <span class="airline-avatar" aria-hidden="true">多</span>
           <span class="airline-body">
             <span class="airline-name">多彩贵州航空</span>
             <span class="airline-url">www.cgzair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.airjiangxi.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c5" href="https://www.airjiangxi.com" target="_blank" rel="noopener" data-search="江西航空 www.airjiangxi.com">
           <span class="airline-avatar" aria-hidden="true">江</span>
           <span class="airline-body">
             <span class="airline-name">江西航空</span>
             <span class="airline-url">www.airjiangxi.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.gxairlines.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.gxairlines.com" target="_blank" rel="noopener" data-search="北部湾航空 www.gxairlines.com">
           <span class="airline-avatar" aria-hidden="true">北</span>
           <span class="airline-body">
             <span class="airline-name">北部湾航空</span>
             <span class="airline-url">www.gxairlines.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.airkunming.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c1" href="https://www.airkunming.com" target="_blank" rel="noopener" data-search="昆明航空 www.airkunming.com">
           <span class="airline-avatar" aria-hidden="true">昆</span>
           <span class="airline-body">
             <span class="airline-name">昆明航空</span>
             <span class="airline-url">www.airkunming.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.longjianghk.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.longjianghk.com" target="_blank" rel="noopener" data-search="龙江航空 www.longjianghk.com">
           <span class="airline-avatar" aria-hidden="true">龙</span>
           <span class="airline-body">
             <span class="airline-name">龙江航空</span>
             <span class="airline-url">www.longjianghk.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.hbhk.com.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.hbhk.com.cn" target="_blank" rel="noopener" data-search="河北航空 www.hbhk.com.cn">
           <span class="airline-avatar" aria-hidden="true">河</span>
           <span class="airline-body">
             <span class="airline-name">河北航空</span>
             <span class="airline-url">www.hbhk.com.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.loongair.cn" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.loongair.cn" target="_blank" rel="noopener" data-search="长龙航空 www.loongair.cn">
           <span class="airline-avatar" aria-hidden="true">长</span>
           <span class="airline-body">
             <span class="airline-name">长龙航空</span>
             <span class="airline-url">www.loongair.cn</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.donghaiair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c5" href="https://www.donghaiair.com" target="_blank" rel="noopener" data-search="东海航空 www.donghaiair.com">
           <span class="airline-avatar" aria-hidden="true">东</span>
           <span class="airline-body">
             <span class="airline-name">东海航空</span>
             <span class="airline-url">www.donghaiair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.joy-air.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.joy-air.com" target="_blank" rel="noopener" data-search="幸福航空 www.joy-air.com">
           <span class="airline-avatar" aria-hidden="true">幸</span>
           <span class="airline-body">
             <span class="airline-name">幸福航空</span>
             <span class="airline-url">www.joy-air.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.china-airlines.com" target="_blank" rel="noopener">
+        </div>
+      </div>
+      <div class="airline-group">
+        <h3><span class="dot"></span>中国港澳台地区航空公司<span class="sub">10 家地区航司</span></h3>
+        <div class="grid-4 airline-grid">
+        <a class="airline-card air-c1" href="https://www.china-airlines.com" target="_blank" rel="noopener" data-search="中华航空 www.china-airlines.com">
           <span class="airline-avatar" aria-hidden="true">中</span>
           <span class="airline-body">
             <span class="airline-name">中华航空</span>
             <span class="airline-url">www.china-airlines.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.evaair.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.evaair.com" target="_blank" rel="noopener" data-search="长荣航空 www.evaair.com">
           <span class="airline-avatar" aria-hidden="true">长</span>
           <span class="airline-body">
             <span class="airline-name">长荣航空</span>
             <span class="airline-url">www.evaair.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.uniair.com.tw" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.uniair.com.tw" target="_blank" rel="noopener" data-search="立荣航空 www.uniair.com.tw">
           <span class="airline-avatar" aria-hidden="true">立</span>
           <span class="airline-body">
             <span class="airline-name">立荣航空</span>
             <span class="airline-url">www.uniair.com.tw</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.mandarin-airlines.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.mandarin-airlines.com" target="_blank" rel="noopener" data-search="华信航空 www.mandarin-airlines.com">
           <span class="airline-avatar" aria-hidden="true">华</span>
           <span class="airline-body">
             <span class="airline-name">华信航空</span>
             <span class="airline-url">www.mandarin-airlines.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.tigerairtw.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c5" href="https://www.tigerairtw.com" target="_blank" rel="noopener" data-search="台湾虎航 www.tigerairtw.com">
           <span class="airline-avatar" aria-hidden="true">台</span>
           <span class="airline-body">
             <span class="airline-name">台湾虎航</span>
             <span class="airline-url">www.tigerairtw.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.starlux-airlines.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.starlux-airlines.com" target="_blank" rel="noopener" data-search="星宇航空 www.starlux-airlines.com">
           <span class="airline-avatar" aria-hidden="true">星</span>
           <span class="airline-body">
             <span class="airline-name">星宇航空</span>
             <span class="airline-url">www.starlux-airlines.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.cathaypacific.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c1" href="https://www.cathaypacific.com" target="_blank" rel="noopener" data-search="国泰航空 www.cathaypacific.com">
           <span class="airline-avatar" aria-hidden="true">国</span>
           <span class="airline-body">
             <span class="airline-name">国泰航空</span>
             <span class="airline-url">www.cathaypacific.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.hongkongairlines.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c2" href="https://www.hongkongairlines.com" target="_blank" rel="noopener" data-search="香港航空 www.hongkongairlines.com">
           <span class="airline-avatar" aria-hidden="true">香</span>
           <span class="airline-body">
             <span class="airline-name">香港航空</span>
             <span class="airline-url">www.hongkongairlines.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.hkexpress.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c3" href="https://www.hkexpress.com" target="_blank" rel="noopener" data-search="香港快运航空 www.hkexpress.com">
           <span class="airline-avatar" aria-hidden="true">香</span>
           <span class="airline-body">
             <span class="airline-name">香港快运航空</span>
             <span class="airline-url">www.hkexpress.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.airmacau.com.mo" target="_blank" rel="noopener">
+        <a class="airline-card air-c4" href="https://www.airmacau.com.mo" target="_blank" rel="noopener" data-search="澳门航空 www.airmacau.com.mo">
           <span class="airline-avatar" aria-hidden="true">澳</span>
           <span class="airline-body">
             <span class="airline-name">澳门航空</span>
             <span class="airline-url">www.airmacau.com.mo</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://t.ctrip.cn/wvJ3M20" target="_blank" rel="noopener">
+        </div>
+      </div>
+      <div class="airline-group">
+        <h3><span class="dot"></span>在线旅行平台<span class="sub">OTA 官方入口</span></h3>
+        <div class="grid-4 airline-grid">
+        <a class="airline-card air-c5" href="https://t.ctrip.cn/wvJ3M20" target="_blank" rel="noopener" data-search="携程 t.ctrip.cn/wvj3m20">
           <span class="airline-avatar" aria-hidden="true">携</span>
           <span class="airline-body">
             <span class="airline-name">携程<span class="airline-ota">平台</span></span>
             <span class="airline-url">t.ctrip.cn/wvJ3M20</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
-        <a class="airline-card" href="https://www.ly.com" target="_blank" rel="noopener">
+        <a class="airline-card air-c6" href="https://www.ly.com" target="_blank" rel="noopener" data-search="同程旅行 www.ly.com">
           <span class="airline-avatar" aria-hidden="true">同</span>
           <span class="airline-body">
             <span class="airline-name">同程旅行<span class="airline-ota">平台</span></span>
             <span class="airline-url">www.ly.com</span>
             
           </span>
+          <span class="airline-go" aria-hidden="true">↗</span>
         </a>
+        </div>
       </div>
-      <div class="source-note" style="margin-top:16px;">
+      <div class="source-note" style="margin-top:18px;">
         <b>入口说明：</b>本导航仅提供航空公司及在线旅行平台的官网入口，方便你直达官方渠道查询航班、票价与规则；
         标注「平台」的为在线旅行服务商（OTA），并非航空公司。<b>本站不销售机票、不代收票款、不参与任何交易、不为任何机构导流下单</b>，
         域名信息由站长整理提供，如发现变更欢迎邮件反馈：mfujun88@agent.qq.com。
@@ -497,6 +566,34 @@
   </div>
 </section>
 
+<script>
+(function () {
+  var inp = document.getElementById('airlineSearch');
+  if (!inp) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.airline-card'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.airline-group'));
+  var empty = document.getElementById('airlineEmpty');
+  var count = document.getElementById('airlineCount');
+  function filter() {
+    var q = inp.value.trim().toLowerCase();
+    var shown = 0;
+    groups.forEach(function (g) {
+      var gc = g.querySelectorAll('.airline-card');
+      var vis = 0;
+      gc.forEach(function (c) {
+        var match = !q || c.getAttribute('data-search').indexOf(q) > -1;
+        c.style.display = match ? '' : 'none';
+        if (match) vis++;
+      });
+      g.style.display = vis ? '' : 'none';
+      shown += vis;
+    });
+    if (count) count.textContent = '共 ' + shown + ' 家';
+    if (empty) empty.classList.toggle('show', shown === 0);
+  }
+  inp.addEventListener('input', filter);
+})();
+</script>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">

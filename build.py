@@ -1052,20 +1052,61 @@ def build_price():
     title = "航空公司导航｜48 家国内外航司与平台官网入口-机票.CC"
     desc = "卡片式航空公司导航：48 家国内外客运航司及携程、同程等平台官网入口，直达官方渠道查询航班、票价与规则。"
 
-    nav_cards = "\n".join(f"""        <a class="airline-card" href="https://{u}" target="_blank" rel="noopener">
+    # 分组：中国大陆 / 中国港澳台地区 / 在线旅行平台
+    HK_MO_TW = {
+        "中华航空", "长荣航空", "立荣航空", "华信航空", "台湾虎航",
+        "星宇航空", "国泰航空", "香港航空", "香港快运航空", "澳门航空",
+    }
+    groups = [
+        ("中国大陆航空公司", "36 家客运航司",
+         [x for x in AIRLINES_NAV if x[2] != "ota" and x[0] not in HK_MO_TW]),
+        ("中国港澳台地区航空公司", "10 家地区航司",
+         [x for x in AIRLINES_NAV if x[0] in HK_MO_TW]),
+        ("在线旅行平台", "OTA 官方入口",
+         [x for x in AIRLINES_NAV if x[2] == "ota"]),
+    ]
+
+    def card_html(n, u, t, idx):
+        cls = "air-c" + str(idx % 6 + 1)
+        ota = '<span class="airline-ota">平台</span>' if t == "ota" else ""
+        note = f'<span class="airline-note">{e(t)}</span>' if t and t != "ota" else ""
+        search = (n + " " + u).lower()
+        return f"""        <a class="airline-card {cls}" href="https://{u}" target="_blank" rel="noopener" data-search="{e(search)}">
           <span class="airline-avatar" aria-hidden="true">{e(n[0])}</span>
           <span class="airline-body">
-            <span class="airline-name">{e(n)}{'<span class="airline-ota">平台</span>' if t == "ota" else ''}</span>
+            <span class="airline-name">{e(n)}{ota}</span>
             <span class="airline-url">{e(u)}</span>
-            {f'<span class="airline-note">{e(t)}</span>' if t and t != "ota" else ""}
+            {note}
           </span>
-        </a>""" for n, u, t in AIRLINES_NAV)
+          <span class="airline-go" aria-hidden="true">↗</span>
+        </a>"""
+
+    groups_html = ""
+    gi = 0
+    for gname, gsub, items in groups:
+        cards = "\n".join(card_html(n, u, t, gi + i) for i, (n, u, t) in enumerate(items))
+        gi += len(items)
+        groups_html += f"""
+      <div class="airline-group">
+        <h3><span class="dot"></span>{gname}<span class="sub">{gsub}</span></h3>
+        <div class="grid-4 airline-grid">
+{cards}
+        </div>
+      </div>"""
+
+    search_box = """
+    <div class="airline-search">
+      <span class="ic" aria-hidden="true">🔍</span>
+      <input id="airlineSearch" type="search" placeholder="搜索航司或平台名称、域名，如：国航 / cathay / ctrip" autocomplete="off" aria-label="搜索航空公司">
+      <span class="airline-count" id="airlineCount">共 48 家</span>
+    </div>
+    <p class="airline-empty" id="airlineEmpty">没有匹配的航司或平台，换个关键词试试。</p>"""
+
     nav_section = f"""
     <section class="section">
-      <div class="grid-4 airline-grid">
-{nav_cards}
-      </div>
-      <div class="source-note" style="margin-top:16px;">
+      {search_box}
+{groups_html}
+      <div class="source-note" style="margin-top:18px;">
         <b>入口说明：</b>本导航仅提供航空公司及在线旅行平台的官网入口，方便你直达官方渠道查询航班、票价与规则；
         标注「平台」的为在线旅行服务商（OTA），并非航空公司。<b>本站不销售机票、不代收票款、不参与任何交易、不为任何机构导流下单</b>，
         域名信息由站长整理提供，如发现变更欢迎邮件反馈：{SITE['agent_email']}。
@@ -1107,6 +1148,34 @@ def build_price():
   </div>
 </main>
 {subscribe_band()}
+<script>
+(function () {{
+  var inp = document.getElementById('airlineSearch');
+  if (!inp) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.airline-card'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.airline-group'));
+  var empty = document.getElementById('airlineEmpty');
+  var count = document.getElementById('airlineCount');
+  function filter() {{
+    var q = inp.value.trim().toLowerCase();
+    var shown = 0;
+    groups.forEach(function (g) {{
+      var gc = g.querySelectorAll('.airline-card');
+      var vis = 0;
+      gc.forEach(function (c) {{
+        var match = !q || c.getAttribute('data-search').indexOf(q) > -1;
+        c.style.display = match ? '' : 'none';
+        if (match) vis++;
+      }});
+      g.style.display = vis ? '' : 'none';
+      shown += vis;
+    }});
+    if (count) count.textContent = '共 ' + shown + ' 家';
+    if (empty) empty.classList.toggle('show', shown === 0);
+  }}
+  inp.addEventListener('input', filter);
+}})();
+</script>
 {footer()}"""
     write(ROOT / "price.html", head(title, desc, "price.html", BASE_URL + "/price.html", ld) + body)
 
