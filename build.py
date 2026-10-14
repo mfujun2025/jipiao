@@ -793,12 +793,11 @@ def breadcrumb(items, canonical):
 
 def page_hero(items, h1, lead, next_review=None, scope=None):
     bc = breadcrumb(items, "")
-    st = stamp(next_review or STAMP["next_review_price"], scope or "数据") if next_review is not False else ""
     return f"""<section class="page-hero">
   <div class="container">
 {bc}    <h1>{e(h1)}</h1>
     <p class="lead">{e(lead)}</p>
-{st}  </div>
+  </div>
 </section>
 """
 
