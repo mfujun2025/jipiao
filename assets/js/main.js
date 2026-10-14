@@ -132,9 +132,9 @@
       }
       if (msg) msg.textContent = '已为你打开邮件客户端，请点击发送完成订阅。';
 
-      var subject = encodeURIComponent('订阅价格提醒：机票.CC');
+      var subject = encodeURIComponent('订阅机票资讯：机票.CC');
       var body = encodeURIComponent(
-        '我想订阅机票.CC 的价格提醒。\n\n订阅邮箱：' + val
+        '我想订阅机票.CC 的资讯更新。\n\n订阅邮箱：' + val
         + '\n关注方向（可多选，留空视为全部）：航空公司导航 / 航线资讯 / 出行攻略 / 航司动态 / 优惠活动\n'
         + '\n退订方式：回信写「退订」即可。\n'
       );

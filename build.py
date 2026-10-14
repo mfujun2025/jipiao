@@ -32,10 +32,10 @@ SITE = {
 
 MAILTO = f"mailto:{SITE['agent_email']}"
 # 统一订阅主题（CRO I6：全站 subject 一致，便于归因）
-SUBJECT = "订阅价格提醒：机票.CC"
+SUBJECT = "订阅机票资讯：机票.CC"
 MAILTO_SUB = f"mailto:{SITE['agent_email']}?subject={quote(SUBJECT)}"
 # 统一 CTA 文案（CRO I2）
-CTA_SUB = "✉ 订阅价格提醒"
+CTA_SUB = "✉ 订阅机票资讯"
 
 NAV = [
     ("index.html", "首页"),
@@ -597,7 +597,7 @@ FAQ = [
     ("站内的机票价格是实时的吗？",
      "航线、班次、规则与价格类信息均来自公开渠道整理，并非实时报价。机票价格受舱位、日期、余票与促销影响波动频繁，请在购票渠道以实际查询结果为准。页面上会标注每份内容的更新日期与来源。"),
     ("怎样订阅机票.CC 的内容更新？",
-     "在页脚的「订阅与联系」栏，或在首页订阅横幅填写邮箱即可；也可以直接向站点智能体邮箱发一封邮件。订阅后每周最多 2 封，内容为价格提醒与航线资讯；不发广告、不转卖邮箱，回信写「退订」即可停止。详见关于我们页的隐私与退订说明。"),
+     "在页脚的「订阅与联系」栏，或在首页订阅横幅填写邮箱即可；也可以直接向站点智能体邮箱发一封邮件。订阅后每周最多 2 封，内容为机票资讯与航线资讯；不发广告、不转卖邮箱，回信写「退订」即可停止。详见关于我们页的隐私与退订说明。"),
     ("网站会推荐具体的购票渠道吗？",
      "我们提供的是判断方法与信息对比，不针对具体票务机构做导流推荐。若内容中出现外部参考链接，均会注明来源，便于你自行核验。"),
     ("为什么有的内容没有给出精确数字？",
@@ -701,7 +701,7 @@ def subscribe_band():
         <form class="sub-form" id="subForm" novalidate>
           <label class="sr-only" for="subEmail">订阅邮箱</label>
           <input type="email" id="subEmail" name="email" placeholder="你的邮箱地址" required>
-          <button class="btn btn-accent" type="submit">订阅价格提醒</button>
+          <button class="btn btn-accent" type="submit">订阅机票资讯</button>
         </form>
         <div class="sub-msg" id="subMsg" role="status"></div>
         <p class="sub-note">我们会唤起你的邮件客户端，发送到站点智能体邮箱 {SITE['agent_email']}。
@@ -759,7 +759,7 @@ def footer():
           <p>站点智能体邮箱，接受订阅申请、内容纠错与合作咨询，通常 1 个工作日内回复。</p>
           <a class="mail-addr" href="{MAILTO}" title="点击发送邮件">{SITE['agent_email']}</a>
           <div class="mail-actions">
-            <a class="btn btn-ghost btn-sm" href="{MAILTO_SUB}">✉ 订阅价格提醒</a>
+            <a class="btn btn-ghost btn-sm" href="{MAILTO_SUB}">✉ 订阅机票资讯</a>
             <button class="btn btn-ghost btn-sm" type="button" id="copyMail" data-mail="{SITE['agent_email']}">⧉ 复制邮箱</button>
           </div>
         </div>
@@ -1010,8 +1010,8 @@ def build_index():
           </div>
           <div class="side-box">
             <h3><span class="bar"></span>订阅与联系</h3>
-            <p class="muted" style="margin-bottom:10px;">订阅价格提醒，或向我们反馈内容问题。</p>
-            <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅价格提醒</a>
+            <p class="muted" style="margin-bottom:10px;">订阅机票资讯，或向我们反馈内容问题。</p>
+            <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅机票资讯</a>
             <p class="muted" style="margin:10px 0 0;font-size:12.5px;word-break:break-all;">{SITE['agent_email']}</p>
           </div>
         </aside>
@@ -1255,7 +1255,7 @@ def build_guides():
         <div class="side-box">
           <h3><span class="bar"></span>订阅与联系</h3>
           <p class="muted" style="margin-bottom:10px;">有想看的选题？回信告诉我们。</p>
-          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅价格提醒</a>
+          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅机票资讯</a>
           <p class="muted" style="margin:10px 0 0;font-size:12.5px;word-break:break-all;">{SITE['agent_email']}</p>
         </div>
       </aside>
@@ -1313,7 +1313,7 @@ def build_airlines():
         <div class="side-box">
           <h3><span class="bar"></span>订阅与联系</h3>
           <p class="muted" style="margin-bottom:10px;">规则变更提醒，一封邮件说清。</p>
-          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅价格提醒</a>
+          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅机票资讯</a>
           <p class="muted" style="margin:10px 0 0;font-size:12.5px;word-break:break-all;">{SITE['agent_email']}</p>
         </div>
       </aside>
@@ -1471,14 +1471,14 @@ def build_about():
             <p>接受订阅申请、内容纠错与合作咨询，通常 1 个工作日内回复。</p>
             <a class="mail-addr" href="{MAILTO}">{SITE['agent_email']}</a>
             <div class="mail-actions">
-              <a class="btn btn-ghost btn-sm" href="{MAILTO_SUB}">✉ 订阅价格提醒</a>
+              <a class="btn btn-ghost btn-sm" href="{MAILTO_SUB}">✉ 订阅机票资讯</a>
               <button class="btn btn-ghost btn-sm" type="button" data-copy-mail data-mail="{SITE['agent_email']}">⧉ 复制邮箱</button>
             </div>
           </div>
           <table>
             <thead><tr><th>用途</th><th>邮件主题建议</th></tr></thead>
             <tbody>
-              <tr><td class="td-strong">订阅内容更新</td><td class="muted">订阅价格提醒：机票.CC</td></tr>
+              <tr><td class="td-strong">订阅内容更新</td><td class="muted">订阅机票资讯：机票.CC</td></tr>
               <tr><td class="td-strong">内容纠错</td><td class="muted">纠错：页面标题 + 问题说明</td></tr>
               <tr><td class="td-strong">选题建议</td><td class="muted">选题：希望看到的内容方向</td></tr>
               <tr><td class="td-strong">内容合作</td><td class="muted">合作：机构名称 + 合作诉求</td></tr>
@@ -1522,7 +1522,7 @@ def build_about():
         <div class="side-box">
           <h3><span class="bar"></span>智能体邮箱</h3>
           <p class="muted" style="margin-bottom:10px;word-break:break-all;">{SITE['agent_email']}</p>
-          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅价格提醒</a>
+          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅机票资讯</a>
         </div>
         <div class="side-box">
           <h3><span class="bar"></span>站点信息</h3>
@@ -1792,8 +1792,8 @@ def build_article(spec):
         </div>
         <div class="side-box">
           <h3><span class="bar"></span>订阅与联系</h3>
-          <p class="muted" style="margin-bottom:10px;">订阅价格提醒与攻略更新。</p>
-          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅价格提醒</a>
+          <p class="muted" style="margin-bottom:10px;">订阅机票资讯与攻略更新。</p>
+          <a class="btn btn-primary btn-block btn-sm" href="{MAILTO_SUB}">✉ 订阅机票资讯</a>
           <p class="muted" style="margin:10px 0 0;font-size:12.5px;word-break:break-all;">{SITE['agent_email']}</p>
         </div>
       </aside>
