@@ -1123,11 +1123,10 @@ def build_price():
     desc = "卡片式航空公司导航：48 家国内外客运航司及携程、同程等平台官网入口，直达官方渠道查询航班、票价与规则。"
 
     nav_cards = "\n".join(f"""        <a class="airline-card" href="https://{u}" target="_blank" rel="noopener">
-          <span class="airline-num">序号 {i}</span>
           <span class="airline-name">{e(n)}{'<span class="airline-ota">平台</span>' if t == "ota" else ''}</span>
           <span class="airline-url">{e(u)}</span>
           {f'<span class="airline-note">{e(t)}</span>' if t and t != "ota" else ""}
-        </a>""" for i, (n, u, t) in enumerate(AIRLINES_NAV, 1))
+        </a>""" for n, u, t in AIRLINES_NAV)
     nav_section = f"""
     <section class="section">
       <div class="section-head">
@@ -1150,7 +1149,8 @@ def build_price():
     body = topbar() + header("price.html") + page_hero(
         [("首页", "index.html"), ("航空公司导航", "price.html")],
         "航空公司导航",
-        "48 家国内外航空公司及在线旅行平台的官网入口，卡片式直达；点击卡片跳转官方渠道查询航班、票价与退改规则。"
+        "48 家国内外航空公司及在线旅行平台的官网入口，卡片式直达；点击卡片跳转官方渠道查询航班、票价与退改规则。",
+        next_review=False
     ) + nav_section + f"""
 <main class="layout-main">
   <div class="container">
