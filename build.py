@@ -26,7 +26,7 @@ SITE = {
     "tagline": "机票资讯 · 航司导航 · 出行攻略",
     "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
     "agent_email": "mfujun88@agent.qq.com",
-    "updated": "2026-10-14",
+    "updated": "2026-10-16",
     "icp": "备案信息办理中",
 }
 
@@ -639,6 +639,75 @@ ARTICLES = [
         "about_note": "本文为机票.CC「出行攻略」栏目的票型选择专题，文中票型与规则为通用科普整理，"
                       "是否提供对应票型及具体价格需按航线查询，请以航空公司官方渠道实时展示为准。"
                       "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "haikou-malaysia-routes",
+        "drafts": ["haikou-malaysia-routes-2026-10-16.md"],
+        "column": "routes.html",
+        "column_name": "航线资讯",
+        "date": "2026-10-16",
+        "review": STAMP["next_review_rule"],
+        "scope": "航线与动态",
+        "title_fallback": "海口往返马来西亚航线加密至一周19班",
+        "meta_title": "海口往返马来西亚航线加密至一周19班：古晋槟城复航后的购票要点-机票.CC",
+        "head_desc_extra": "文中含复航航线班期时刻表、四航点行程定位表、三种购票思路对照表与下单前核对清单及 FAQ。",
+        "keywords": "海口飞马来西亚,海口古晋航线,海口槟城航线,九元航空海口,东南亚机票怎么买,马来西亚航线复航",
+        "cat_label": "国际航线",
+        "summary": "古晋槟城复航后海口联通马来西亚增至4城：班期、时刻与购票思路拆解。",
+        "about_note": "本文为机票.CC「航线资讯」栏目的东南亚航线专题，文中航线、班期与时刻信息整理自公开渠道，"
+                      "以航空公司最终执行的航班计划为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "shandong-airlines-winter-31",
+        "drafts": ["shandong-airlines-winter-31-2026-10-16.md"],
+        "column": "airlines.html",
+        "column_name": "航司动态",
+        "date": "2026-10-16",
+        "review": STAMP["next_review_rule"],
+        "scope": "航线与动态",
+        "title_fallback": "山航冬春航季新增加密31条航线",
+        "meta_title": "山航冬春航季新增加密31条航线：济青中转升级后的购票要点-机票.CC",
+        "head_desc_extra": "文中含航线方向分类表、典型出行场景对照表、换季前后购票时间点表与核对清单及 FAQ。",
+        "keywords": "山航冬春航季,山东航空新航线,济南青岛中转,10月25日换季,航线加密,首尔航线加密",
+        "cat_label": "航季换季",
+        "summary": "31条新增加密航线怎么用：直飞替代、通程中转与换季购票节奏。",
+        "about_note": "本文为机票.CC「航司动态」栏目的换季运力专题，文中航线与中转权益信息整理自公开渠道，"
+                      "以山东航空官方渠道发布的最终航班计划为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "season-change-ticket-guide",
+        "drafts": ["season-change-ticket-guide-2026-10-16.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-16",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "换季日已出票旅客怎么应对航班时刻变更",
+        "meta_title": "10月25日换季日临近：已出票旅客怎么应对航班时刻变更-机票.CC",
+        "head_desc_extra": "文中含换季变更类型表、订单风险分级方法、三个核对节点清单与变更处理流程及 FAQ。",
+        "keywords": "航班换季时刻变更,航班取消改签,换季机票怎么办,航班时刻变更退票,已出票航班调整",
+        "cat_label": "退改指南",
+        "summary": "换季变更三类情形、三个核对节点与一套完整的改签退票决策流程。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的换季应对专题，文中方法为公开信息归纳整理，"
+                      "具体办理标准取决于各航司规则与票种，请以航空公司官方答复为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "southeast-asia-nov-fares",
+        "drafts": ["southeast-asia-nov-fares-2026-10-16.md"],
+        "column": "deals.html",
+        "column_name": "优惠活动",
+        "date": "2026-10-16",
+        "review": STAMP["next_review_price"],
+        "scope": "数据与活动",
+        "title_fallback": "11月错峰东南亚价格窗口解读",
+        "meta_title": "11月错峰东南亚：航线密集复航后的价格窗口与优惠解读-机票.CC",
+        "head_desc_extra": "文中含错峰供需时段表、三类人群购票策略表、促销核对清单与总成本核算思路及 FAQ。",
+        "keywords": "11月机票便宜吗,东南亚机票错峰,复航航线促销,双11机票优惠,东南亚淡季机票,错峰出行攻略",
+        "cat_label": "错峰出行",
+        "summary": "供给增量遇上需求淡季：识别11月东南亚价格窗口的方法与优惠核对清单。",
+        "about_note": "本文为机票.CC「优惠活动」栏目的错峰专题，文中价格表现均为定性规律描述，"
+                      "票价实时变动，促销规则以各航司官方渠道发布为准。本站不销售机票、不参与任何交易环节。",
     },
 ]
 

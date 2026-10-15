@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-14",
+  "updated": "2026-10-16",
   "icp": "备案信息办理中"
 };
 
@@ -345,6 +345,26 @@ const SEARCH_INDEX = [
     "title": "往返票还是单程票？多段组合购票的决策方法（附场景对照表）",
     "meta": "出行攻略 · 购票技巧",
     "url": "round-trip-vs-oneway.html"
+  },
+  {
+    "title": "海口往返马来西亚航线加密至一周19班：古晋槟城复航后的购票要点",
+    "meta": "航线资讯 · 国际航线",
+    "url": "haikou-malaysia-routes.html"
+  },
+  {
+    "title": "山航冬春航季新增加密31条航线：济青中转升级后的购票要点",
+    "meta": "航司动态 · 航季换季",
+    "url": "shandong-airlines-winter-31.html"
+  },
+  {
+    "title": "10月25日换季日临近：已出票旅客怎么应对航班时刻变更",
+    "meta": "出行攻略 · 退改指南",
+    "url": "season-change-ticket-guide.html"
+  },
+  {
+    "title": "11月错峰东南亚：航线密集复航后的价格窗口与优惠解读",
+    "meta": "优惠活动 · 错峰出行",
+    "url": "southeast-asia-nov-fares.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
