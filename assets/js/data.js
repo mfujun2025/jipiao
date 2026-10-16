@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "icp": "备案信息办理中"
 };
 
@@ -365,6 +365,26 @@ const SEARCH_INDEX = [
     "title": "11月错峰东南亚：航线密集复航后的价格窗口与优惠解读",
     "meta": "优惠活动 · 错峰出行",
     "url": "southeast-asia-nov-fares.html"
+  },
+  {
+    "title": "换季前一周新航线密集官宣：南宁—盐城、合肥—揭阳、郑州—喀什直飞怎么买",
+    "meta": "航线资讯 · 新航线上新",
+    "url": "new-routes-before-winter-season.html"
+  },
+  {
+    "title": "重庆航空冬春航季焕新62条航线：新开重庆至三明等航线后的购票要点",
+    "meta": "航司动态 · 航季换季",
+    "url": "chongqing-airlines-winter-renewal.html"
+  },
+  {
+    "title": "冰雪游避寒游航班加密：乌鲁木齐哈尔滨三亚航线怎么买更划算",
+    "meta": "出行攻略 · 购票时机",
+    "url": "ice-snow-warm-winter-booking.html"
+  },
+  {
+    "title": "东航空铁联订怎么用：机票火车票一次下单，联订惠价规则与使用要点",
+    "meta": "优惠活动 · 联运优惠",
+    "url": "eastair-air-rail-booking-deal.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
