@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "icp": "备案信息办理中"
 };
 
@@ -385,6 +385,26 @@ const SEARCH_INDEX = [
     "title": "东航空铁联订怎么用：机票火车票一次下单，联订惠价规则与使用要点",
     "meta": "优惠活动 · 联运优惠",
     "url": "eastair-air-rail-booking-deal.html"
+  },
+  {
+    "title": "上海直飞胡志明市开航：每日一班时刻表与购票要点",
+    "meta": "航线资讯 · 国际航线上新",
+    "url": "hochiminh-shanghai-daily-flight.html"
+  },
+  {
+    "title": "东航新开西安至湛江直飞航线：10月25日起每日一班，购票要点全梳理",
+    "meta": "航司动态 · 航季换季",
+    "url": "xian-zhanjiang-direct-flight.html"
+  },
+  {
+    "title": "经停航班怎么买：换季新开的经停航线，比直飞慢多久、值不值",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "stopover-vs-direct-flight.html"
+  },
+  {
+    "title": "航司会员日怎么用：10月18日东航会员日之际，换季前后的优惠日历与核对方法",
+    "meta": "优惠活动 · 会员日",
+    "url": "member-day-calendar-oct.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
