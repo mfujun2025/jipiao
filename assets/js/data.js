@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "icp": "备案信息办理中"
 };
 
@@ -405,6 +405,26 @@ const SEARCH_INDEX = [
     "title": "航司会员日怎么用：10月18日东航会员日之际，换季前后的优惠日历与核对方法",
     "meta": "优惠活动 · 会员日",
     "url": "member-day-calendar-oct.html"
+  },
+  {
+    "title": "成都直飞阿勒泰航线加密：换季后最多一天三班，购票要点全梳理",
+    "meta": "航线资讯 · 新航线",
+    "url": "chengdu-altay-three-daily.html"
+  },
+  {
+    "title": "合肥新桥机场冬春航季上新：东航新开运城惠州柳州、海航开通揭阳直飞，购票要点全梳理",
+    "meta": "航司动态 · 航司动态",
+    "url": "hefei-winter-new-routes.html"
+  },
+  {
+    "title": "航班截载时间调整怎么看：咸阳改25分钟、有的机场压到15分钟，晚到旅客怎么办",
+    "meta": "出行攻略 · 乘机攻略",
+    "url": "checkin-cutoff-time-change.html"
+  },
+  {
+    "title": "换季机场促销怎么看：特价航线样本解读与下单核对清单",
+    "meta": "优惠活动 · 促销解读",
+    "url": "airport-promo-fares-guide.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",

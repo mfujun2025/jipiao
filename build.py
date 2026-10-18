@@ -26,7 +26,7 @@ SITE = {
     "tagline": "机票资讯 · 航司导航 · 出行攻略",
     "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
     "agent_email": "mfujun88@agent.qq.com",
-    "updated": "2026-10-18",
+    "updated": "2026-10-19",
     "icp": "备案信息办理中",
 }
 
@@ -844,6 +844,78 @@ ARTICLES = [
         "summary": "会员日日历与三组开航特惠口径：叠加顺序、实务要点与下单核对方法。",
         "about_note": "本文为机票.CC「优惠活动」栏目的会员日专题，会员日日期与促销口径整理自公开报道，"
                       "「起价」均为官方公布促销起点价，数量有限、实时变动，以各航司官方渠道为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "chengdu-altay-three-daily",
+        "drafts": ["chengdu-altay-three-daily-2026-10-19.md"],
+        "column": "routes.html",
+        "column_name": "航线资讯",
+        "date": "2026-10-19",
+        "review": STAMP["next_review_price"],
+        "scope": "航线与票价",
+        "title_fallback": "成都直飞阿勒泰航线加密后的购票要点",
+        "meta_title": "成都直飞阿勒泰航线加密：换季后最多一天三班，购票要点全梳理-机票.CC",
+        "head_desc_extra": "文中含三家承运方航线结构表、票价口径说明、班次密度分析、下单核对清单与 FAQ。",
+        "keywords": "成都直飞阿勒泰,阿勒泰机票,冬春航季新航线,直飞阿勒泰航班,阿勒泰雪季购票,换季航线加密",
+        "cat_label": "新航线",
+        "summary": "换季后成都最多一天三班直飞阿勒泰：航线结构、票价区间口径与下单核对要点。",
+        "about_note": "本文为机票.CC「航线资讯」栏目的换季新航线专题，航线与票价信息整理自公开报道，"
+                      "票价为查询时点样本区间、不含税费、实时变动，以航司官方渠道为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "hefei-winter-new-routes",
+        "drafts": ["hefei-winter-new-routes-2026-10-19.md"],
+        "column": "airlines.html",
+        "column_name": "航司动态",
+        "date": "2026-10-19",
+        "review": STAMP["next_review_rule"],
+        "scope": "航司与航线",
+        "title_fallback": "合肥新桥机场冬春航季新航线梳理",
+        "meta_title": "合肥新桥机场冬春航季上新：东航新开运城惠州柳州、海航揭阳直飞购票要点-机票.CC",
+        "head_desc_extra": "文中含东航安徽航线变化表、合肥—揭阳时刻表、购票要点与截载时间提醒、FAQ。",
+        "keywords": "合肥新桥机场,冬春航季新航线,东航合肥航线,海航合肥揭阳,合肥直飞,换季航班计划",
+        "cat_label": "航司动态",
+        "summary": "东航安徽5机场47条航线的新增与加密、海航合肥—揭阳每日班时刻与购票要点。",
+        "about_note": "本文为机票.CC「航司动态」栏目的换季航司盘点专题，班期与时刻整理自公开报道的新航季计划，"
+                      "可能动态调整，以航司官方销售系统实时显示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "checkin-cutoff-time-change",
+        "drafts": ["checkin-cutoff-time-change-2026-10-19.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-19",
+        "review": STAMP["next_review_rule"],
+        "scope": "乘机规则",
+        "title_fallback": "航班截载时间变化与晚到旅客应对方法",
+        "meta_title": "航班截载时间怎么看：咸阳改25分钟、晚到旅客怎么办-机票.CC",
+        "head_desc_extra": "文中含截载/登机口/起飞三概念对照表、晚到自救清单、误机处理路径与 FAQ。",
+        "keywords": "航班截载时间,值机截止时间,西安咸阳机场值机,晚到旅客,误机怎么办,登机口关闭时间",
+        "cat_label": "乘机攻略",
+        "summary": "截载时间因机场航司而异且正在变化：三概念对照、自救清单与误机处理路径。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的乘机规则专题，截载时间信息整理自公开报道，"
+                      "因机场、航司与航班类型而异且可能调整，出行前以官方公示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "airport-promo-fares-guide",
+        "drafts": ["airport-promo-fares-guide-2026-10-19.md"],
+        "column": "deals.html",
+        "column_name": "优惠活动",
+        "date": "2026-10-19",
+        "review": STAMP["next_review_price"],
+        "scope": "促销与规则",
+        "title_fallback": "换季机场特价航线的解读与核对方法",
+        "meta_title": "换季机场促销怎么看：特价航线样本解读与下单核对清单-机票.CC",
+        "head_desc_extra": "文中含机场公告与航司活动对照表、特价航线样本数据、隐藏成本三笔账、六步核对清单与 FAQ。",
+        "keywords": "机场特价机票,换季促销,特价航线,起价什么意思,特价票退改,新航线优惠",
+        "cat_label": "促销解读",
+        "summary": "机场换季特价公告的读法：两类促销来源、起价口径、隐藏成本与下单核对清单。",
+        "about_note": "本文为机票.CC「优惠活动」栏目的促销解读专题，特价口径整理自机场公告等公开渠道，"
+                      "「起价」均为公布价格下限，不含税费、数量有限、实时变动，以航司官方渠道为准。"
                       "本站不销售机票、不参与任何交易环节。",
     },
 ]
