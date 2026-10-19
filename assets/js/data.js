@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "icp": "备案信息办理中"
 };
 
@@ -425,6 +425,26 @@ const SEARCH_INDEX = [
     "title": "换季机场促销怎么看：特价航线样本解读与下单核对清单",
     "meta": "优惠活动 · 促销解读",
     "url": "airport-promo-fares-guide.html"
+  },
+  {
+    "title": "2027春运机票什么时候买：春节2月6日，三个预订窗口与锁票策略",
+    "meta": "出行攻略 · 节假日购票",
+    "url": "spring-festival-flight-booking-2027.html"
+  },
+  {
+    "title": "春秋航空冬春航季国际线加密：济州曼谷天天班与12月新航线购票要点",
+    "meta": "航线资讯 · 国际航线",
+    "url": "spring-airlines-intl-winter-2026.html"
+  },
+  {
+    "title": "天津航空冬春航季新开恢复加密59条航线：通航点扩至115个后的购票要点",
+    "meta": "航司动态 · 航司动态",
+    "url": "tianjin-air-winter-season-2026.html"
+  },
+  {
+    "title": "双11机票次卡上新怎么用：航司次卡、随心飞与红包返场的规则解读",
+    "meta": "优惠活动 · 促销解读",
+    "url": "double11-flight-card-2026.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
