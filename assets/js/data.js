@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "icp": "备案信息办理中"
 };
 
@@ -445,6 +445,26 @@ const SEARCH_INDEX = [
     "title": "双11机票次卡上新怎么用：航司次卡、随心飞与红包返场的规则解读",
     "meta": "优惠活动 · 促销解读",
     "url": "double11-flight-card-2026.html"
+  },
+  {
+    "title": "福州航空冬春航季新开六条航线：福州直飞哈尔滨复航后怎么买票",
+    "meta": "航线资讯 · 航线扩容",
+    "url": "fuzhou-air-winter-new-routes.html"
+  },
+  {
+    "title": "湖南航空冬航季新开11条航线：长沙始发扩容后的购票要点",
+    "meta": "航司动态 · 航司动态",
+    "url": "hunan-airlines-winter-11-routes.html"
+  },
+  {
+    "title": "宠物能带上飞机吗：客舱携宠服务的购票流程与核对清单",
+    "meta": "出行攻略 · 特殊出行",
+    "url": "pet-in-cabin-flight-booking.html"
+  },
+  {
+    "title": "换季首周机票怎么捡漏：新航线促销价的规律与核对清单",
+    "meta": "优惠活动 · 促销规律",
+    "url": "winter-season-new-route-promo.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",

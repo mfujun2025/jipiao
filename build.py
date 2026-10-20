@@ -26,7 +26,7 @@ SITE = {
     "tagline": "机票资讯 · 航司导航 · 出行攻略",
     "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
     "agent_email": "mfujun88@agent.qq.com",
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "icp": "备案信息办理中",
 }
 
@@ -988,6 +988,75 @@ ARTICLES = [
         "about_note": "本文为机票.CC「优惠活动」栏目的促销规则解读专题，品类与条款信息整理自公开报道，"
                       "各商品价格与规则以活动页实时展示为准，不含任何购买链接。"
                       "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "fuzhou-air-winter-new-routes",
+        "drafts": ["fuzhou-air-winter-new-routes-2026-10-21.md"],
+        "column": "routes.html",
+        "column_name": "航线资讯",
+        "date": "2026-10-21",
+        "review": STAMP["next_review_rule"],
+        "scope": "航线与班期",
+        "title_fallback": "福州航空冬春航季新开六条航线",
+        "meta_title": "福州航空冬春航季新开六条航线：福州直飞哈尔滨复航后怎么买票-机票.CC",
+        "head_desc_extra": "文中含六条新开与重开航线结构表、经停与替代方案对照表、冰雪季购票时点判断与下单核对清单、FAQ。",
+        "keywords": "福州航空新航线,福州直飞哈尔滨,冬春航季新航线,福州飞长春,经停航班,冰雪机票什么时候买,福州机票",
+        "cat_label": "航线扩容",
+        "summary": "六条新线打通福建至东北西北走廊、直飞哈尔滨复航与经停结构的读法。",
+        "about_note": "本文为机票.CC「航线资讯」栏目的换季航线扩容专题，航线与加密方向整理自东南网2026年10月20日报道，"
+                      "班期与时刻以航司官方销售系统实时查询为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "hunan-airlines-winter-11-routes",
+        "drafts": ["hunan-airlines-winter-11-routes-2026-10-21.md"],
+        "column": "airlines.html",
+        "column_name": "航司动态",
+        "date": "2026-10-21",
+        "review": STAMP["next_review_rule"],
+        "scope": "航司与航线",
+        "title_fallback": "湖南航空冬航季新开11条航线",
+        "meta_title": "湖南航空冬航季新开11条航线：长沙始发扩容后的购票要点-机票.CC",
+        "head_desc_extra": "文中含11条新开航线场景表、冬游方向购票节奏表、初期票价窗口读法与四个核对动作、FAQ。",
+        "keywords": "湖南航空新航线,长沙飞海口,长沙飞西双版纳,冬航季机票,新航线初期票价,客舱携宠,爱宠同行",
+        "cat_label": "航司动态",
+        "summary": "11条新线扩容长沙始发、换季初期价格窗口的读法与客舱携宠服务升级要点。",
+        "about_note": "本文为机票.CC「航司动态」栏目的换季航司扩容专题，航线与服务信息整理自华声在线2026年10月20日报道，"
+                      "以航司官方销售系统实时查询为准。本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "pet-in-cabin-flight-booking",
+        "drafts": ["pet-in-cabin-flight-booking-2026-10-21.md"],
+        "column": "guides.html",
+        "column_name": "出行攻略",
+        "date": "2026-10-21",
+        "review": STAMP["next_review_rule"],
+        "scope": "规则与攻略",
+        "title_fallback": "宠物能带上飞机吗",
+        "meta_title": "宠物能带上飞机吗：客舱携宠服务的购票流程与核对清单-机票.CC",
+        "head_desc_extra": "文中含客舱携宠与有氧托运对比表、五步申请流程、常见误区清单与携宠购票FAQ。",
+        "keywords": "宠物能带上飞机吗,客舱携宠,宠物托运机票,带宠物坐飞机流程,宠物乘机证明,爱宠同行,宠物航空箱要求",
+        "cat_label": "特殊出行",
+        "summary": "客舱携宠与有氧托运两条路径的选择、五步申请流程与下单前核对清单。",
+        "about_note": "本文为机票.CC「出行攻略」栏目的携宠出行专题，服务信息引自公开报道，"
+                      "各航司宠物运输政策差异较大且可能调整，请以拟乘航司官方公示为准。"
+                      "本站不销售机票、不参与任何交易环节。",
+    },
+    {
+        "slug": "winter-season-new-route-promo",
+        "drafts": ["winter-season-new-route-promo-2026-10-21.md"],
+        "column": "deals.html",
+        "column_name": "优惠活动",
+        "date": "2026-10-21",
+        "review": STAMP["next_review_price"],
+        "scope": "促销与规律",
+        "title_fallback": "换季首周机票怎么捡漏",
+        "meta_title": "换季首周机票怎么捡漏：新航线促销价的规律与核对清单-机票.CC",
+        "head_desc_extra": "文中含换季时间节点与市场特征表、三类促销形态解读、四步比价节奏与下单前核对清单、FAQ。",
+        "keywords": "换季机票捡漏,新航线促销价,冬春航季机票优惠,11月机票什么时候买,低价机票规律,机票促销怎么核对",
+        "cat_label": "促销规律",
+        "summary": "新航线头几周的促销规律、三类促销形态的核对方法与11月比价节奏。",
+        "about_note": "本文为机票.CC「优惠活动」栏目的换季促销规律专题，航季数据与促销提示整理自财联社、川观新闻等公开报道，"
+                      "不提供任何精确票价，实际价格以官方渠道实时查询为准。本站不销售机票、不参与任何交易环节。",
     },
 ]
 
