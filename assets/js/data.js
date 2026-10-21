@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "icp": "备案信息办理中"
 };
 
@@ -465,6 +465,26 @@ const SEARCH_INDEX = [
     "title": "换季首周机票怎么捡漏：新航线促销价的规律与核对清单",
     "meta": "优惠活动 · 促销规律",
     "url": "winter-season-new-route-promo.html"
+  },
+  {
+    "title": "苏南瑞丽航空冬春航季新开复飞31条航线：南京直飞昆明开航后的购票要点",
+    "meta": "航线资讯 · 航线扩容",
+    "url": "ruili-air-31-routes-winter.html"
+  },
+  {
+    "title": "南航上海冬春航季优化多条航线：浦东新开佳木斯、直飞乌鲁木齐每日一班的购票要点",
+    "meta": "航司动态 · 航司动态",
+    "url": "china-southern-shanghai-winter-season.html"
+  },
+  {
+    "title": "同一航线一天七八班怎么选：换季后快线航班挑选的决策方法",
+    "meta": "出行攻略 · 选航班",
+    "url": "same-route-multiple-flights-choose.html"
+  },
+  {
+    "title": "空铁联运机票怎么买：临沂换季推介会上的组合产品与使用要点",
+    "meta": "优惠活动 · 联运产品",
+    "url": "linyi-air-rail-joint-deals.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
