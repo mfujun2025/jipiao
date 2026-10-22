@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "icp": "备案信息办理中"
 };
 
@@ -485,6 +485,26 @@ const SEARCH_INDEX = [
     "title": "空铁联运机票怎么买：临沂换季推介会上的组合产品与使用要点",
     "meta": "优惠活动 · 联运产品",
     "url": "linyi-air-rail-joint-deals.html"
+  },
+  {
+    "title": "海南航空东北冬春航季新增8条航线：哈尔滨长春沈阳大连新航线怎么买",
+    "meta": "航线资讯 · 新航线",
+    "url": "hainan-airlines-northeast-new-routes.html"
+  },
+  {
+    "title": "长安航空冬春航季新开西安—荔波—珠海等航线：覆盖41城后的购票要点",
+    "meta": "航司动态 · 换季上新",
+    "url": "changan-airlines-winter-new-routes.html"
+  },
+  {
+    "title": "老年旅客坐飞机怎么买票：机场爱心服务与首次乘机操作指南",
+    "meta": "出行攻略 · 特殊旅客",
+    "url": "elderly-passenger-flight-booking-guide.html"
+  },
+  {
+    "title": "华夏航空冬春航季航线产品怎么看：参考价区间与配额规则解读",
+    "meta": "优惠活动 · 航线产品",
+    "url": "huaxia-airlines-winter-fare-products.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
