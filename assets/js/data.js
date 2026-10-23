@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "icp": "备案信息办理中"
 };
 
@@ -505,6 +505,26 @@ const SEARCH_INDEX = [
     "title": "华夏航空冬春航季航线产品怎么看：参考价区间与配额规则解读",
     "meta": "优惠活动 · 航线产品",
     "url": "huaxia-airlines-winter-fare-products.html"
+  },
+  {
+    "title": "深圳直飞乌兰巴托航线开通：每周一班新国际线怎么买",
+    "meta": "航线资讯 · 国际上新",
+    "url": "shenzhen-ulaanbaatar-new-route.html"
+  },
+  {
+    "title": "国航冬春航季计划执行457条航线：快线扩至15条后的购票要点",
+    "meta": "航司动态 · 换季上新",
+    "url": "air-china-winter-season-15-shuttle.html"
+  },
+  {
+    "title": "第一次坐飞机怎么申请首乘服务：民航首乘服务新标准要点解读",
+    "meta": "出行攻略 · 首乘指南",
+    "url": "first-flight-service-standard-guide.html"
+  },
+  {
+    "title": "候鸟游机票预订量同比增长三成：避寒旅居低价窗口怎么抓",
+    "meta": "优惠活动 · 错峰窗口",
+    "url": "migratory-bird-winter-fares-window.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
