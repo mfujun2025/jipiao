@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "icp": "备案信息办理中"
 };
 
@@ -545,6 +545,26 @@ const SEARCH_INDEX = [
     "title": "中转机票怎么买才不误机：换季后衔接时间怎么留",
     "meta": "优惠活动 · 中转攻略",
     "url": "transfer-connection-time-guide.html"
+  },
+  {
+    "title": "北京直飞冰岛航线今日首航：去雷克雅未克怎么买票更划算",
+    "meta": "航线资讯 · 国际新航线",
+    "url": "iceland-direct-route.html"
+  },
+  {
+    "title": "西藏航空冬春航季布局115条航线：拉萨新航线与「冬日暖阳」次卡怎么买",
+    "meta": "航司动态 · 换季计划",
+    "url": "tibet-airlines-winter-routes.html"
+  },
+  {
+    "title": "换季后坐飞机该提前多久到机场：早高峰、除冰、大雾三种场景的时间账",
+    "meta": "出行攻略 · 乘机实操",
+    "url": "winter-airport-arrival-time.html"
+  },
+  {
+    "title": "双11随心飞与机票卡集中开兑：卡费、兑换费、税费三笔账怎么算",
+    "meta": "优惠活动 · 票卡算账",
+    "url": "shuang11-flight-pass.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
