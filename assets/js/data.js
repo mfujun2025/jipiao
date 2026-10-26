@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "icp": "备案信息办理中"
 };
 
@@ -565,6 +565,26 @@ const SEARCH_INDEX = [
     "title": "双11随心飞与机票卡集中开兑：卡费、兑换费、税费三笔账怎么算",
     "meta": "优惠活动 · 票卡算账",
     "url": "shuang11-flight-pass.html"
+  },
+  {
+    "title": "10月27日多条经停新航线同日开航：乌鲁木齐、南通出发怎么买",
+    "meta": "航线资讯 · 新航线",
+    "url": "oct27-new-stopover-routes.html"
+  },
+  {
+    "title": "西部航空重庆新开两条独飞航线：经池州飞大连、经固原飞沈阳怎么买",
+    "meta": "航司动态 · 换季计划",
+    "url": "west-air-chongqing-winter-routes.html"
+  },
+  {
+    "title": "收到航班取消短信怎么办：换季退改签诈骗识别与官方核实流程",
+    "meta": "出行攻略 · 购票安全",
+    "url": "flight-cancel-sms-scam-guide.html"
+  },
+  {
+    "title": "10月末错峰机票怎么挑：航司官网挂出的优惠价样本与核对方法",
+    "meta": "优惠活动 · 错峰窗口",
+    "url": "late-oct-offpeak-fare-samples.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
