@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "icp": "备案信息办理中"
 };
 
@@ -585,6 +585,26 @@ const SEARCH_INDEX = [
     "title": "10月末错峰机票怎么挑：航司官网挂出的优惠价样本与核对方法",
     "meta": "优惠活动 · 错峰窗口",
     "url": "late-oct-offpeak-fare-samples.html"
+  },
+  {
+    "title": "青岛直飞万象航线开通：经停西双版纳、行李直挂的购票要点",
+    "meta": "航线资讯 · 新航线",
+    "url": "qingdao-vientiane-new-route.html"
+  },
+  {
+    "title": "新航季航司服务上新：机上免费上网、快线时刻与宠物进客舱",
+    "meta": "航司动态 · 服务升级",
+    "url": "winter-season-service-upgrades.html"
+  },
+  {
+    "title": "航班截载时间调整后怎么赶飞机：从贵阳30分钟到济南25分钟",
+    "meta": "出行攻略 · 乘机流程",
+    "url": "boarding-cutoff-time-adjustments.html"
+  },
+  {
+    "title": "买机票送城际乘车码与机场巴士：广州空铁联运权益怎么用",
+    "meta": "优惠活动 · 联运权益",
+    "url": "guangzhou-air-rail-transfer-perks.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
