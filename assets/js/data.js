@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "icp": "备案信息办理中"
 };
 
@@ -605,6 +605,26 @@ const SEARCH_INDEX = [
     "title": "买机票送城际乘车码与机场巴士：广州空铁联运权益怎么用",
     "meta": "优惠活动 · 联运权益",
     "url": "guangzhou-air-rail-transfer-perks.html"
+  },
+  {
+    "title": "巴里坤直飞北京航线开通：草原小城进京的购票要点",
+    "meta": "航线资讯 · 新航线",
+    "url": "balikun-beijing-new-route.html"
+  },
+  {
+    "title": "南航冬春航季国际航线扩容：济州、德里与澳新加密怎么买",
+    "meta": "航司动态 · 国际航线",
+    "url": "china-southern-intl-winter-expansion.html"
+  },
+  {
+    "title": "去大连的机票怎么买最划算：低价窗口与购票时机",
+    "meta": "出行攻略 · 购票时机",
+    "url": "dalian-flight-booking-window.html"
+  },
+  {
+    "title": "南昌出港机票补贴活动上线：28条特价航线与机场立减50元怎么用",
+    "meta": "优惠活动 · 机票补贴",
+    "url": "nanchang-flight-subsidy-deals.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
