@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-29",
+  "updated": "2026-10-31",
   "icp": "备案信息办理中"
 };
 
@@ -625,6 +625,26 @@ const SEARCH_INDEX = [
     "title": "南昌出港机票补贴活动上线：28条特价航线与机场立减50元怎么用",
     "meta": "优惠活动 · 机票补贴",
     "url": "nanchang-flight-subsidy-deals.html"
+  },
+  {
+    "title": "2026冬春航季航线大调整：288条新航线上线后怎么买机票",
+    "meta": "航线资讯 · 航线盘点",
+    "url": "winter-season-route-network.html"
+  },
+  {
+    "title": "东航C919航线增至20条：18个航点覆盖哪些城市、怎么买",
+    "meta": "航司动态 · 国产民机",
+    "url": "c919-flight-network-expansion.html"
+  },
+  {
+    "title": "小城机票预订暴涨200%：冬春航季错峰捡漏窗口怎么抓",
+    "meta": "出行攻略 · 购票时机",
+    "url": "small-city-flight-booking-boom.html"
+  },
+  {
+    "title": "南航长者惠游活动怎么参加：280元礼包与候鸟长者规则解读",
+    "meta": "优惠活动 · 长者优惠",
+    "url": "south-airlines-senior-fares.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
