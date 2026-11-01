@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-10-31",
+  "updated": "2026-11-02",
   "icp": "备案信息办理中"
 };
 
@@ -645,6 +645,26 @@ const SEARCH_INDEX = [
     "title": "南航长者惠游活动怎么参加：280元礼包与候鸟长者规则解读",
     "meta": "优惠活动 · 长者优惠",
     "url": "south-airlines-senior-fares.html"
+  },
+  {
+    "title": "冬春航季国际航线悄悄上新：冰岛、非洲、土耳其多点上新后怎么买",
+    "meta": "航线资讯 · 国际航线",
+    "url": "winter-international-routes-new.html"
+  },
+  {
+    "title": "春秋航空会员权益升级：无门槛券折上折与行李产品怎么用",
+    "meta": "航司动态 · 会员权益",
+    "url": "spring-airlines-member-upgrade.html"
+  },
+  {
+    "title": "机票什么时候订最划算：换季、元旦、春运三层窗口按顺序订更省",
+    "meta": "出行攻略 · 购票时机",
+    "url": "when-to-book-flight-three-windows.html"
+  },
+  {
+    "title": "南航汕头冰雪游专享优惠11月上线：揭阳义乌始发北上的购票要点",
+    "meta": "优惠活动 · 冰雪游优惠",
+    "url": "china-southern-snow-tour.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
