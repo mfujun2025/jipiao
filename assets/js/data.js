@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "icp": "备案信息办理中"
 };
 
@@ -665,6 +665,26 @@ const SEARCH_INDEX = [
     "title": "南航汕头冰雪游专享优惠11月上线：揭阳义乌始发北上的购票要点",
     "meta": "优惠活动 · 冰雪游优惠",
     "url": "china-southern-snow-tour.html"
+  },
+  {
+    "title": "成都国际航线密集上新：新西伯利亚首航、伊斯坦布尔11月开航后怎么买",
+    "meta": "航线资讯 · 国际航线",
+    "url": "chengdu-intl-routes-new.html"
+  },
+  {
+    "title": "北部湾航空冬春航季新增11条航线：南宁济南海口三枢纽怎么买更顺",
+    "meta": "航线资讯 · 新开航线",
+    "url": "beibuwan-airlines-11-routes.html"
+  },
+  {
+    "title": "浙江淡季错峰机票跳水15%至30%：杭州出发200元起怎么买才不亏",
+    "meta": "优惠活动 · 淡季错峰",
+    "url": "zhejiang-offpeak-fare-drop.html"
+  },
+  {
+    "title": "买机票时怎么把行李额度算进总价：冬季厚衣物与滑雪装备托运要点",
+    "meta": "出行攻略 · 行李规则",
+    "url": "winter-flight-baggage-guide.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
