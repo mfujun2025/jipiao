@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "icp": "备案信息办理中"
 };
 
@@ -685,6 +685,26 @@ const SEARCH_INDEX = [
     "title": "买机票时怎么把行李额度算进总价：冬季厚衣物与滑雪装备托运要点",
     "meta": "出行攻略 · 行李规则",
     "url": "winter-flight-baggage-guide.html"
+  },
+  {
+    "title": "国内航线燃油附加费11月5日起上调至80/140元：购票该提前还是再等",
+    "meta": "出行攻略 · 价格解读",
+    "url": "fuel-surcharge-nov5.html"
+  },
+  {
+    "title": "银川机场冬春航季航线扩容：银川—阿勒泰凭登机牌免费滑雪、乌航经停海口怎么买",
+    "meta": "航线资讯 · 航线动态",
+    "url": "yinchuan-airport-winter-routes.html"
+  },
+  {
+    "title": "东海航空冬春航季新增7条航线：深圳珠海中转枢纽与支线加密怎么买",
+    "meta": "航司动态 · 新开航线",
+    "url": "donghai-air-winter-7-routes.html"
+  },
+  {
+    "title": "双11机票促销怎么挑：酷航新加坡1099起、东航国际次卡99元起的规则与避坑",
+    "meta": "优惠活动 · 双11促销",
+    "url": "shuang11-flight-deals.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
