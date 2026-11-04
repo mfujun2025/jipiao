@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "icp": "备案信息办理中"
 };
 
@@ -705,6 +705,26 @@ const SEARCH_INDEX = [
     "title": "双11机票促销怎么挑：酷航新加坡1099起、东航国际次卡99元起的规则与避坑",
     "meta": "优惠活动 · 双11促销",
     "url": "shuang11-flight-deals.html"
+  },
+  {
+    "title": "南宁直飞越南海防航线11月10日开通：班次、时刻与购票要点",
+    "meta": "航线资讯 · 新开航线",
+    "url": "nanning-haiphong-route.html"
+  },
+  {
+    "title": "外航11月密集上新中国航线：土耳其航空成都开航、卡塔尔南美新线怎么买",
+    "meta": "航司动态 · 国际航司",
+    "url": "foreign-carriers-china-nov-routes.html"
+  },
+  {
+    "title": "特价机票的退改规则怎么看：不同舱位退改费与省钱判断",
+    "meta": "出行攻略 · 退改规则",
+    "url": "low-fare-refund-change-rules.html"
+  },
+  {
+    "title": "成都出发机票最低200元：秋假叠加双11的低价窗口怎么抓",
+    "meta": "优惠活动 · 淡季错峰",
+    "url": "chengdu-departure-low-fares.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
