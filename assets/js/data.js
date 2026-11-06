@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "icp": "备案信息办理中"
 };
 
@@ -745,6 +745,26 @@ const SEARCH_INDEX = [
     "title": "南航哈尔滨—义乌—揭阳航线11月6日首航：冰雪通道怎么买更顺",
     "meta": "航线资讯 · 新航线首航",
     "url": "harbin-yiwu-jieyang-route.html"
+  },
+  {
+    "title": "吉祥航空南京—鞍山直飞11月19日开航：华东直奔钢都冰雪怎么买",
+    "meta": "航线资讯 · 新航线开航",
+    "url": "nanjing-anshan-route.html"
+  },
+  {
+    "title": "土耳其航空11月11日新开伊斯坦布尔—成都天府：星空联盟宽体怎么衔接",
+    "meta": "航司动态 · 国际新航线",
+    "url": "turkish-istanbul-chengdu-route.html"
+  },
+  {
+    "title": "机票盲盒和次卡值不值得买：规则边界与适合人群",
+    "meta": "出行攻略 · 促销避坑",
+    "url": "flight-blind-box-card-guide.html"
+  },
+  {
+    "title": "乌鲁木齐航空乌鲁木齐—银川—海口开航优惠：冰雪与暖冬300元起怎么抢",
+    "meta": "优惠活动 · 开航特价",
+    "url": "urumqi-airlines-winter-open-deal.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
