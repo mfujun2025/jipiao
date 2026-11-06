@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "icp": "备案信息办理中"
 };
 
@@ -725,6 +725,26 @@ const SEARCH_INDEX = [
     "title": "成都出发机票最低200元：秋假叠加双11的低价窗口怎么抓",
     "meta": "优惠活动 · 淡季错峰",
     "url": "chengdu-departure-low-fares.html"
+  },
+  {
+    "title": "首都航空冬春航季新航线布局：杭州等多点新开与杭州—温哥华复航",
+    "meta": "航司动态 · 航司航线",
+    "url": "capital-airlines-winter-new-routes.html"
+  },
+  {
+    "title": "2026双11机票特价清单：亚航200元出境秒杀、深航280元起、携程周末飞/早鸟飞券怎么抢",
+    "meta": "优惠活动 · 双11特价",
+    "url": "double11-special-fares.html"
+  },
+  {
+    "title": "外航11月再添中国相关新线：新西兰航空基督城—东京/珀斯、靛蓝航空非洲线、约旦皇家航空安曼—北京",
+    "meta": "航司动态 · 国际航司",
+    "url": "foreign-carriers-nov-new-lines.html"
+  },
+  {
+    "title": "南航哈尔滨—义乌—揭阳航线11月6日首航：冰雪通道怎么买更顺",
+    "meta": "航线资讯 · 新航线首航",
+    "url": "harbin-yiwu-jieyang-route.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
