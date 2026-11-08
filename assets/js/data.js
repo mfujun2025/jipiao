@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "icp": "备案信息办理中"
 };
 
@@ -785,6 +785,26 @@ const SEARCH_INDEX = [
     "title": "三大航双11机票次卡横向对比：国航南航东航怎么选才不亏",
     "meta": "优惠活动 · 双11次卡",
     "url": "triple-airline-double11-cards.html"
+  },
+  {
+    "title": "湛江吴川机场冬春航季航线推介会：39条航线与300元起特价怎么买",
+    "meta": "航线资讯 · 机场航线",
+    "url": "zhanjiang-wuchuan-winter-routes.html"
+  },
+  {
+    "title": "春秋航空冬春航季第二期新开复飞加密：冰雪、避寒、海岛三线怎么买",
+    "meta": "航司动态 · 航季航线",
+    "url": "spring-airlines-winter-phase2.html"
+  },
+  {
+    "title": "寒假家庭出游机票怎么买：儿童票、亲子权益与行李额度决策清单",
+    "meta": "出行攻略 · 家庭出行",
+    "url": "family-child-flight-booking-guide.html"
+  },
+  {
+    "title": "双11机票抢购倒计时：11月9-11日航司限时促销日历与下单核对清单",
+    "meta": "优惠活动 · 双11抢购",
+    "url": "double11-flight-snapshot-2026.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
