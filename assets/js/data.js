@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "icp": "备案信息办理中"
 };
 
@@ -805,6 +805,26 @@ const SEARCH_INDEX = [
     "title": "双11机票抢购倒计时：11月9-11日航司限时促销日历与下单核对清单",
     "meta": "优惠活动 · 双11抢购",
     "url": "double11-flight-snapshot-2026.html"
+  },
+  {
+    "title": "丽水机场开通经深圳国际通程中转：支线小城买联程机票怎么一票到底",
+    "meta": "航线资讯 · 支线通程",
+    "url": "lishui-through-checkin-shenzhen.html"
+  },
+  {
+    "title": "深圳航空冬春航季新增加密多条航线：深圳直飞悉尼与国内支线怎么选",
+    "meta": "航司动态 · 换季选线",
+    "url": "shenzhen-airlines-winter-2026.html"
+  },
+  {
+    "title": "冬季坐飞机遇到雨雪延误怎么办：从民航局冬季运行保障手册说起",
+    "meta": "出行攻略 · 延误处置",
+    "url": "winter-weather-flight-disruption.html"
+  },
+  {
+    "title": "国际早鸟票怎么买：天津航空7条国际线的下浮区间、缺口程与行李权益",
+    "meta": "优惠活动 · 早鸟规则",
+    "url": "tianjin-air-intl-earlybird.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
