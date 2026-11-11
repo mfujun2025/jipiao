@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "icp": "备案信息办理中"
 };
 
@@ -825,6 +825,26 @@ const SEARCH_INDEX = [
     "title": "国际早鸟票怎么买：天津航空7条国际线的下浮区间、缺口程与行李权益",
     "meta": "优惠活动 · 早鸟规则",
     "url": "tianjin-air-intl-earlybird.html"
+  },
+  {
+    "title": "土耳其航空成都天府—伊斯坦布尔开航：成都直飞伊斯坦布尔机票怎么买",
+    "meta": "航线资讯 · 新航线",
+    "url": "turkish-air-chengdu-istanbul-1111.html"
+  },
+  {
+    "title": "上海到河内机票怎么订？开航八折购票指南",
+    "meta": "优惠活动 · 开航促销",
+    "url": "sun-phuquoc-shanghai-hanoi.html"
+  },
+  {
+    "title": "11月滑雪游机票怎么买最划算：张家口、阿勒泰预订量同比大增后怎么订",
+    "meta": "出行攻略 · 雪季攻略",
+    "url": "nov-ski-trip-flights.html"
+  },
+  {
+    "title": "长者机票怎么买最划算？冬春航季南下过冬订票指南",
+    "meta": "航司动态 · 航司专题",
+    "url": "southern-airlines-winter-warm-flights.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
