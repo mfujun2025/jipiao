@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "icp": "备案信息办理中"
 };
 
@@ -845,6 +845,26 @@ const SEARCH_INDEX = [
     "title": "长者机票怎么买最划算？冬春航季南下过冬订票指南",
     "meta": "航司动态 · 航司专题",
     "url": "southern-airlines-winter-warm-flights.html"
+  },
+  {
+    "title": "邵阳武冈机场11月17日开通上海浦东=邵阳=昆明航线：经停航线机票怎么买",
+    "meta": "航线资讯 · 新航线",
+    "url": "shaoyang-wugang-shanghai-kunming-route.html"
+  },
+  {
+    "title": "春秋航空沈阳冬春航季新开4条航线：经停航线行李额度与购票要点",
+    "meta": "航司动态 · 航司专题",
+    "url": "spring-airlines-shenyang-new-4-routes.html"
+  },
+  {
+    "title": "冬春航季换季初期机票价格大跳水：捡漏窗口怎么抓",
+    "meta": "优惠活动 · 错峰捡漏",
+    "url": "winter-season-fare-drop-window.html"
+  },
+  {
+    "title": "儿童机票怎么买：儿童票年龄身高口径与换季带娃出行购票攻略",
+    "meta": "出行攻略 · 带娃出行",
+    "url": "children-flight-ticket-booking-guide.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
