@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "icp": "备案信息办理中"
 };
 
@@ -865,6 +865,26 @@ const SEARCH_INDEX = [
     "title": "儿童机票怎么买：儿童票年龄身高口径与换季带娃出行购票攻略",
     "meta": "出行攻略 · 带娃出行",
     "url": "children-flight-ticket-booking-guide.html"
+  },
+  {
+    "title": "合肥新桥机场冬春航季89条航线怎么买：合肥机票新增航点与国际港澳线路核对要点",
+    "meta": "航线资讯 · 机场航季",
+    "url": "hefei-winter-89-routes.html"
+  },
+  {
+    "title": "天津航空秋假出行服务怎么买：同行拼团机票优惠与同时退改规则核对要点",
+    "meta": "航司动态 · 航司专题",
+    "url": "tianjin-air-autumn-break-group.html"
+  },
+  {
+    "title": "积分兑换机票怎么算才划算：里程折扣兑换、次卡与现金票的总价对照",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "miles-award-ticket-value.html"
+  },
+  {
+    "title": "云闪付航旅消费券怎么用：入滇机票满减与昆明中转权益购票要点",
+    "meta": "优惠活动 · 惠民活动",
+    "url": "yunnan-air-travel-coupon.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
