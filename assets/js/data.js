@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-13",
+  "updated": "2026-11-15",
   "icp": "备案信息办理中"
 };
 
@@ -885,6 +885,26 @@ const SEARCH_INDEX = [
     "title": "云闪付航旅消费券怎么用：入滇机票满减与昆明中转权益购票要点",
     "meta": "优惠活动 · 惠民活动",
     "url": "yunnan-air-travel-coupon.html"
+  },
+  {
+    "title": "安阳新增航点后机票怎么买：乌鲁木齐=安阳=厦门经停航线的分段购票要点",
+    "meta": "航线资讯 · 经停航线",
+    "url": "anyang-new-stopover-route.html"
+  },
+  {
+    "title": "海南航空长沙冬春航季加密11对往返航班：快线与秋假加班运力怎么挑",
+    "meta": "航司动态 · 航司专题",
+    "url": "hainan-air-changsha-11-roundtrips.html"
+  },
+  {
+    "title": "买错机票能不能免费退：退票冷静期与退改费率公示怎么核对",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "wrong-purchase-refund-cooling-off.html"
+  },
+  {
+    "title": "佛山机场家庭套票怎么买：人均价格区间、适用航线与同行退改要点",
+    "meta": "优惠活动 · 惠民活动",
+    "url": "foshan-family-ticket-package.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
