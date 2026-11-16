@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "icp": "备案信息办理中"
 };
 
@@ -905,6 +905,26 @@ const SEARCH_INDEX = [
     "title": "佛山机场家庭套票怎么买：人均价格区间、适用航线与同行退改要点",
     "meta": "优惠活动 · 惠民活动",
     "url": "foshan-family-ticket-package.html"
+  },
+  {
+    "title": "石家庄直飞岘港航线11月16日首航：石家庄机票新选择与东南亚凉季购票要点",
+    "meta": "航线资讯 · 国际航线",
+    "url": "shijiazhuang-danang-new-route.html"
+  },
+  {
+    "title": "海南航空沈阳—三亚航线11月16日起投放宽体机：避寒与冰雪双向客流买机票要点",
+    "meta": "航司动态 · 航司专题",
+    "url": "hainan-shenyang-sanya-widebody.html"
+  },
+  {
+    "title": "成都—库尔勒—克拉玛依航线首航：国航新航线折扣票怎么买更稳",
+    "meta": "优惠活动 · 开航优惠",
+    "url": "chengdu-korla-karamay-promo-fares.html"
+  },
+  {
+    "title": "网上订机票怎么防坑：正规渠道核验五步与购票陷阱核对清单",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "online-flight-booking-safety-checklist.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
