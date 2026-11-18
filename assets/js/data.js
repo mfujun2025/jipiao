@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "icp": "备案信息办理中"
 };
 
@@ -925,6 +925,26 @@ const SEARCH_INDEX = [
     "title": "网上订机票怎么防坑：正规渠道核验五步与购票陷阱核对清单",
     "meta": "出行攻略 · 购票技巧",
     "url": "online-flight-booking-safety-checklist.html"
+  },
+  {
+    "title": "温州直飞胡志明市夜航开通：机票怎么买更划算",
+    "meta": "航线资讯 · 新开航线",
+    "url": "wenzhou-hochiminh-night-flight.html"
+  },
+  {
+    "title": "川航冬航季执行290余条航线：洲际航线增至11条后机票怎么买",
+    "meta": "航司动态 · 航季调整",
+    "url": "sichuan-airlines-winter-290-routes.html"
+  },
+  {
+    "title": "多人出行机票怎么买：拆单还是合单的取舍清单",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "group-flight-booking-split-orders.html"
+  },
+  {
+    "title": "珠海出发机票价格回落：冰雪与热门方向怎么买更稳",
+    "meta": "优惠活动 · 错峰出行",
+    "url": "zhuhai-departure-fare-drop.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
