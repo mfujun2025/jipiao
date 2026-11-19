@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "icp": "备案信息办理中"
 };
 
@@ -945,6 +945,26 @@ const SEARCH_INDEX = [
     "title": "珠海出发机票价格回落：冰雪与热门方向怎么买更稳",
     "meta": "优惠活动 · 错峰出行",
     "url": "zhuhai-departure-fare-drop.html"
+  },
+  {
+    "title": "珠海—万州—青岛航线开通：万州机票新选择与串飞购票要点",
+    "meta": "航线资讯 · 新航线",
+    "url": "wanzhou-zhuhai-qingdao-route.html"
+  },
+  {
+    "title": "春秋航空扬州泰州冬春航季加码：新增4航点后扬州机票怎么买",
+    "meta": "航司动态 · 航季调整",
+    "url": "spring-airlines-yangzhou-taizhou-expansion.html"
+  },
+  {
+    "title": "拼票中转行李能不能直挂：跨航司通程值机怎么用更省心",
+    "meta": "出行攻略 · 中转规则",
+    "url": "cross-airline-through-checkin-guide.html"
+  },
+  {
+    "title": "合肥出发淡季机票200至300元档：长线降幅超七成后怎么捡漏",
+    "meta": "优惠活动 · 错峰出行",
+    "url": "hefei-offseason-low-fares.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
