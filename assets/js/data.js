@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "icp": "备案信息办理中"
 };
 
@@ -965,6 +965,26 @@ const SEARCH_INDEX = [
     "title": "合肥出发淡季机票200至300元档：长线降幅超七成后怎么捡漏",
     "meta": "优惠活动 · 错峰出行",
     "url": "hefei-offseason-low-fares.html"
+  },
+  {
+    "title": "丽江直飞新加坡航线开通：滇西北出境机票怎么买与联运衔接要点",
+    "meta": "航线资讯 · 航线动态",
+    "url": "lijiang-singapore-route.html"
+  },
+  {
+    "title": "京沪快线跨航司签转升级：全舱位自愿签转后机票怎么用更灵活",
+    "meta": "航司动态 · 服务升级",
+    "url": "jinghu-cross-airline-endorsement.html"
+  },
+  {
+    "title": "机票价格走势图与低价日历怎么用：读懂低价窗口的实操方法",
+    "meta": "出行攻略 · 购票技巧",
+    "url": "price-trend-low-fare-calendar-guide.html"
+  },
+  {
+    "title": "香港航空20周年机票优惠怎么参加：八折折扣的适用范围与核对要点",
+    "meta": "优惠活动 · 促销解读",
+    "url": "hongkong-airlines-20th-anniversary.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
