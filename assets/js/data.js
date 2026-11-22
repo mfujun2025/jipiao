@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "icp": "备案信息办理中"
 };
 
@@ -985,6 +985,26 @@ const SEARCH_INDEX = [
     "title": "香港航空20周年机票优惠怎么参加：八折折扣的适用范围与核对要点",
     "meta": "优惠活动 · 促销解读",
     "url": "hongkong-airlines-20th-anniversary.html"
+  },
+  {
+    "title": "南昌到喀什机票怎么买：南航经停一机到底新航线开通后的购票要点",
+    "meta": "航线资讯 · 新航线",
+    "url": "nanchang-urumqi-kashgar-route.html"
+  },
+  {
+    "title": "首都航空新开航线怎么买：冬春航季24条新线与文旅权益核对要点",
+    "meta": "航司动态 · 航司布局",
+    "url": "capital-airlines-24-new-routes.html"
+  },
+  {
+    "title": "低成本航空和全服务航司怎么选：把行李选座退改算进总价的决策清单",
+    "meta": "出行攻略 · 购票决策",
+    "url": "low-cost-vs-full-service-airline.html"
+  },
+  {
+    "title": "天津航空冬春航季特惠机票怎么选：价格区间、适用航线与下单核对要点",
+    "meta": "优惠活动 · 促销解读",
+    "url": "tianjin-air-winter-special-fares.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
