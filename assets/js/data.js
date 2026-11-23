@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "icp": "备案信息办理中"
 };
 
@@ -1005,6 +1005,26 @@ const SEARCH_INDEX = [
     "title": "天津航空冬春航季特惠机票怎么选：价格区间、适用航线与下单核对要点",
     "meta": "优惠活动 · 促销解读",
     "url": "tianjin-air-winter-special-fares.html"
+  },
+  {
+    "title": "枣庄翼云机场首航机票怎么买：12月6日深圳经停航线开通后的购票要点",
+    "meta": "航线资讯 · 新航线",
+    "url": "zaozhuang-yun-airport-first-flight.html"
+  },
+  {
+    "title": "西安到阿勒泰机票怎么买：长安航空11月22日恢复直飞后的购票要点",
+    "meta": "航司动态 · 航司布局",
+    "url": "changan-xian-altay-resume.html"
+  },
+  {
+    "title": "改签还是退票重买：行程变了怎么选更划算的决策清单",
+    "meta": "出行攻略 · 退改决策",
+    "url": "change-vs-rebook-guide.html"
+  },
+  {
+    "title": "机票票根权益怎么用：青岛宁波双向福利与中转住宿的核对要点",
+    "meta": "优惠活动 · 权益解读",
+    "url": "qingdao-ningbo-ticket-stub-perks.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
