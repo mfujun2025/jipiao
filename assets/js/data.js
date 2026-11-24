@@ -6,7 +6,7 @@ const SITE = {
   "tagline": "机票资讯 · 航司导航 · 出行攻略",
   "desc": "机票.CC 是聚焦航空公司导航、航线资讯、出行攻略、航司动态与优惠活动的机票资讯站点，帮助出行者判断预订时机、读懂票价规律。",
   "agent_email": "mfujun88@agent.qq.com",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "icp": "备案信息办理中"
 };
 
@@ -1025,6 +1025,26 @@ const SEARCH_INDEX = [
     "title": "机票票根权益怎么用：青岛宁波双向福利与中转住宿的核对要点",
     "meta": "优惠活动 · 权益解读",
     "url": "qingdao-ningbo-ticket-stub-perks.html"
+  },
+  {
+    "title": "长沙直飞林芝机票怎么买：湖南首条雪域航线开通后的购票要点",
+    "meta": "航线资讯 · 新航线",
+    "url": "changsha-linzhi-direct-route.html"
+  },
+  {
+    "title": "冬季飞新疆机票怎么买：多家航司加密航线后的航班核对要点",
+    "meta": "航司动态 · 航司布局",
+    "url": "xinjiang-winter-airlines.html"
+  },
+  {
+    "title": "买机票怎么把机场接驳算进总价：别只看票面省钱的决策清单",
+    "meta": "出行攻略 · 总价决策",
+    "url": "airport-transfer-total-cost-guide.html"
+  },
+  {
+    "title": "飞广州机票权益怎么用：南航五重出行礼遇的规则核对要点",
+    "meta": "优惠活动 · 权益解读",
+    "url": "guangzhou-flight-perks-guide.html"
   },
   {
     "title": "京沪空中快线再加密：日班次与时刻分布梳理",
